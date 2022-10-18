@@ -1,4 +1,4 @@
-package CSCE247Project;
+
 import java.util.ArrayList;
 
 public class Cabin {
@@ -13,6 +13,7 @@ public class Cabin {
     }
 
     public String setageGroup(ArrayList<Child> children){
+        return cabinNumber;
         
     }
 

@@ -1,4 +1,3 @@
-package CSCE247Project;
 
 import java.util.ArrayList;
 
@@ -7,6 +6,7 @@ public class ChildCollection {
     private  ArrayList<Child> children;
 
     private ArrayList<Child> childList(){
+        return children;
 
     }
 
