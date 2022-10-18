@@ -2,13 +2,17 @@
     {
         "username": "superdirector15",
         "password": "summercamp99",
-        "firstname": "Samuel",
+        "firstName": "Samuel",
         "lastName": "Flours",
         "emergencyContact": "UUID here",
         "restrictions": "gluten"
     },
     {
         "username": "davidsmith742",
-        "password": ""
+        "password": "dsmithword247",
+        "firstName": "David",
+        "lastName": "Smith",
+        "emergencyContact": "UUID here",
+        "restrictions": "none"
     }
 ]
