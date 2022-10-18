@@ -1,0 +1,35 @@
+[
+    {
+        "username": "for user class",
+        "password": "for user class",
+        "FirstName":"First Name Here",
+        "LastName":"Last Name Here",
+        "Age":"MM/DD/YYYY",
+        "address": "Insert Address",
+        "emergencyContact": "Emergency Contact",
+        "eCNumber": 1234567890,
+        "restrictions": "Insert Restriction Enum Here"
+    },
+    {
+        "username": "dFlours",
+        "password": "for user class",
+        "FirstName":"David",
+        "LastName":"Flour",
+        "Age":"12/27/1999",
+        "address": "2089 Bluebird Rd",
+        "emergencyContact": "Harry Jobs",
+        "eCNumber": 1234567890,
+        "restrictions": "None"
+    },
+    {
+        "username": "JonesBill96",
+        "password": "for user class",
+        "FirstName":"Bill",
+        "LastName":"Jones",
+        "Age":"08/19/1996",
+        "address": "...",
+        "emergencyContact": "Curt Cobain",
+        "eCNumber": 1234567890,
+        "restrictions": "NoSwim"
+    }
+]
