@@ -1,4 +1,4 @@
-package CSCE247Project;
+
 
 import java.util.ArrayList;
 
@@ -8,6 +8,7 @@ public class CabinCollection {
     private ArrayList<Cabin> cabins;
 
     public ArrayList<Cabin> cabinList(){
+        return cabins;
 
     }
 }

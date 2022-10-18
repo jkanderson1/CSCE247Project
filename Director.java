@@ -1,4 +1,4 @@
-package CSCE247Project;
+import java.util.ArrayList;
 
 public class Director {
 private ArrayList<Child> children;
@@ -13,7 +13,7 @@ private void makeTeenSchedule(Days, TeenActivities){
 private void viewCabins(){
 
 }
-private childCollections viewChildren(){
+private ChildCollection viewChildren(){
 
 }
 private CounselorCollection viewCounselors(){

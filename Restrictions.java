@@ -1,4 +1,3 @@
-package CSCE247Project;
 
 public enum Restrictions {
     Peanut,

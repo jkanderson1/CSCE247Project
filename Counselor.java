@@ -1,4 +1,4 @@
-package CSCE247Project;
+
 
 public class Counselor {
 private String frstName;
