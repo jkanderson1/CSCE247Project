@@ -1,0 +1,38 @@
+[
+    {
+        "username": "for user class",
+        "password": "for user class",
+        "childFirstName":"First Name Here",
+        "childLastName":"Last Name Here",
+        "childAge":"MM/DD/YYYY",
+        "restrictions": "Insert Restrictions",
+        "address": "Insert Address",
+        "guardian": "Parent's First Name",
+        "pediatrician": "Doctor's Name",
+        "pediatricianNumber": 1234567890
+    },
+    {
+        "username": "jDonahue12",
+        "password": "password123",
+        "childFirstName":"Jimmy",
+        "childLastName":"Donahue",
+        "childAge":"10/07/2007",
+        "restrictions": "None",
+        "address": "123 Hoover St",
+        "guardian": "Wendy",
+        "pediatrician": "Dr. Pepper",
+        "pediatricianNumber": 1234567890
+    },
+    {
+        "username": "SamKenn2004",
+        "password": "mpass1474",
+        "childFirstName":"Samantha",
+        "childLastName":"Kennedy",
+        "childAge":"03/24/2004",
+        "restrictions": "Peanut",
+        "address": "321 Couldesac St",
+        "guardian": "Joeseph",
+        "pediatrician": "Dr. Keeves",
+        "pediatricianNumber": 1234567890
+    }
+]
