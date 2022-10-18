@@ -4,8 +4,10 @@ public class Child {
     public String childDOB;
     public Contact EmergencyContact;
     public Contact Pediatrician;
+    public Restriction restriction;
+    //might remove restrictions;
 
-    public Child(String childFirstName, String childLastname, String childDOB, Contact EmergencyContact, Contact Pediatrician){
+    public Child(String childFirstName, String childLastname, String childDOB, Restriction restriction, Contact EmergencyContact, Contact Pediatrician){
 
     }
 
@@ -16,10 +18,6 @@ public class Child {
     public boolean hasRestriction(Restriction restriction){
         return false;
     }
-
-
-
-
 
 
 }
