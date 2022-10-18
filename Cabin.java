@@ -13,7 +13,7 @@ public class Cabin {
     }
 
     public String setageGroup(ArrayList<Child> children){
-        return cabinNumber;
+        return "";
         
     }
 
