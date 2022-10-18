@@ -7,9 +7,9 @@ private String couselorDOB;
 private String address;
 private String emergencyContact;
 private int eCNumber;
-private  Restrictions restrictions;
+private  Restriction restrictions;
 
-public Counselor AddCounselor(String FirstName, String LastName, String Age, String address, String emergencyContact, int eCNumber, Restrictions restrictions){
+public Counselor AddCounselor(String FirstName, String LastName, String Age, String address, String emergencyContact, int eCNumber, Restriction restrictions){
     return null;
 
 }

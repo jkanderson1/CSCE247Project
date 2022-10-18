@@ -3,7 +3,7 @@ import java.util.ArrayList;
 
 public class Cabin {
     private Counselor counselor;
-    private Restrictions restrictions;
+    private Restriction restrictions;
     public ArrayList<Child> chidlren;
     public String cabinNumber;
     public int Sessions;
