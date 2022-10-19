@@ -1,7 +1,8 @@
+import java.util.ArrayList;
+
 public class UserCollection {
-    public String username;
-    public String password;
-    public Schedule schedule;
+    private ArrayList<User> user;
+    private UserCollection userCollection;
 
     private UserCollection(){
 
