@@ -1,5 +1,18 @@
 {
     {
-        "cabinName": ""
+        "cabinName": "Cabin A",
+	    "counselor": "David Flours",
+	    "ageGroup": "5-9",
+	    "cabinGender": "Male",
+	    "cabinRestrictions": "noSwim",
+	    "children": ["jimmy donahue", "ford lakes", "bob donovan", "daniel finger", "david beets", "jeff brooks", "sam chives", "baker daniels"]
+    },
+    {
+        "cabinName": "Cabin B",
+	    "counselor": "Susan Jones",
+	    "ageGroup": "5-9",
+	    "cabinGender": "Female",
+	    "cabinRestrictions": "none",
+	    "children": ["jenny donahue", "annie lakes", "susie donovan", "annabelle samuels", "destiny beets", "sam brooks", "sally chives", "gabby daniels"]
     }
 }
