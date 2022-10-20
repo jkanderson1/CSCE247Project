@@ -1,8 +1,14 @@
 
 
+<<<<<<< HEAD
 public class Counselor {
 public static String firstName;
 public static String lastName;
+=======
+public class Counselor extends User{
+private String firstName;
+private String lastName;
+>>>>>>> refs/remotes/origin/main
 private String couselorDOB;
 private String address;
 private Contact EmergencyContact;

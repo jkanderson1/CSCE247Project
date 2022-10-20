@@ -11,8 +11,10 @@ public class CounselorCollection {
         Counselors.add(counselor);
     }
     public void AddCounselor(String firstName, String lastName, String couselorDOB, String address, Contact EmergencyContact, Restriction restriction){
+
         Counselors.add(counselor);
         //adding counselor into the counselor array list
+
     }
 
     String CounselorName = Counselor.firstName + " " + Counselor.lastName;

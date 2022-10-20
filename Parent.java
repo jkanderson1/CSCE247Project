@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-public class Parent {
+public class Parent extends User{
    public String firstName;
    public String lastName;
    public String email;
