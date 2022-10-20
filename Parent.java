@@ -6,9 +6,6 @@ public class Parent {
    private int number;
    private ArrayList<Child> childList;
    
-public void addChild(String childFirstName, String childLastName, int childAge, Restriction restrictions){
-
-}
 
 public String toString(){
    return "";
