@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class DateReader {
+public class DataReader {
     
     public ArrayList<User> getAllUsers(){
         return null;

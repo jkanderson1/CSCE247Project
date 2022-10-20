@@ -4,7 +4,7 @@
         "password": "summercamp99",
         "firstName": "Samuel",
         "lastName": "Flours",
-        "emergencyContact": "UUID here",
+        "emergencyContact": "a59ae01a-1e6c-4773-8605-289040f8cc6c",
         "restrictions": "gluten"
     },
     {
@@ -12,7 +12,7 @@
         "password": "dsmithword247",
         "firstName": "David",
         "lastName": "Smith",
-        "emergencyContact": "UUID here",
+        "emergencyContact": "8d8dc728-3640-440c-8fa2-d8d4b883617e",
         "restrictions": "none"
     }
 ]

@@ -1,0 +1,20 @@
+[
+    {
+        "username": "dondaDuck87",
+        "password": "aPasswordforParent1",
+        "firstName": "donald",
+        "lastName": "duck",
+        "email": "donaldduck@gmail.com",
+        "number": "5556667777",
+        "children": ["david duck", "daffy duck", "daphene duck"]
+    },
+    {
+        "username": "daisyduck",
+        "password": "aPasswordforParent2",
+        "firstName": "daisy",
+        "lastName": "duck",
+        "email": "daisyduck@gmail.com",
+        "number": "5556667777",
+        "children": ["david duck", "daffy duck", "daphene duck"]
+    }
+]
