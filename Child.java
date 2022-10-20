@@ -1,22 +1,30 @@
-public class Child {
+
+import java.util.ArrayList;
+public class Child extends Parent{
     public String childFirstname;
     public String childLastname;
     public String childDOB;
     public Contact EmergencyContact;
     public Contact Pediatrician;
-    public Restriction restriction;
+    public ArrayList<Restriction> restriction;
     //might remove restrictions;
 
-    public Child(String childFirstName, String childLastname, String childDOB, Restriction restriction, Contact EmergencyContact, Contact Pediatrician){
-
+    public Child(String childFirstname, String childLastname, String childDOB, ArrayList<Restriction> restriction, Contact EmergencyContact, Contact Pediatrician){
+        this.childFirstname = childFirstname;
+        this.childLastname = childLastname;
+        this.childDOB = childDOB;
+        this.restriction = restriction;
+        this.EmergencyContact = EmergencyContact;
+        this.Pediatrician = Pediatrician;
     }
 
+
     public String toString(){
-        return " ";
+        return childFirstname+ childLastname+ childDOB+ restriction+ EmergencyContact+ Pediatrician;
     }
 
     public boolean hasRestriction(Restriction restriction){
-        return false;
+        return restriction!= null;
     }
 
 
