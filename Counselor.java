@@ -1,8 +1,8 @@
 
 
 public class Counselor {
-private String firstName;
-private String lastName;
+public static String firstName;
+public static String lastName;
 private String couselorDOB;
 private String address;
 private Contact EmergencyContact;
