@@ -8,7 +8,7 @@ public class CounselorCollection {
     private ArrayList<Counselor> Counselors ;
 
     public ArrayList<Counselor> CounselorList(){
-        return Counselors;
-        
+        Counselors.add(Counselors);
+   
     }
 }
