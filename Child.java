@@ -1,14 +1,15 @@
 
-public class Child implements Parent{
+import java.util.ArrayList;
+public class Child {
     public String childFirstname;
     public String childLastname;
     public String childDOB;
     public Contact EmergencyContact;
     public Contact Pediatrician;
-    public Restriction restriction;
+    public ArrayList<Restriction> restriction;
     //might remove restrictions;
 
-    public Child(String childFirstname, String childLastname, String childDOB, Restriction restriction, Contact EmergencyContact, Contact Pediatrician){
+    public Child(String childFirstname, String childLastname, String childDOB, ArrayList<Restriction> restriction, Contact EmergencyContact, Contact Pediatrician){
         this.childFirstname = childFirstname;
         this.childLastname = childLastname;
         this.childDOB = childDOB;
@@ -17,7 +18,7 @@ public class Child implements Parent{
         this.Pediatrician = Pediatrician;
     }
 
-    public void addChild(String childFirstName, String childLastName, String childDOB, Contact EmergencyContact, Contact Pediatrician, Restriction restriction){
+    public void addChild(String childFirstName, String childLastName, String childDOB, Contact EmergencyContact, Contact Pediatrician, ArrayList<Restriction> restriction){
         this.childFirstname =  childFirstName;
         this.childLastname = childLastName;
         this.childDOB = childDOB;
@@ -31,10 +32,7 @@ public class Child implements Parent{
     }
 
     public boolean hasRestriction(Restriction restriction){
-        if (restriction!= null){
-            return true;
-        }
-        else return false;
+        return restriction!= null;
     }
 
 

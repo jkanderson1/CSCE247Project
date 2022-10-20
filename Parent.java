@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-public interface Parent {
+public class Parent {
    public String firstName;
    public String lastName;
    public String email;
@@ -11,5 +11,7 @@ public interface Parent {
 public static void addParent(String firstName, String lastName, String email, int number){
 // call data writer to add parent to the jason parent 
 }
+
+   
 
 }

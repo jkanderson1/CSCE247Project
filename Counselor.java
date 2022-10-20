@@ -18,6 +18,7 @@ public void AddCounselor(String firstName, String lastName, String couselorDOB, 
 }
 public Cabin viewCabin(){
     return null;
+    //print out the list of children in their cabin
     
 }
 }

@@ -2,7 +2,7 @@
 import java.util.ArrayList;
 
 public class ChildCollection extends Child{
-    public ChildCollection(String childFirstname, String childLastname, String childDOB, Restriction restriction,
+    public ChildCollection(String childFirstname, String childLastname, String childDOB, ArrayList<Restriction> restriction,
             Contact EmergencyContact, Contact Pediatrician) {
         super(childFirstname, childLastname, childDOB, restriction, EmergencyContact, Pediatrician);
         //TODO Auto-generated constructor stub
@@ -12,6 +12,7 @@ public class ChildCollection extends Child{
     private  ArrayList<Child> children;
 
     private ArrayList<Child> childList(){
+        
         return children;
 
     }
