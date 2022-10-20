@@ -1,6 +1,6 @@
 
 import java.util.ArrayList;
-public class Child {
+public class Child extends Parent{
     public String childFirstname;
     public String childLastname;
     public String childDOB;
