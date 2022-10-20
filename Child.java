@@ -18,14 +18,6 @@ public class Child extends Parent{
         this.Pediatrician = Pediatrician;
     }
 
-    public void addChild(String childFirstName, String childLastName, String childDOB, Contact EmergencyContact, Contact Pediatrician, ArrayList<Restriction> restriction){
-        this.childFirstname =  childFirstName;
-        this.childLastname = childLastName;
-        this.childDOB = childDOB;
-        this.EmergencyContact = EmergencyContact;
-        this.Pediatrician = Pediatrician;
-        this.restriction = restriction;
-     }
 
     public String toString(){
         return childFirstname+ childLastname+ childDOB+ restriction+ EmergencyContact+ Pediatrician;
