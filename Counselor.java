@@ -1,17 +1,20 @@
 
 
 public class Counselor {
-private String frstName;
+private String firstName;
 private String lastName;
 private String couselorDOB;
 private String address;
-private String emergencyContact;
-private int eCNumber;
-private  Restriction restrictions;
+private Contact EmergencyContact;
+private  Restriction restriction;
 
-public Counselor AddCounselor(String FirstName, String LastName, String Age, String address, String emergencyContact, int eCNumber, Restriction restrictions){
-    return null;
-
+public void AddCounselor(String firstName, String lastName, String couselorDOB, String address, Contact EmergencyContact, Restriction restriction){
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.couselorDOB = couselorDOB;
+    this.address = address;
+    this.EmergencyContact = EmergencyContact;
+    this.restriction = restriction;
 }
 public Cabin viewCabin(){
     return null;
