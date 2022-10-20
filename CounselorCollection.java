@@ -6,9 +6,10 @@ public class CounselorCollection {
     private String CounselorName;
     private int CounselorAge;
     private ArrayList<Counselor> Counselors ;
+    private Counselor counselor;
 
-    public ArrayList<Counselor> CounselorList(){
-        Counselors.add(Counselors);
-   
+    public void CounselorList(){
+
+        Counselors.add(counselor);
     }
 }
