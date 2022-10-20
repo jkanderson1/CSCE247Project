@@ -5,8 +5,9 @@
 	    "ageGroup": "5-9",
 	    "cabinGender": "Male",
 	    "cabinRestrictions": "noSwim",
-	    "children": ["jimmy donahue", "ford lakes", "bob donovan", "daniel finger", "david beets", "jeff brooks", "sam chives", "baker daniels"]
-    },
+	    "children": ["jimmy donahue", "ford lakes", "bob donovan", "daniel finger", "david beets", "jeff brooks", "sam chives", "baker daniels"],
+		"schedule": 
+	},
     {
         "cabinName": "Cabin B",
 	    "counselor": "Susan Jones",
