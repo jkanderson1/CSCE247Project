@@ -4,7 +4,7 @@
 	    "counselor": "David Flours",
 	    "ageGroup": "5-9",
 	    
-	    "cabinRestrictions": "noSwim",
+	    
 	    "children": ["jimmy donahue", "ford lakes", "bob donovan", "daniel finger", "david beets", "jeff brooks", "sam chives", "baker daniels"],
 		"schedule": " ",
 		"session" : 1
@@ -14,7 +14,7 @@
 	    "counselor": "Susan Jones",
 	    "ageGroup": "5-9",
 	    
-	    "cabinRestrictions": "none",
+	    
 	    "children": ["jenny donahue", "annie lakes", "susie donovan", "annabelle samuels", "destiny beets", "sam brooks", "sally chives", "gabby daniels"],
 		"schedule" : " ",
 		"session" : 1
