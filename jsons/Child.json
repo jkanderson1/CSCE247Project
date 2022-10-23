@@ -5,7 +5,8 @@
         "childAge":"MM/DD/YYYY",
         "restrictions": "Insert Restrictions",
         "address": "Insert Address",
-        "guardian": "Parent's First Name",
+        "emergencyContact": "Ricky Bobby",
+        "emergencyContactNumber": "111-222-3333",
         "pediatrician": "Doctor's Name",
         "pediatricianNumber": 1234567890
     },
@@ -15,8 +16,9 @@
         "childAge":"10/07/2007",
         "restrictions": "None",
         "address": "123 Hoover St",
-        "guardian": "Wendy",
-        "pediatrician": "Dr. Pepper",
+        "emergencyContact": "Ricky Bobby",
+        "emergencyContactNumber": "111-222-3333",
+        "pediatrician": "Doctor's Name",
         "pediatricianNumber": 1234567890
     },
     {
@@ -25,8 +27,9 @@
         "childAge":"03/24/2004",
         "restrictions": "Peanut",
         "address": "321 Couldesac St",
-        "guardian": "Joeseph",
-        "pediatrician": "Dr. Keeves",
+        "emergencyContact": "Ricky Bobby",
+        "emergencyContactNumber": "111-222-3333",
+        "pediatrician": "Doctor's Name",
         "pediatricianNumber": 1234567890
     }
 ]
