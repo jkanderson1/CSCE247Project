@@ -66,14 +66,8 @@ public class DataReader {
             String childFirstName = (String)childJson.get("childFirstName");
             String childLastName = (String)childJson.get("childLastName");
             String childAge = (String)childJson.get("childAge");
-            JSONArray restrictions = (JSONArray)childJson.get("restrictions");
-            ArrayList<String> restrictionsAL = new ArrayList<String>();
-
-            Iterator iterator = restrictions.iterator();
-            while(iterator.hasNext())
-            {
-                restrictionsAL.add((String)iterator.next());
-            }
+            String restrictions = (String)childJson.get("restrictions");
+            
 
             String address = (String)childJson.get("address");
             String emergencyContact = (String)childJson.get("emergencyContact");
@@ -81,7 +75,7 @@ public class DataReader {
             String guardian = (String)childJson.get("guardian");
             String pediatrician = (String)childJson.get("pediatrician");
             String pediatricianNumber = (String)childJson.get("pediatricianNumber");
-            Child child = new Child(childFirstName, childLastName, childAge, restrictionsAL, emergencyContact, emergencyContactNumber, pediatrician, pediatricianNumber);
+            Child child = new Child(childFirstName, childLastName, childAge, restrictions, emergencyContact, emergencyContactNumber, pediatrician, pediatricianNumber);
             childAL.add(child);
 
            }
