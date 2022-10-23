@@ -8,10 +8,10 @@ public class Child extends Parent{
     public String EmergencyContactNumber;
     public String Pediatrician;
     public String PediatricianNumber;
-    public ArrayList<Restriction> restriction;
+    public ArrayList<String> restriction;
     //might remove restrictions;
 
-    public Child(String childFirstname, String childLastname, String childDOB, ArrayList<Restriction> restriction, String EmergencyContact, String EmergencyContactNumber, String Pediatrician,String PediatricianNumber){
+    public Child(String childFirstname, String childLastname, String childDOB, ArrayList<String> restriction, String EmergencyContact, String EmergencyContactNumber, String Pediatrician,String PediatricianNumber){
         this.childFirstname = childFirstname;
         this.childLastname = childLastname;
         this.childDOB = childDOB;
