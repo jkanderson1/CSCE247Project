@@ -6,10 +6,6 @@ public class CounselorCollection {
     private ArrayList<Counselor> Counselors ;
     private Counselor counselor;
 
-    public void CounselorList(){
-
-        Counselors.add(counselor);
-    }
     public void AddCounselor(String firstName, String lastName, String couselorDOB, String address, Contact EmergencyContact, Restriction restriction){
 
         Counselors.add(counselor);
@@ -17,5 +13,10 @@ public class CounselorCollection {
 
     }
 
-    String CounselorName = Counselor.firstName + " " + Counselor.lastName;
+    /*
+     * public String CounselorName(){
+     return Counselor.firstName+ Counselor.lastName
+    }
+     */
+    
 }

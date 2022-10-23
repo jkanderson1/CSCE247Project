@@ -6,18 +6,16 @@ import javax.lang.model.util.ElementScanner14;
 public class User {
     private String username;
     private String password;
-    private Schedule schedule;
     public Scanner keyboard = new Scanner(System.in);
 
     public User(){
         this.username = null;
         this.password = null;
-        this.schedule = new Schedule();
     }
-    private String getUsername(){
+    public String getUsername(){
         return this.username;
     }
-    private String getPassword(){
+    public String getPassword(){
         return this.password;
     }
     public static void main(String[] args) {
@@ -33,24 +31,27 @@ public class User {
         ArrayList<Director> directors = DataReader.getAllDirectors();
         ArrayList<Counselor> counselors = DataReader.getAllCounselors();
         for (int i = 0; i > parents.size();i++) {
-            if (this.username.equals(parents.get(i))){
-                if (this.password.equals(parents.get(i))){
+            if (this.username.equals(parents.get(i).getUsername())){
+                System.out.println("Attemping parent login... \n  Input Password");    
+                if (this.password.equals(parents.get(i).getPassword())){
                     System.out.println("Successful Login! Welcome "+this.username);
                     return true;
                 }
                 System.out.println("Incorrect Password");
                 return false;
             }
-            if (this.username.equals(/*The DataReader method for director users*/)){
-                if (this.password.equals(/*The DataReader method for parent passwords*/)){
+            if (this.username.equals(directors.get(i).getUsername())){
+                System.out.println("Attemping director login... \n  Input Password");    
+                if (this.password.equals(directors.get(i).getPassword())){
                     System.out.println("Successful Login! Welcome "+this.username);
                     return true;
                 }
                 System.out.println("Incorrect Password");
                 return false;
             }
-            if (this.username.equals(/*The DataReader method for counselor users*/)){
-                if (this.password.equals(/*The DataReader method for parent passwords*/)){
+            if (this.username.equals(counselors.get(i).getUsername())){
+                System.out.println("Attemping counselor login... \n  Input Password");    
+                if (this.password.equals(counselors.get(i).getUsername())){
                     System.out.println("Successful Login! Welcome "+this.username);
                     return true;
                 }

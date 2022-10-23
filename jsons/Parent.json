@@ -6,6 +6,7 @@
         "lastName": "duck",
         "email": "donaldduck@gmail.com",
         "number": "5556667777",
+        "address": "123 Hoover St",
         "children": ["david duck", "daffy duck", "daphene duck"]
     },
     {
@@ -15,6 +16,7 @@
         "lastName": "duck",
         "email": "daisyduck@gmail.com",
         "number": "5556667777",
+        "address": "321 Couldesac St",
         "children": ["david duck", "daffy duck", "daphene duck"]
     }
 ]
