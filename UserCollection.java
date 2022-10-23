@@ -4,6 +4,7 @@ public class UserCollection {
     private ArrayList<User> users;
     private UserCollection userCollection;
     private ArrayList<Parent> parents ;
+    private Parent Parent;
 
     private UserCollection(){
 
@@ -13,7 +14,9 @@ public class UserCollection {
         
     }
     public void addUser(String firstname, String lastname){
-
+        //Using add counselor method to add a User of type counselor
+        CounselorCollection.AddCounselor(lastname, lastname, lastname, lastname, null, null);
+        addParent(firstname, lastname, lastname, firstname, lastname);
     }
     public User getUser(String UserName){
         return null;
@@ -26,7 +29,8 @@ public class UserCollection {
         
     }
 
-    public void addParent(String firstName, String lastName, String email, String number, String addresString){
-        
+    public void addParent(String firstName, String lastName, String email, String number, String address){
+        parents.add(Parent);
     }
+    
 }

@@ -13,6 +13,7 @@ public Cabin viewCabin(){
 }
 
 public Counselor(String firstName, String lastName, String couselorDOB, String address, Contact EmergencyContact, Restriction restriction){
+    super();
     this.firstName = firstName;
     this.lastName = lastName;
     this.couselorDOB = couselorDOB;
