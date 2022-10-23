@@ -53,24 +53,43 @@ public class DataReader {
     }
     return directorAL; 
     }
-    public ArrayList<Child> getAllChildren(){
-        FileReader reader;
+    public static ArrayList<Child> getAllChildren(){
+    
+        ArrayList<Child> childAL = new ArrayList<Child>();
         try {
-            reader = new FileReader("Child.json");
+           FileReader reader = new FileReader("Child.json");
+           JSONArray childJsonArray = (JSONArray)new JSONParser().parse(reader);
+           JSONParser parser = new JSONParser();
+           for(int i =0; i<childJsonArray.size();i++)
+           {
+            JSONObject childJson = (JSONObject)childJsonArray.get(i);
+            String childFirstName = (String)childJson.get("childFirstName");
+            String childLastName = (String)childJson.get("childLastName");
+            String childAge = (String)childJson.get("childAge");
+            String restrictions = (String)childJson.get("restrictions");
+            String address = (String)childJson.get("address");
+            String emergencyContact = (String)childJson.get("emergencyContact");
+            String emergencyContactNumber = (String)childJson.get("emergencyContactNumber");
+            String guardian = (String)childJson.get("guardian");
+            String pediatrician = (String)childJson.get("pediatrician");
+            int pediatricianNumber = (int)childJson.get("pediatricianNumber");
+            Child child = new Child(childFirstName, childLastName, childAge, restrictions, address, guardian, pediatrician, pediatricianNumber);
+            childAL.add(child);
+
+           }
         } catch (FileNotFoundException e1) {
             // TODO Auto-generated catch block
             e1.printStackTrace();
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        } catch (ParseException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
         }
-        JSONParser parser = new JSONParser();
-       try {
-        JSONArray directorJsonArray = (JSONArray)new JSONParser().parse(reader);
-    } catch (IOException e) {
-        // TODO Auto-generated catch block
-        e.printStackTrace();
-    } catch (ParseException e) {
-        // TODO Auto-generated catch block
-        e.printStackTrace();
-    }
+        
+      return childAL;
+    
 
     }
     public ArrayList<Cabin> getAllCabins(){
