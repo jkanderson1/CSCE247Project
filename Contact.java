@@ -1,4 +1,3 @@
-
 public class Contact {
     public String FirstName;
     public String LastName;

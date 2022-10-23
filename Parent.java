@@ -6,13 +6,11 @@ public class Parent extends User{
    public String number;
    public String address;
    
-/*public void addChild(String childFirstName, String childLastName, int childAge, Restriction restrictions){
-
-} */
-public static void addParent(String firstName, String lastName, String email, String number, String address){
-// call data writer to add parent to the jason parent 
+public String toString(){
+   return firstName+" "+lastName;
 }
 
-   
+
+
 
 }
