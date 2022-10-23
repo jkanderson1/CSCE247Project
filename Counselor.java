@@ -1,4 +1,3 @@
-
 public class Counselor extends User{
 private String firstName;
 private String lastName;

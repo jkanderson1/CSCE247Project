@@ -9,11 +9,16 @@ import org.json.simple.parser.*;
 
 public class DataReader {
     JSONParser parser = new JSONParser();
-    public ArrayList<Director> getAllDirectors(){
-        
+    public static ArrayList<Director> getAllDirectors(){
+        /*
+         * why does director.json have all of this stuff if the director only has a children and parentname arraylist. 
+         * 
+         */
+        ArrayList<Director> directorAL = new ArrayList<Director>(); 
        try {
-        Object obj = parser.parse(new FileReader("Director.json"));
-        JSONArray directorJsonArray = (JSONArray)obj;
+         FileReader reader = new FileReader("Director.json");
+         JSONParser parser = new JSONParser();
+        JSONArray directorJsonArray = (JSONArray)new JSONParser().parse(reader);
         for (int i = 0; i<directorJsonArray.size(); i++){
             JSONObject directorJson = (JSONObject)directorJsonArray.get(i);
             String username = (String)directorJson.get("username");
@@ -31,8 +36,10 @@ public class DataReader {
                 restrictionsAL.add((String)iterator.next());
             }
 
-            while()
+            Director director = new Director(username, password, firstName, lastName, emergencyContact, restrictionsAL);
+            directorAL.add(director);
         }
+       
 
     } catch (FileNotFoundException e) {
         // TODO Auto-generated catch block
@@ -44,10 +51,26 @@ public class DataReader {
         // TODO Auto-generated catch block
         e.printStackTrace();
     }
-        
+    return directorAL; 
     }
     public ArrayList<Child> getAllChildren(){
-        return null;
+        FileReader reader;
+        try {
+            reader = new FileReader("Child.json");
+        } catch (FileNotFoundException e1) {
+            // TODO Auto-generated catch block
+            e1.printStackTrace();
+        }
+        JSONParser parser = new JSONParser();
+       try {
+        JSONArray directorJsonArray = (JSONArray)new JSONParser().parse(reader);
+    } catch (IOException e) {
+        // TODO Auto-generated catch block
+        e.printStackTrace();
+    } catch (ParseException e) {
+        // TODO Auto-generated catch block
+        e.printStackTrace();
+    }
 
     }
     public ArrayList<Cabin> getAllCabins(){

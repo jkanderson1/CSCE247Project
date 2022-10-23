@@ -4,23 +4,27 @@ public class Child extends Parent{
     public String childFirstname;
     public String childLastname;
     public String childDOB;
-    public Contact EmergencyContact;
-    public Contact Pediatrician;
+    public String EmergencyContact;
+    public String EmergencyContactNumber;
+    public String Pediatrician;
+    public String PediatricianNumber;
     public ArrayList<Restriction> restriction;
     //might remove restrictions;
 
-    public Child(String childFirstname, String childLastname, String childDOB, ArrayList<Restriction> restriction, Contact EmergencyContact, Contact Pediatrician){
+    public Child(String childFirstname, String childLastname, String childDOB, ArrayList<Restriction> restriction, String EmergencyContact, String Pediatrician){
         this.childFirstname = childFirstname;
         this.childLastname = childLastname;
         this.childDOB = childDOB;
         this.restriction = restriction;
         this.EmergencyContact = EmergencyContact;
+        this.EmergencyContactNumber = EmergencyContactNumber;
         this.Pediatrician = Pediatrician;
+        this.PediatricianNumber= PediatricianNumber;
     }
 
 
     public String toString(){
-        return childFirstname+ childLastname+ childDOB+ restriction+ EmergencyContact+ Pediatrician;
+        return childFirstname+ childLastname+ childDOB+ restriction+ EmergencyContact+ EmergencyContactNumber+ Pediatrician+PediatricianNumber;
     }
 
     public boolean hasRestriction(Restriction restriction){
