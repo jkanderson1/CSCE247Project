@@ -3,31 +3,32 @@
         "childFirstName":"First Name Here",
         "childLastName":"Last Name Here",
         "childAge":"MM/DD/YYYY",
-        "restrictions": "Insert Restrictions",
+        "restrictions": ["Insert Restrictions"],
         "address": "Insert Address",
         "emergencyContact": "Ricky Bobby",
         "emergencyContactNumber": "111-222-3333",
         "pediatrician": "Doctor's Name",
-        "pediatricianNumber": 1234567890
+        "pediatricianNumber": "1234567890"
     },
     {
         "childFirstName":"Jimmy",
         "childLastName":"Donahue",
         "childAge":"10/07/2007",
-        "restrictions": "None",
+        "restrictions": ["None"],
+        "address": "123 Hoover St",
         "emergencyContact": "Ricky Bobby",
         "emergencyContactNumber": "111-222-3333",
         "pediatrician": "Doctor's Name",
-        "pediatricianNumber": 1234567890
+        "pediatricianNumber": "1234567890"
     },
     {
         "childFirstName":"Samantha",
         "childLastName":"Kennedy",
         "childAge":"03/24/2004",
-        "restrictions": "Peanut",
+        "restrictions": ["Peanut"],
         "emergencyContact": "Ricky Bobby",
         "emergencyContactNumber": "111-222-3333",
         "pediatrician": "Doctor's Name",
-        "pediatricianNumber": 1234567890
+        "pediatricianNumber": "1234567890"
     }
 ]

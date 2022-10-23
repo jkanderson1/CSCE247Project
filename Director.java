@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Director {
+public class Director extends User{
 private ArrayList<Child> children;
 private ArrayList<String> parentname;
 private String username;
