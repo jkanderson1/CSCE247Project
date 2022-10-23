@@ -11,7 +11,7 @@ public class Child extends Parent{
     public Restriction[]restriction;
     //might remove restrictions;
 
-    public Child(String childFirstname, String childLastname, String childDOB, Restriction[] restriction, String EmergencyContact, String EmergencyContactNumber, String Pediatrician,String PediatricianNumber){
+    public Child(String childFirstname, String childLastname, String childDOB, ArrayList<Restriction> restriction, String EmergencyContact, String EmergencyContactNumber, String Pediatrician,String PediatricianNumber){
         this.childFirstname = childFirstname;
         this.childLastname = childLastname;
         this.childDOB = childDOB;
