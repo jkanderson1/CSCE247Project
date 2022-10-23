@@ -7,11 +7,11 @@ public class Child extends Parent{
     public String EmergencyContact;
     public String EmergencyContactNumber;
     public String Pediatrician;
-    public String PediatricianNumber;
-    public Restriction[]restriction;
-    //might remove restrictions;
+    public static String PediatricianNumber;
+    public String restriction;
 
-    public Child(String childFirstname, String childLastname, String childDOB, Restriction[] restriction, String EmergencyContact, String EmergencyContactNumber, String Pediatrician,String PediatricianNumber){
+    //might remove restrictions;
+    public Child(String childFirstname, String childLastname, String childDOB, String restriction, String EmergencyContact, String EmergencyContactNumber, String Pediatrician,String PediatricianNumber){
         this.childFirstname = childFirstname;
         this.childLastname = childLastname;
         this.childDOB = childDOB;
@@ -26,8 +26,12 @@ public class Child extends Parent{
         return childFirstname+ childLastname+ childDOB+ restriction+ EmergencyContact+ EmergencyContactNumber+ Pediatrician+PediatricianNumber;
     }
 
-    public boolean hasRestriction(Restriction restriction){
-        return restriction!= null;
+    public String hasRestriction(String restriction){
+        if (restriction != null)
+        {
+            return restriction;
+        }
+        else return null;
     }
 
 
