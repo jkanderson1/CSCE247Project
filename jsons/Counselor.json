@@ -4,10 +4,10 @@
         "password": "for user class",
         "FirstName":"First Name Here",
         "LastName":"Last Name Here",
-        "Age":"MM/DD/YYYY",
+        "counselorDOB":"MM/DD/YYYY",
         "address": "Insert Address",
         "emergencyContact": "Emergency Contact",
-        "eCNumber": 1234567890,
+        "emergencyContactNumber": 1234567890,
         "restrictions": "Insert Restriction Enum Here"
     },
     {
@@ -15,10 +15,10 @@
         "password": "for user class",
         "FirstName":"David",
         "LastName":"Flour",
-        "Age":"12/27/1999",
+        "counselorDOB":"12/27/1999",
         "address": "2089 Bluebird Rd",
         "emergencyContact": "Harry Jobs",
-        "eCNumber": 1234567890,
+        "emergencyContactNumber": 1234567890,
         "restrictions": "None"
     },
     {
