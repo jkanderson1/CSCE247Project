@@ -7,7 +7,7 @@ public class Child extends Parent{
     public String EmergencyContact;
     public String EmergencyContactNumber;
     public String Pediatrician;
-    public String PediatricianNumber;
+    public static String PediatricianNumber;
     public ArrayList<Restriction> restriction;
     //might remove restrictions;
 
