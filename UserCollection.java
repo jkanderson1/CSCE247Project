@@ -1,8 +1,9 @@
 import java.util.ArrayList;
 
 public class UserCollection {
-    private ArrayList<User> user;
+    private ArrayList<User> users;
     private UserCollection userCollection;
+    private ArrayList<Parent> parents ;
 
     private UserCollection(){
 
@@ -22,6 +23,10 @@ public class UserCollection {
 
     }
     public void saveUsers(){
+        
+    }
+
+    public void addParent(String firstName, String lastName, String email, String number, String addresString){
         
     }
 }

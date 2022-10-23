@@ -9,6 +9,7 @@ public class Child extends Parent{
     public String Pediatrician;
     public static String PediatricianNumber;
     public String restriction;
+
     //might remove restrictions;
 
     public Child(String childFirstname, String childLastname, String childDOB, String restriction, String EmergencyContact, String EmergencyContactNumber, String Pediatrician,String PediatricianNumber){

@@ -3,7 +3,7 @@
 import java.util.ArrayList;
 
 public class CounselorCollection {
-    private ArrayList<Counselor> Counselors ;
+    private ArrayList<Counselor> Counselors;
     private Counselor counselor;
 
     public void AddCounselor(String firstName, String lastName, String couselorDOB, String address, String EmergencyContact, String EmergencyContactNumber, String restriction){
