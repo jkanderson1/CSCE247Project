@@ -1,8 +1,6 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.UUID;
-
-import javax.lang.model.util.ElementScanner14;
 public class User {
     private String username;
     private String password;

@@ -128,7 +128,7 @@ public class DataReader {
         }
         return parentAL;
     }
-    public static ArrayList<Parent> getAllCounselors(){
+    public static ArrayList<Counselor> getAllCounselors(){
 
         ArrayList<Counselor> counselorAL = new ArrayList<Counselor>();
         try{

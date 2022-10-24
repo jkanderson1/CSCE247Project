@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.UUID;
 
 public class Director extends User{
 private ArrayList<Child> children;
@@ -9,6 +10,7 @@ private String firstName;
 private String lastName; 
 private String emergencyContact; 
 private ArrayList<String> restrictions; 
+public UUID directorID;
 
 public Director(String username, String password, String firstName, String lastName, String emergencyContact, ArrayList<String> restrictions)
 {
@@ -20,6 +22,13 @@ public Director(String username, String password, String firstName, String lastN
     this.emergencyContact = emergencyContact; 
     this.restrictions = restrictions; 
 }
+/*
+     * A static method that generates a UUID randomly
+     */
+    private static UUID setUUID(){
+        UUID temp = UUID.randomUUID();
+        return temp;
+    }
 
 private void makeChildSchedule(Days ChildActivities){
 
