@@ -12,6 +12,7 @@ private ArrayList<String> restrictions;
 
 public Director(String username, String password, String firstName, String lastName, String emergencyContact, ArrayList<String> restrictions)
 {
+    super();
     this.username = username;
     this.password = password; 
     this.firstName = firstName;
@@ -41,4 +42,6 @@ private CounselorCollection viewCounselors(){
 private void expelChild(Cabin cabin, String childFirstName, String childLastName){
     
 }
+
+private void addDirector()
 }

@@ -11,7 +11,6 @@ public class Child extends Parent{
     public String restriction;
 
     //might remove restrictions;
-
     public Child(String childFirstname, String childLastname, String childDOB, String restriction, String EmergencyContact, String EmergencyContactNumber, String Pediatrician,String PediatricianNumber){
         this.childFirstname = childFirstname;
         this.childLastname = childLastname;
@@ -22,7 +21,6 @@ public class Child extends Parent{
         this.Pediatrician = Pediatrician;
         this.PediatricianNumber= PediatricianNumber;
     }
-
 
     public String toString(){
         return childFirstname+ childLastname+ childDOB+ restriction+ EmergencyContact+ EmergencyContactNumber+ Pediatrician+PediatricianNumber;
