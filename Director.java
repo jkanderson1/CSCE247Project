@@ -26,7 +26,8 @@ private void makeChildSchedule(Days ChildActivities){
 private void makeTeenSchedule(Days TeenActivities){
 
 }
-private void viewCabins(){
+private CabinCollection viewCabins(){
+    return null;
 
 }
 private ChildCollection viewChildren(){
