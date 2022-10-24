@@ -43,5 +43,7 @@ private void expelChild(Cabin cabin, String childFirstName, String childLastName
     
 }
 
-private void addDirector()
+private void addDirector(){
+    
+}
 }
