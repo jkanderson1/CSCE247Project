@@ -8,7 +8,8 @@
         "address": "Insert Address",
         "emergencyContact": "Emergency Contact",
         "emergencyContactNumber": 1234567890,
-        "restrictions": "Insert Restriction Enum Here"
+        "restrictions": "Insert Restriction Enum Here",
+        "UUID": ""
     },
     {
         "username": "dFlours",
@@ -19,7 +20,8 @@
         "address": "2089 Bluebird Rd",
         "emergencyContact": "Harry Jobs",
         "emergencyContactNumber": 1234567890,
-        "restrictions": "None"
+        "restrictions": "None",
+        "UUID": ""
     },
     {
         "username": "JonesBill96",
@@ -30,6 +32,7 @@
         "address": "...",
         "emergencyContact": "Curt Cobain",
         "eCNumber": 1234567890,
-        "restrictions": "NoSwim"
+        "restrictions": "NoSwim",
+        "UUID": ""
     }
 ]

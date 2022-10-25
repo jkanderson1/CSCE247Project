@@ -1,3 +1,5 @@
+import java.util.UUID;
+
 public class Counselor extends User{
 private String firstName;
 private String lastName;
@@ -5,7 +7,8 @@ private String couselorDOB;
 private String address;
 private String EmergencyContact;
 private String EmergencyContactNumber;
-private  String restriction;
+private String restriction;
+public UUID counselorID;
 
 public Cabin viewCabin(){
     return null;
@@ -22,5 +25,13 @@ public Counselor(String firstName, String lastName, String couselorDOB, String a
     this.EmergencyContact = EmergencyContact;
     this.EmergencyContactNumber = EmergencyContactNumber;
     this.restriction = restriction;
+    this.counselorID = setUUID();
 }
+/*
+     * A static method that generates a UUID randomly
+     */
+    private static UUID setUUID(){
+        UUID temp = UUID.randomUUID();
+        return temp;
+    }
 }

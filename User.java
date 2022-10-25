@@ -1,8 +1,6 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.UUID;
-
-import javax.lang.model.util.ElementScanner14;
 public class User {
     private String username;
     private String password;
@@ -21,7 +19,6 @@ public class User {
     public static void main(String[] args) {
         System.out.println(UUID.randomUUID());
     }
-    //Should allow logins once the .equals method is changed
     private boolean login(){
         System.out.println("Input username");
         this.username = keyboard.nextLine();

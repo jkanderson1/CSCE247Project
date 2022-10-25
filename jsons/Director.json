@@ -5,7 +5,8 @@
         "firstName": "Samuel",
         "lastName": "Flours",
         "emergencyContact": "a59ae01a-1e6c-4773-8605-289040f8cc6c",
-        "restrictions": "gluten"
+        "restrictions": "gluten",
+        "UUID": ""
     },
     {
         "username": "davidsmith742",
@@ -13,6 +14,7 @@
         "firstName": "David",
         "lastName": "Smith",
         "emergencyContact": "8d8dc728-3640-440c-8fa2-d8d4b883617e",
-        "restrictions": "none"
+        "restrictions": "none",
+        "UUID": ""
     }
 ]

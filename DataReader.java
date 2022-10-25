@@ -95,7 +95,97 @@ public class DataReader {
 
     }
     public ArrayList<Cabin> getAllCabins(){
-        return null;
+
+        ArrayList<Cabin> cabinAL = new ArrayList<Cabin>();
+        try {
+            FileReader reader = new FileReader("Cabin.json");
+            JSONArray cabinJsonArray = (JSONArray)new JSONParser().parse(reader);
+           JSONParser parser = new JSONParser();
+           for(int i = 0; i<cabinJsonArray.size(); i++)
+           {
+            JSONObject cabinJson = (JSONObject)cabinJsonArray.get(i);
+            //Can we store a Counselor in JSON ? I think using the UUID like she said is the way to go. 
+            //Counselor counselor = (Counselor)cabinJson.get("counselor");
+            String counselorUUID = (String)cabinJson.get("UUID");
+            String ageGroup = (String)cabinJson.get("ageGroup");
+            Cabin cabin = new Cabin(ageGroup, counselorUUID);
+
+           }
+        } catch (FileNotFoundException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        } catch (ParseException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
         
     }
+    public static ArrayList<Parent> getAllParents(){
+
+        ArrayList<Parent> parentAL = new ArrayList<Parent>();
+        try{
+            FileReader reader = new FileReader("Parent.json");
+            JSONArray parentJsonArray = (JSONArray)new JSONParser().parse(reader);
+            JSONParser parser = new JSONParser();
+            for(int i = 0;i<parentJsonArray.size();i++){
+                JSONObject parentJson = (JSONObject)parentJsonArray.get(i);
+                String username = (String)parentJson.get("username");
+                String password = (String)parentJson.get("password");
+                String firstName = (String)parentJson.get("firstName");
+                String lastName = (String)parentJson.get("lastName");
+                String email = (String)parentJson.get("email");
+                String number = (String)parentJson.get("number");
+                String[] children = (String[])parentJson.get("children");
+                String address = (String)parentJson.get("address");
+                parentAL.add(new Parent(firstName, lastName, email, number, address));
+            }
+        } catch (FileNotFoundException e1) {
+            // TODO Auto-generated catch block
+            e1.printStackTrace();
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        } catch (ParseException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        return parentAL;
+    }
+    public static ArrayList<Counselor> getAllCounselors(){
+
+        ArrayList<Counselor> counselorAL = new ArrayList<Counselor>();
+        try{
+            FileReader reader = new FileReader("Counselor.json");
+            JSONArray counselorJsonArray = (JSONArray)new JSONParser().parse(reader);
+            JSONParser parser = new JSONParser();
+            for(int i = 0;i<counselorJsonArray.size();i++){
+                JSONObject counselorJson = (JSONObject)counselorJsonArray.get(i);
+                String username = (String)counselorJson.get("username");
+                String password = (String)counselorJson.get("password");
+                String firstName = (String)counselorJson.get("FirstName");
+                String lastName = (String)counselorJson.get("LastName");
+                String CounselorDOB = (String)counselorJson.get("CounselorDOB");
+                String address = (String)counselorJson.get("address");
+                String emergencyContact = (String)counselorJson.get("emergencyContact");
+                String emergencyContactNumber = (String)counselorJson.get("emergencyContactNumber");
+                String restrictions = (String)counselorJson.get("restrictions");
+                counselorAL.add(new Counselor( firstName, lastName, CounselorDOB, address, emergencyContact, emergencyContactNumber, restrictions));
+            }
+        } catch (FileNotFoundException e1) {
+            // TODO Auto-generated catch block
+            e1.printStackTrace();
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        } catch (ParseException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        return counselorAL;
+    }
+
 }
+

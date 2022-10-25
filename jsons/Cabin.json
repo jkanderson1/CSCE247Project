@@ -3,21 +3,20 @@
         "cabinNumber": 1,
 	    "counselor": "David Flours",
 	    "ageGroup": "5-9",
-	    
-	    
 	    "children": ["jimmy donahue", "ford lakes", "bob donovan", "daniel finger", "david beets", "jeff brooks", "sam chives", "baker daniels"],
 		"schedule": " ",
-		"session" : 1
+		"session" : 1,
+		"UUID": ""
+		
 	},
     {
         "cabinNumber": 2,
 	    "counselor": "Susan Jones",
 	    "ageGroup": "5-9",
-	    
-	    
 	    "children": ["jenny donahue", "annie lakes", "susie donovan", "annabelle samuels", "destiny beets", "sam brooks", "sally chives", "gabby daniels"],
 		"schedule" : " ",
-		"session" : 1
+		"session" : 1,
+		"UUID": ""
     }
 
 ]
