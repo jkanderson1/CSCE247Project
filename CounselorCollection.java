@@ -11,10 +11,5 @@ public class CounselorCollection {
         //adding counselor into the counselor array list
     }
 
-    /*
-     * public String CounselorName(){
-     return Counselor.firstName+ Counselor.lastName
-    }
-     */
     
 }

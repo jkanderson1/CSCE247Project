@@ -5,6 +5,8 @@ public class Parent extends User{
    public String email;
    public String number;
    public String address;
+   // private ArrayList<Parent> parents ;
+   // private Parent Parent;
    
    public Parent(String username, String password, String firstName, String lastName, String email, String number, String address)
    {
@@ -15,10 +17,16 @@ public class Parent extends User{
       this.number = number; 
       this.address = address; 
    }
+   
 public String toString(){
    return firstName+" "+lastName;
 }
 
+/**
+ * public void addParent(String firstName, String lastName, String email, String number, String address){
+   parents.add(Parent);
+}
+*/
 
 
 }
