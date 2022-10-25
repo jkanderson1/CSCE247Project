@@ -18,7 +18,7 @@ public class ChildCollection extends Child{
 
      }
     public String toString(){
-        
+        return 
     }
 
     
