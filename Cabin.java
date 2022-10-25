@@ -29,7 +29,7 @@ public class Cabin {
         minAge = 9;
         if(cabin == null)
         {
-            System.out.println("Creating a cabin");
+            System.out.println("Creating a cabin for the youngest age group");
             cabin = new Cabin(maxAge, minAge, counselorUUID, counselor, session);
         }
         return cabin;
@@ -41,7 +41,7 @@ public class Cabin {
         minAge = 14;
         if(cabin == null)
         {
-            System.out.println("Creating a cabin");
+            System.out.println("Creating a cabin for the middle age group");
             cabin = new Cabin(maxAge, minAge, counselorUUID, counselor, session);
         }
         return cabin;
@@ -53,7 +53,7 @@ public class Cabin {
         minAge = 18;
         if(cabin == null)
         {
-            System.out.println("Creating a cabin");
+            System.out.println("Creating a for the oldest age group");
             cabin = new Cabin(maxAge, minAge, counselorUUID, counselor, session);
         }
         return cabin;
