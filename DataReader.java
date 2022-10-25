@@ -141,7 +141,7 @@ public class DataReader {
                 String number = (String)parentJson.get("number");
                 String[] children = (String[])parentJson.get("children");
                 String address = (String)parentJson.get("address");
-                parentAL.add(new Parent(firstName, lastName, email, number, address));
+                parentAL.add(new Parent(username, password, firstName, lastName, email, number, address));
             }
         } catch (FileNotFoundException e1) {
             // TODO Auto-generated catch block

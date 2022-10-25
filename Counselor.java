@@ -26,7 +26,11 @@ public Counselor(String firstName, String lastName, String couselorDOB, String a
     this.restriction = restriction;
     this.counselorID = setUUID();
 }
-    /*
+
+public String toString(){
+    return firstName+lastName+couselorDOB+address+EmergencyContact+EmergencyContactNumber+restriction+counselorID;
+}
+/*
      * A static method that generates a UUID randomly
      */
     private static UUID setUUID(){

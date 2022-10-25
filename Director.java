@@ -14,9 +14,7 @@ public UUID directorID;
 
 public Director(String username, String password, String firstName, String lastName, String emergencyContact, ArrayList<String> restrictions)
 {
-    super();
-    this.username = username;
-    this.password = password; 
+    super(username, password);
     this.firstName = firstName;
     this.lastName = lastName; 
     this.emergencyContact = emergencyContact; 
@@ -44,19 +42,15 @@ private ChildCollection viewChildren(ArrayList<Child> children){
     return  viewChildren(children);
 
 }
-private CounselorCollection viewCounselors(ArrayList<Counselor>counselors){
-    return viewCounselors(counselors);
+private ArrayList<Counselor> viewCounselors(ArrayList<Counselor>counselors){
+    return counselors;
 
 }
 private void expelChild(Cabin cabin, String childFirstName, String childLastName){
     
 }
 
-<<<<<<< HEAD
-
-=======
 private void addDirector(){
 
 }
->>>>>>> refs/remotes/origin/main
 }
