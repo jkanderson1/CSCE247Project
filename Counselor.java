@@ -12,12 +12,11 @@ public UUID counselorID;
 
 public Cabin viewCabin(){
     return null;
-    //print out the list of children in their cabin
-    
+    //print out the list of children in their cabin  
 }
 
-public Counselor(String firstName, String lastName, String couselorDOB, String address, String EmergencyContact, String EmergencyContactNumber, String restriction){
-    super();
+public Counselor(String firstName, String lastName, String couselorDOB, String address, String EmergencyContact, String EmergencyContactNumber, String restriction, String username, String password){
+    super(username,password);
     this.firstName = firstName;
     this.lastName = lastName;
     this.couselorDOB = couselorDOB;
@@ -27,11 +26,12 @@ public Counselor(String firstName, String lastName, String couselorDOB, String a
     this.restriction = restriction;
     this.counselorID = setUUID();
 }
-/*
+    /*
      * A static method that generates a UUID randomly
      */
     private static UUID setUUID(){
         UUID temp = UUID.randomUUID();
         return temp;
     }
+
 }
