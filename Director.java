@@ -44,8 +44,8 @@ private ChildCollection viewChildren(ArrayList<Child> children){
     return  viewChildren(children);
 
 }
-private CounselorCollection viewCounselors(ArrayList<Counselor>counselors){
-    return viewCounselors(counselors);
+private ArrayList<Counselor> viewCounselors(ArrayList<Counselor>counselors){
+    return counselors;
 
 }
 private void expelChild(Cabin cabin, String childFirstName, String childLastName){
