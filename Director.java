@@ -36,23 +36,27 @@ private void makeChildSchedule(Days ChildActivities){
 private void makeTeenSchedule(Days TeenActivities){
 
 }
-private CabinCollection viewCabins(){
-    return null;
+private CabinCollection viewCabins(ArrayList<Cabin> cabinList){
+    return viewCabins(cabinList);
 
 }
-private ChildCollection viewChildren(){
-    return null;
+private ChildCollection viewChildren(ArrayList<Child> children){
+    return  viewChildren(children);
 
 }
-private CounselorCollection viewCounselors(){
-    return null;
+private CounselorCollection viewCounselors(ArrayList<Counselor>counselors){
+    return viewCounselors(counselors);
 
 }
 private void expelChild(Cabin cabin, String childFirstName, String childLastName){
     
 }
 
+<<<<<<< HEAD
+
+=======
 private void addDirector(){
-    
+
 }
+>>>>>>> refs/remotes/origin/main
 }

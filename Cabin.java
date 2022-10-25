@@ -10,8 +10,19 @@ public class Cabin {
     public int session;
     public UUID cabinID;
     private Scanner keyboard = new Scanner(System.in);
+    public String ageGroup;
+    public String counselorUUID;
+    
+    public Cabin( String ageGroup, String counselorUUID)
+    {
+        
+        
+        this.ageGroup = ageGroup;
+        this.counselorUUID = counselorUUID;
+    }
 
     public Cabin makeCabin(String ageGroup, Counselor counselor){
+        //Singleton
         // this.children = ChildCollection.childList(ageGroup);
         this.counselor = counselor;
         System.out.println("Input New Cabin Number");
