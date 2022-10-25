@@ -9,6 +9,5 @@ public class CabinCollection {
 
     public ArrayList<Cabin> cabinList(){
         return cabins;
-
     }
 }

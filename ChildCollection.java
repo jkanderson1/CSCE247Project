@@ -14,12 +14,7 @@ public class ChildCollection extends Child{
 
     public void addChild(String childFirstName, String childLastName, String childDOB, String EmergencyContact, String Pediatrician, String restriction){
         children.add(child);
-        
-
      }
-    public String toString(){
-        return 
-    }
 
     
 }

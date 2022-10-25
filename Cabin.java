@@ -3,6 +3,7 @@ import java.util.Scanner;
 import java.util.UUID;
 
 public class Cabin {
+    public static Cabin cabin;
     private Counselor counselor;
     public ArrayList<Child> children;
     public int cabinNumber;
@@ -22,15 +23,40 @@ public class Cabin {
         this.session = session;
     }
 
-    public Cabin makeCabin(int maxAge,int minAge, String counselorUUID, Counselor counselor, int session){
+    public static Cabin makeCabinYoungest(int maxAge,int minAge, String counselorUUID, Counselor counselor, int session){
         //Singleton
-        this.counselor = counselor;
-        System.out.println("Input New Cabin Number");
-        this.cabinNumber = keyboard.nextInt();
-        System.out.println("Input the session week for this cabin");
-        this.session = keyboard.nextInt();
-        this.cabinID = setUUID();
-        return this;
+        maxAge = 5;
+        minAge = 9;
+        if(cabin == null)
+        {
+            System.out.println("Creating a cabin");
+            cabin = new Cabin(maxAge, minAge, counselorUUID, counselor, session);
+        }
+        return cabin;
+    }
+
+    public static Cabin makeCabinMiddleCabin(int maxAge,int minAge, String counselorUUID, Counselor counselor, int session){
+        //Singleton
+        maxAge = 9;
+        minAge = 14;
+        if(cabin == null)
+        {
+            System.out.println("Creating a cabin");
+            cabin = new Cabin(maxAge, minAge, counselorUUID, counselor, session);
+        }
+        return cabin;
+    }
+
+    public static Cabin makeCabinOldest(int maxAge,int minAge, String counselorUUID, Counselor counselor, int session){
+        //Singleton
+        maxAge = 14;
+        minAge = 18;
+        if(cabin == null)
+        {
+            System.out.println("Creating a cabin");
+            cabin = new Cabin(maxAge, minAge, counselorUUID, counselor, session);
+        }
+        return cabin;
     }
     /*
      * A static method that generates the UUID randomly
