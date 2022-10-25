@@ -109,6 +109,7 @@ public class DataReader {
             String counselorUUID = (String)cabinJson.get("UUID");
             String ageGroup = (String)cabinJson.get("ageGroup");
             Cabin cabin = new Cabin(ageGroup, counselorUUID);
+            cabinAL.add(cabin);
 
            }
         } catch (FileNotFoundException e) {
@@ -121,7 +122,7 @@ public class DataReader {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
-        
+        return cabinAL;
     }
     public static ArrayList<Parent> getAllParents(){
 
@@ -140,7 +141,7 @@ public class DataReader {
                 String number = (String)parentJson.get("number");
                 String[] children = (String[])parentJson.get("children");
                 String address = (String)parentJson.get("address");
-                parentAL.add(new Parent(firstName, lastName, email, number, address));
+                parentAL.add(new Parent(username, password, firstName, lastName, email, number, address));
             }
         } catch (FileNotFoundException e1) {
             // TODO Auto-generated catch block

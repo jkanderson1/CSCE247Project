@@ -6,8 +6,9 @@ public class Parent extends User{
    public String number;
    public String address;
    
-   public Parent(String firstName, String lastName, String email, String number, String address)
+   public Parent(String username, String password, String firstName, String lastName, String email, String number, String address)
    {
+      super(username, password);
       this.firstName = firstName;
       this.lastName = lastName;
       this.email = email;
