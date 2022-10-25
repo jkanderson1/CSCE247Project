@@ -2,13 +2,13 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.UUID;
 public class User {
-    private String username;
-    private String password;
+    public String username;
+    public String password;
     public Scanner keyboard = new Scanner(System.in);
 
-    public User(){
-        this.username = null;
-        this.password = null;
+    public User(String username, String password){
+        this.username = username;
+        this.password = password;
     }
     public String getUsername(){
         return this.username;
