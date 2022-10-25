@@ -8,16 +8,17 @@ private String address;
 private String EmergencyContact;
 private String EmergencyContactNumber;
 private String restriction;
+public Cabin cabin;
 public UUID counselorID;
 
 public Cabin viewCabin(){
-    return null;
-    //print out the list of children in their cabin
-    
+    return cabin;
+    //print out the list of children in their cabin  
 }
 
-public Counselor(String firstName, String lastName, String couselorDOB, String address, String EmergencyContact, String EmergencyContactNumber, String restriction){
-    super();
+public Counselor(Cabin cabin, String firstName, String lastName, String couselorDOB, String address, String EmergencyContact, String EmergencyContactNumber, String restriction, String username, String password){
+    super(username,password);
+    this.cabin = cabin;
     this.firstName = firstName;
     this.lastName = lastName;
     this.couselorDOB = couselorDOB;
@@ -38,4 +39,5 @@ public String toString(){
         UUID temp = UUID.randomUUID();
         return temp;
     }
+
 }

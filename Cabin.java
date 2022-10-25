@@ -1,4 +1,3 @@
-
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.UUID;
@@ -10,20 +9,21 @@ public class Cabin {
     public int session;
     public UUID cabinID;
     private Scanner keyboard = new Scanner(System.in);
-    public String ageGroup;
+    public int maxAge;
+    public int minAge;
     public String counselorUUID;
     
-    public Cabin( String ageGroup, String counselorUUID)
+    public Cabin(int maxAge,int minAge, String counselorUUID, Counselor counselor, int session)
     {
-        
-        
-        this.ageGroup = ageGroup;
+        this.counselor = counselor;
+        this.maxAge = maxAge;
+        this.minAge = minAge;
         this.counselorUUID = counselorUUID;
+        this.session = session;
     }
 
-    public Cabin makeCabin(String ageGroup, Counselor counselor){
+    public Cabin makeCabin(int maxAge,int minAge, String counselorUUID, Counselor counselor, int session){
         //Singleton
-        // this.children = ChildCollection.childList(ageGroup);
         this.counselor = counselor;
         System.out.println("Input New Cabin Number");
         this.cabinNumber = keyboard.nextInt();

@@ -13,14 +13,6 @@ public class ChildCollection extends Child{
 
 
     public void addChild(String childFirstName, String childLastName, String childDOB, String EmergencyContact, String Pediatrician, String restriction){
-        /*this.childFirstname =  childFirstName;
-        this.childLastname = childLastName;
-        this.childDOB = childDOB;
-        this.EmergencyContact = EmergencyContact;
-        this.EmergencyContactNumber = EmergencyContactNumber;
-        this.Pediatrician = Pediatrician;
-        this.PediatricianNumber= PediatricianNumber;
-        this.restriction = restriction; */
         children.add(child);
         
 
