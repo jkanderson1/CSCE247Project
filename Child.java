@@ -1,7 +1,7 @@
 
 import java.util.ArrayList;
 import java.util.UUID;
-public class Child extends Parent{
+public class Child {
     public String childFirstname;
     public String childLastname;
     public String childDOB;

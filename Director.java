@@ -14,9 +14,7 @@ public UUID directorID;
 
 public Director(String username, String password, String firstName, String lastName, String emergencyContact, ArrayList<String> restrictions)
 {
-    super();
-    this.username = username;
-    this.password = password; 
+    super(username, password);
     this.firstName = firstName;
     this.lastName = lastName; 
     this.emergencyContact = emergencyContact; 
@@ -52,11 +50,7 @@ private void expelChild(Cabin cabin, String childFirstName, String childLastName
     
 }
 
-<<<<<<< HEAD
-
-=======
 private void addDirector(){
 
 }
->>>>>>> refs/remotes/origin/main
 }
