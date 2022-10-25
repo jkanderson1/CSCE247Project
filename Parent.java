@@ -13,7 +13,6 @@ public class Parent extends User{
       this.email = email;
       this.number = number; 
       this.address = address; 
-
    }
 public String toString(){
    return firstName+" "+lastName;
