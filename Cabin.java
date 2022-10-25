@@ -58,6 +58,9 @@ public class Cabin {
         }
         return cabin;
     }
+    //make maximum amount of children per cabin and keep track of each child
+
+
     /*
      * A static method that generates the UUID randomly
      */
