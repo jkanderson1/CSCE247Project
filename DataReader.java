@@ -95,7 +95,32 @@ public class DataReader {
 
     }
     public ArrayList<Cabin> getAllCabins(){
-        return null;
+
+        ArrayList<Cabin> cabinAL = new ArrayList<Cabin>();
+        try {
+            FileReader reader = new FileReader("Cabin.json");
+            JSONArray cabinJsonArray = (JSONArray)new JSONParser().parse(reader);
+           JSONParser parser = new JSONParser();
+           for(int i = 0; i<cabinJsonArray.size(); i++)
+           {
+            JSONObject cabinJson = (JSONObject)cabinJsonArray.get(i);
+            //Can we store a Counselor in JSON ? I think using the UUID like she said is the way to go. 
+            //Counselor counselor = (Counselor)cabinJson.get("counselor");
+            String counselorUUID = (String)cabinJson.get("UUID");
+            String ageGroup = (String)cabinJson.get("ageGroup");
+            Cabin cabin = new Cabin(ageGroup, counselorUUID);
+
+           }
+        } catch (FileNotFoundException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        } catch (ParseException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
         
     }
     public static ArrayList<Parent> getAllParents(){
@@ -114,7 +139,8 @@ public class DataReader {
                 String email = (String)parentJson.get("email");
                 String number = (String)parentJson.get("number");
                 String[] children = (String[])parentJson.get("children");
-                parentAL.add(new Parent(username, password, firstName, lastName, email, number, children));
+                String address = (String)parentJson.get("address");
+                parentAL.add(new Parent(firstName, lastName, email, number, address));
             }
         } catch (FileNotFoundException e1) {
             // TODO Auto-generated catch block
@@ -145,8 +171,8 @@ public class DataReader {
                 String address = (String)counselorJson.get("address");
                 String emergencyContact = (String)counselorJson.get("emergencyContact");
                 String emergencyContactNumber = (String)counselorJson.get("emergencyContactNumber");
-                String[] restrictions = (String[])counselorJson.get("restrictions");
-                counselorAL.add(new Counselor(username, password, firstName, lastName, CounselorDOB, address, emergencyContact, emergencyContactNumber, restrictions));
+                String restrictions = (String)counselorJson.get("restrictions");
+                counselorAL.add(new Counselor( firstName, lastName, CounselorDOB, address, emergencyContact, emergencyContactNumber, restrictions));
             }
         } catch (FileNotFoundException e1) {
             // TODO Auto-generated catch block
@@ -162,3 +188,4 @@ public class DataReader {
     }
 
 }
+

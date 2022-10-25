@@ -6,9 +6,19 @@ public class Parent extends User{
    public String number;
    public String address;
    
+   public Parent(String firstName, String lastName, String email, String number, String address)
+   {
+      this.firstName = firstName;
+      this.lastName = lastName;
+      this.email = email;
+      this.number = number; 
+      this.address = address; 
+
+   }
 public String toString(){
    return firstName+" "+lastName;
 }
+
 
 
 }
