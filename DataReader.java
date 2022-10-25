@@ -107,7 +107,6 @@ public class DataReader {
             //Can we store a Counselor in JSON ? I think using the UUID like she said is the way to go. 
             //Counselor counselor = (Counselor)cabinJson.get("counselor");
             String counselorUUID = (String)cabinJson.get("UUID");
-            int maxAge = 
             String ageGroup = (String)cabinJson.get("ageGroup");
             Cabin cabin = new Cabin(maxAge,minAge,counselorUUID,counselor,session);
             cabinAL.add(cabin);

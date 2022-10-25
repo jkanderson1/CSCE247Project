@@ -16,5 +16,11 @@ public class ChildCollection extends Child{
         children.add(child);
      }
 
+    public void getChildren(){
+        for(int i = 0; i > children.size();i++){
+            System.out.println(children.get(i).toString());
+        }
+    } 
+
     
 }
