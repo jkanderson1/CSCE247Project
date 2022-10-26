@@ -8,11 +8,14 @@ private String username;
 private String password; 
 private String firstName;
 private String lastName; 
-private String emergencyContact; 
+private Contact emergencyContact; 
 private ArrayList<String> restrictions; 
 public UUID directorID;
+public ChildCollection child;
+public CounselorCollection counselor;
+public CabinCollection cabins;
 
-public Director(String username, String password, String firstName, String lastName, String emergencyContact, ArrayList<String> restrictions)
+public Director(String username, String password, String firstName, String lastName, Contact emergencyContact, ArrayList<String> restrictions)
 {
     super(username, password);
     this.firstName = firstName;
@@ -35,15 +38,15 @@ private void makeTeenSchedule(Days TeenActivities){
 
 }
 private CabinCollection viewCabins(ArrayList<Cabin> cabinList){
-    return viewCabins(cabinList);
+    return (CabinCollection)cabins;
 
 }
-private ChildCollection viewChildren(ArrayList<Child> children){
-    return 
+private ChildCollection viewChildren(ArrayList<Child> Children){
+    return (ChildCollection)child;
 
 }
 private CounselorCollection viewCounselors(ArrayList<Counselor>counselors){
-    return counselors;
+    return (CounselorCollection)counselor;
 
 }
 private void expelChild(Cabin cabin, String childFirstName, String childLastName){
