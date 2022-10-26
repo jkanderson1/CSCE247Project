@@ -20,7 +20,7 @@ public class ChildCollection extends Child{
         for(int i = 0; i > children.size();i++){
             System.out.println(children.get(i).toString());
         }
-    } 
+    }
 
     
 }
