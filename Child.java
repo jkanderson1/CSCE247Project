@@ -1,27 +1,24 @@
 
+import java.time.Period;
 import java.util.ArrayList;
 import java.util.UUID;
 public class Child {
     public String childFirstname;
     public String childLastname;
     public String childDOB;
-    public String emergencyContact;
-    public String emergencyContactNumber;
-    public String pediatrician;
-    public String pediatricianNumber;
-    public ArrayList<String> restriction;
+    public Contact Pediatrician;
+    public Contact EmergencyContact;
+    public String restriction;
     public UUID childID;
 
     //might remove restrictions;
-    public Child(String childFirstname, String childLastname, String childDOB,  ArrayList<String> restriction, String emergencyContact, String emergencyContactNumber, String pediatrician,String pediatricianNumber){
+    public Child(String childFirstname, String childLastname, String childDOB, String restriction, Contact EmergencyContact, Contact Pediatrician){
         this.childFirstname = childFirstname;
         this.childLastname = childLastname;
         this.childDOB = childDOB;
         this.restriction = restriction;
-        this.emergencyContact = emergencyContact;
-        this.emergencyContactNumber = emergencyContactNumber;
-        this.pediatrician = pediatrician;
-        this.pediatricianNumber= pediatricianNumber;
+        this.Pediatrician = Pediatrician;
+        this.EmergencyContact = EmergencyContact;
         this.childID = setUUID();
     }
     /*
@@ -33,7 +30,7 @@ public class Child {
     }
 
     public String toString(){
-        return childFirstname+ childLastname+ childDOB+ restriction+ emergencyContact+ emergencyContactNumber+ pediatrician+pediatricianNumber;
+        return childFirstname+ childLastname+childDOB+restriction+Pediatrician+EmergencyContact+childID;
     }
 
     public String hasRestriction(String restriction){

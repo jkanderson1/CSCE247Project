@@ -25,7 +25,7 @@ public class DataReader {
             String password = (String)directorJson.get("password");
             String firstName = (String)directorJson.get("firstName");
             String lastName = (String)directorJson.get("lastName");
-            String emergencyContact = (String)directorJson.get("emergencyContact");
+            Contact emergencyContact = (Contact)directorJson.get("emergencyContact");
             JSONArray restrictions = (JSONArray)directorJson.get("restrictions");
             ArrayList<String> restrictionsAL = new ArrayList<String>();
 
@@ -66,23 +66,14 @@ public class DataReader {
             String childFirstName = (String)childJson.get("childFirstName");
             String childLastName = (String)childJson.get("childLastName");
             String childAge = (String)childJson.get("childAge");
-            JSONArray restrictions = (JSONArray)childJson.get("restrictions");
-            ArrayList<String> restrictionsAL = new ArrayList<String>();
-            Iterator iterator = restrictions.iterator();
-            while(iterator.hasNext())
-            {
-                restrictionsAL.add((String)iterator.next());
-            }
-
-            
-
+            String restrictions = (String)childJson.get("restrictions");
             String address = (String)childJson.get("address");
-            String emergencyContact = (String)childJson.get("emergencyContact");
-            String emergencyContactNumber = (String)childJson.get("emergencyContactNumber");
+            Contact emergencyContact = (Contact)childJson.get("emergencyContact");
+            //String emergencyContactNumber = (String)childJson.get("emergencyContactNumber");
             String guardian = (String)childJson.get("guardian");
-            String pediatrician = (String)childJson.get("pediatrician");
-            String pediatricianNumber = (String)childJson.get("pediatricianNumber");
-            Child child = new Child(childFirstName, childLastName, childAge, restrictionsAL, emergencyContact, emergencyContactNumber, pediatrician, pediatricianNumber);
+            Contact pediatrician = (Contact)childJson.get("pediatrician");
+            //String pediatricianNumber = (String)childJson.get("pediatricianNumber");
+            Child child = new Child(childFirstName, childLastName, childAge, restrictions, emergencyContact, pediatrician);
             childAL.add(child);
 
            }
@@ -114,8 +105,12 @@ public class DataReader {
             //Can we store a Counselor in JSON ? I think using the UUID like she said is the way to go. 
             //Counselor counselor = (Counselor)cabinJson.get("counselor");
             String counselorUUID = (String)cabinJson.get("UUID");
-            String ageGroup = (String)cabinJson.get("ageGroup");
-            Cabin cabin = new Cabin(ageGroup, counselorUUID);
+            int maxAge= (int)cabinJson.get("maxAge");
+            int minAge =(int)cabinJson.get("minAge");
+            Counselor counselor =(Counselor)cabinJson.get("Counselor");
+            int session = (int)cabinJson.get("session");
+            //String ageGroup = (String)cabinJson.get("ageGroup");
+            Cabin cabin = new Cabin(maxAge,minAge,counselorUUID,counselor,session);
             cabinAL.add(cabin);
 
            }
@@ -171,16 +166,17 @@ public class DataReader {
             JSONParser parser = new JSONParser();
             for(int i = 0;i<counselorJsonArray.size();i++){
                 JSONObject counselorJson = (JSONObject)counselorJsonArray.get(i);
+                Cabin cabin = (Cabin)counselorJson.get("cabin");
                 String username = (String)counselorJson.get("username");
                 String password = (String)counselorJson.get("password");
                 String firstName = (String)counselorJson.get("FirstName");
                 String lastName = (String)counselorJson.get("LastName");
                 String CounselorDOB = (String)counselorJson.get("CounselorDOB");
                 String address = (String)counselorJson.get("address");
-                String emergencyContact = (String)counselorJson.get("emergencyContact");
-                String emergencyContactNumber = (String)counselorJson.get("emergencyContactNumber");
+                Contact emergencyContact = (Contact)counselorJson.get("emergencyContact");
+                //String emergencyContactNumber = (String)counselorJson.get("emergencyContactNumber");
                 String restrictions = (String)counselorJson.get("restrictions");
-                counselorAL.add(new Counselor( firstName, lastName, CounselorDOB, address, emergencyContact, emergencyContactNumber, restrictions));
+                counselorAL.add(new Counselor(cabin, firstName, lastName, CounselorDOB, address, emergencyContact, restrictions, username, password));
             }
         } catch (FileNotFoundException e1) {
             // TODO Auto-generated catch block

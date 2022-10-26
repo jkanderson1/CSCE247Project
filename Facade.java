@@ -2,9 +2,18 @@ import java.util.ArrayList;
 
 public class Facade {
     private User user;
+    private ChildCollection kids;
+    private CounselorCollection counselorcollection;
+    private Director director;
+public Facade(User user){
+this.user = user;
+this.kids= kids;
+this.director=director;
+this.counselorcollection = counselorcollection;
+}
 
-public User login(String userName,String password){
-    return user;
+public User login(String username,String password){
+    return user.login();
 
 }
 public User signUp(){
@@ -21,7 +30,7 @@ public ArrayList<Schedule> getAllSchedules(){
 }
 public ArrayList<Child> getchildCollection(){
     return null;
-
+    
 }
 public ArrayList<Counselor> getConselorcollection(){
     return null;
