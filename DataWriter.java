@@ -1,4 +1,5 @@
 //Written by Walker Bowen
+import java.io.FileWriter;
 import java.util.ArrayList;
 
 import javax.swing.text.html.HTMLDocument.Iterator;
@@ -8,7 +9,7 @@ import org.json.simple.*;
 public class DataWriter {
 
 public boolean saveAllChildren(ArrayList<Child> children)
-{
+{FileWriter childFile = new FileWriter("Child.json");
     java.util.Iterator<Child> iterator = children.iterator();
    while(iterator.hasNext())
    {
@@ -17,16 +18,30 @@ public boolean saveAllChildren(ArrayList<Child> children)
     jsonChild.put("childFirstname",child.childFirstname);
     jsonChild.put("childLastName", child.childLastname);
     jsonChild.put("childDOB", child.childDOB);
-    //converting ArrayList to JSONArray
+    jsonChild.put("restriction", child.restriction);
+    //need to create new pediatricianArray for contacts
+    JSONArray pediatricianArray = new JSONArray();
+    pediatricianArray.add("firstname:"+" "+child.Pediatrician.firstname);
+    pediatricianArray.add("lastname:"+" "+child.Pediatrician.lastname);
+    pediatricianArray.add("number:"+" "+child.Pediatrician.number);
+    pediatricianArray.add("address:"+" "+child.Pediatrician.address);
 
-    JSONArray jsonRestrictions = new JSONArray();
+    jsonChild.put("pediatrician", pediatricianArray);
+
+    JSONArray EContactArray = new JSONArray();
+
+    EContactArray.add("firstname:"+" "+child.EmergencyContact.firstname);
+    EContactArray.add("lastname:"+" "+child.EmergencyContact.lastname);
+    EContactArray.add("number:"+" "+child.EmergencyContact.number);
+    EContactArray.add("address:"+" "+child.EmergencyContact.address);
     
-    java.util.Iterator<String> restrictionIterator = child.restriction.iterator();
-    while(restrictionIterator.hasNext())
-    {
-        restrictionsAL.add(restrictionIterator.next());
-        
+    jsonChild.put("emergencyContact", EContactArray);
+
+    childFile.write(jsonChild.toJSONString());
+
     }
+    childFile.close();
+    return true; 
 
 
    }
