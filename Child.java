@@ -9,11 +9,11 @@ public class Child {
     public String emergencyContactNumber;
     public String pediatrician;
     public String pediatricianNumber;
-    public String restriction;
+    public ArrayList<String> restriction;
     public UUID childID;
 
     //might remove restrictions;
-    public Child(String childFirstname, String childLastname, String childDOB, String restriction, String emergencyContact, String emergencyContactNumber, String pediatrician,String pediatricianNumber){
+    public Child(String childFirstname, String childLastname, String childDOB,  ArrayList<String> restriction, String emergencyContact, String emergencyContactNumber, String pediatrician,String pediatricianNumber){
         this.childFirstname = childFirstname;
         this.childLastname = childLastname;
         this.childDOB = childDOB;

@@ -1,21 +1,62 @@
+//Written by Walker Bowen
 import java.util.ArrayList;
 
+import javax.swing.text.html.HTMLDocument.Iterator;
+
+import org.json.simple.*;
+
 public class DataWriter {
-public boolean saveAllUsers(ArrayList<User>users){
-    return false;
+
+public boolean saveAllChildren(ArrayList<Child> children)
+{
+    java.util.Iterator<Child> iterator = children.iterator();
+   while(iterator.hasNext())
+   {
+    Child child = iterator.next();
+    JSONObject jsonChild = new JSONObject();
+    jsonChild.put("childFirstname",child.childFirstname);
+    jsonChild.put("childLastName", child.childLastname);
+    jsonChild.put("childDOB", child.childDOB);
+    //converting ArrayList to JSONArray
+
+    JSONArray jsonRestrictions = new JSONArray();
     
-}
-public boolean saveAllChildren(ArrayList<Child> children){
-    return false;
+    java.util.Iterator<String> restrictionIterator = child.restriction.iterator();
+    while(restrictionIterator.hasNext())
+    {
+        restrictionsAL.add(restrictionIterator.next());
+        
+    }
+
+
+   }
+
     
 }
 
-public boolean getAllCabins(ArrayList<Cabin> cabin){
-    return false;
+public boolean saveAllCabins(ArrayList<Cabin> cabins)
+{
+    
     
 }
-public boolean saveAllCabins(ArrayList<Cabin> cabin){
-    return false;
-    
+
+public boolean saveAllContacts(ArrayList<Contact> contacts)
+{
+
+}
+
+public boolean saveAllCounselors(ArrayList<Counselor> counselors)
+{
+
+}
+
+public boolean saveAllDirectors(ArrayList<Director> directors)
+{
+
+}
+
+public boolean saveAllParents(ArrayList<Parent> parents)
+{
+
 }
 }
