@@ -1,4 +1,5 @@
 
+import java.time.Period;
 import java.util.ArrayList;
 import java.util.UUID;
 public class Child {
@@ -29,7 +30,7 @@ public class Child {
     }
 
     public String toString(){
-        return childFirstname+ childLastname;
+        return childFirstname+ childLastname+childDOB+restriction+Pediatrician+EmergencyContact+childID;
     }
 
     public String hasRestriction(String restriction){

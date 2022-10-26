@@ -39,10 +39,10 @@ private CabinCollection viewCabins(ArrayList<Cabin> cabinList){
 
 }
 private ChildCollection viewChildren(ArrayList<Child> children){
-    return  viewChildren(children);
+    return 
 
 }
-private ArrayList<Counselor> viewCounselors(ArrayList<Counselor>counselors){
+private CounselorCollection viewCounselors(ArrayList<Counselor>counselors){
     return counselors;
 
 }

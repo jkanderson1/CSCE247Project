@@ -3,8 +3,8 @@ import java.util.ArrayList;
 
 public class ChildCollection extends Child{
     public ChildCollection(String childFirstname, String childLastname, String childDOB, String restriction,
-            String EmergencyContact, String EmergencyContactNumber, String  Pediatrician, String PediatricanNumber) {
-        super(childFirstname, childLastname, childDOB, restriction, EmergencyContact,EmergencyContactNumber, Pediatrician, PediatricanNumber);
+            Contact EmergencyContact, Contact Pediatrician) {
+        super(childFirstname, childLastname, childDOB, restriction, EmergencyContact, Pediatrician);
         //TODO Auto-generated constructor stub
     }
 
