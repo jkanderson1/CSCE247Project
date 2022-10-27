@@ -72,5 +72,13 @@ public String getLastName()
 {
     return this.lastName;
 }
+public String getEContactID()
+{
+    return this.emergencyContact.contactID.toString();
 
+}
+public String getRestrictions()
+{
+    return this.re
+}
 }
