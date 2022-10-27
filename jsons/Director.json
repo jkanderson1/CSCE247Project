@@ -4,8 +4,13 @@
         "password": "summercamp99",
         "firstName": "Samuel",
         "lastName": "Flours",
-        "emergencyContact": "a59ae01a-1e6c-4773-8605-289040f8cc6c",
-        "restrictions": ["gluten"],
+        "emergencyContact":{
+            "firstName": "Daniel",
+            "lastName": "Weathers",
+            "number": "8038412343",
+            "address": "12 Pristine Court"
+        },
+        "restrictions": "gluten",
         "UUID": ""
     },
     {
