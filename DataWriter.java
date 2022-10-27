@@ -135,7 +135,42 @@ public JSONObject getContactJSON(Contact contact)
 
 public boolean saveAllCounselors(ArrayList<Counselor> counselors)
 {
+    JSONArray jsonCounselor = new JSONArray();
+    for (int i = 0; i<counselors.size(); i++) 
+    {
+        
+        jsonCounselor.add(getCounselorJSON(counselors.get(i)));
 
+    }
+    try(FileWriter counselorFile = new FileWriter("Counselor.json"))
+    {
+        counselorFile.write(jsonCounselor.toJSONString());
+        counselorFile.flush();
+        return true;
+        
+    } catch (IOException e) {
+        // TODO Auto-generated catch block
+        e.printStackTrace();
+        return false;
+    }
+
+}
+
+public JSONObject getCounselorJSON(Counselor counselor)
+{
+    JSONObject counselorJson = new JSONObject();
+    counselorJson.put("username", counselor.username);
+    counselorJson.put("password", counselor.password);
+    counselorJson.put("FirstName", counselor.getFirstName());
+    counselorJson.put("LastName", counselor.getLastName());
+    counselorJson.put("counselorDOB", counselor.getCounselorDOB());
+    counselorJson.put("address", counselor.getAddress());
+    counselorJson.put("emergencyContact", counselor.getEmergencyContact().firstname+" "+counselor.getEmergencyContact().lastname);
+    counselorJson.put("emergencyContactNumber", counselor.getEmergencyContact().number);
+    counselorJson.put("restrictions", counselor.getRestriction());
+    counselorJson.put("UUID", counselor.getCounselorID().toString());
+
+    return counselorJson;
 }
 
 public boolean saveAllDirectors(ArrayList<Director> directors)

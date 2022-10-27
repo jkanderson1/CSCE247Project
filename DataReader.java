@@ -16,7 +16,7 @@ public class DataReader {
          */
         ArrayList<Director> directorAL = new ArrayList<Director>(); 
        try {
-         FileReader reader = new FileReader("Director.json");
+         FileReader reader = new FileReader("jsons/Director.json");
          JSONParser parser = new JSONParser();
         JSONArray directorJsonArray = (JSONArray)new JSONParser().parse(reader);
         for (int i = 0; i<directorJsonArray.size(); i++){
@@ -57,7 +57,7 @@ public class DataReader {
     
         ArrayList<Child> childAL = new ArrayList<Child>();
         try {
-           FileReader reader = new FileReader("Child.json");
+           FileReader reader = new FileReader("jsons/Child.json");
            JSONArray childJsonArray = (JSONArray)new JSONParser().parse(reader);
            JSONParser parser = new JSONParser();
            for(int i =0; i<childJsonArray.size();i++)
@@ -96,7 +96,7 @@ public class DataReader {
 
         ArrayList<Cabin> cabinAL = new ArrayList<Cabin>();
         try {
-            FileReader reader = new FileReader("Cabin.json");
+            FileReader reader = new FileReader("jsons/Cabin.json");
             JSONArray cabinJsonArray = (JSONArray)new JSONParser().parse(reader);
            JSONParser parser = new JSONParser();
            for(int i = 0; i<cabinJsonArray.size(); i++)
@@ -130,7 +130,7 @@ public class DataReader {
 
         ArrayList<Parent> parentAL = new ArrayList<Parent>();
         try{
-            FileReader reader = new FileReader("Parent.json");
+            FileReader reader = new FileReader("jsons/Parent.json");
             JSONArray parentJsonArray = (JSONArray)new JSONParser().parse(reader);
             JSONParser parser = new JSONParser();
             for(int i = 0;i<parentJsonArray.size();i++){
@@ -161,7 +161,7 @@ public class DataReader {
 
         ArrayList<Counselor> counselorAL = new ArrayList<Counselor>();
         try{
-            FileReader reader = new FileReader("Counselor.json");
+            FileReader reader = new FileReader("jsons/Counselor.json");
             JSONArray counselorJsonArray = (JSONArray)new JSONParser().parse(reader);
             JSONParser parser = new JSONParser();
             for(int i = 0;i<counselorJsonArray.size();i++){

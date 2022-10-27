@@ -57,4 +57,30 @@ private  ArrayList<Director> director;
 private void addDirector(){
     director.add(director2);
 }
+public String getUsername()
+{
+    return this.username;
+}
+public String getPassword()
+{
+    return this.password;
+}
+public String getFirstName()
+{
+    return this.firstName;
+}
+public String getLastName()
+{
+    return this.lastName;
+}
+public String getEContactID()
+{
+    return this.emergencyContact.contactID.toString();
+
+}
+public ArrayList getRestrictions()
+{
+    return this.restrictions;
+}
+
 }

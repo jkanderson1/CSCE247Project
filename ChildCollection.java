@@ -1,21 +1,16 @@
 
 import java.util.ArrayList;
 
-public class ChildCollection extends Child{
-    public ChildCollection(String childFirstname, String childLastname, String childDOB, String restriction,
-            Contact EmergencyContact, Contact Pediatrician) {
-        super(childFirstname, childLastname, childDOB, restriction, EmergencyContact, Pediatrician);
-        //TODO Auto-generated constructor stub
+public class ChildCollection{
+    public ChildCollection(ArrayList<Child> children) {
+        this.children = children;
     }
 
     private  ArrayList<Child> children;
-    private Child child;
-
-
-    public void addChild(String childFirstname, String childLastname, String childDOB, Contact EmergencyContact, Contact Pediatrician, String restriction){
-        children.add(child);
-     }
-
+    public void addChild(String childFirstName, String childLastName, String childDOB, Contact EmergencyContact, Contact Pediatrician, String restriction){
+        Child child = new Child(childFirstName, childLastName, childDOB, restriction, EmergencyContact, Pediatrician);
+        this.children.add(child);
+    }
     public void getChildren(){
         for(int i = 0; i > children.size();i++){
             System.out.println(children.get(i).toString());
