@@ -52,9 +52,10 @@ private CounselorCollection viewCounselors(ArrayList<Counselor>counselors){
 private void expelChild(Cabin cabin, String childFirstName, String childLastName){
     
 }
-
+private  ArrayList<Director> director;
+    private Director director2;
 private void addDirector(){
-
+    director.add(director2);
 }
 public String getUsername()
 {
@@ -77,12 +78,9 @@ public String getEContactID()
     return this.emergencyContact.contactID.toString();
 
 }
-public ArrayList<String> getRestrictions()
+public ArrayList getRestrictions()
 {
     return this.restrictions;
 }
-public String getDirectorID()
-{
-    return this.directorID.toString();
-}
+
 }

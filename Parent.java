@@ -6,10 +6,6 @@ public class Parent extends User{
    public String email;
    public String number;
    public String address;
-   public ArrayList<String> children;
-   public UUID parentID;
-   // private ArrayList<Parent> parents ;
-   // private Parent Parent;
    
    public Parent(String username, String password, String firstName, String lastName, String email, String number, String address, ArrayList<String> children)
    {
@@ -24,14 +20,36 @@ public class Parent extends User{
    }
    
 public String toString(){
-   return firstName+" "+lastName;
+   return firstName+" "+lastName+email+number+address;
 }
 
-/**
- * public void addParent(String firstName, String lastName, String email, String number, String address){
-   parents.add(Parent);
+private  ArrayList<Parent> parent;
+private Parent parent2;
+ public void addParent(String firstName, String lastName, String email, String number, String address){
+   parent.add(parent2);
 }
-*/
 
+public String getfirstname(){
+   return this.firstName;
+}
+public String getlastname(){
+        return this.lastName;
+}
+
+public String getemail()
+{
+        return this.email;
+}
+public String getphonenumber()
+    {
+        return this.number;
+    }
+
+    public String getaddress()
+    {
+        return this.address;
+    }
+
+   
 
 }

@@ -73,4 +73,6 @@ public class Cabin {
         return "Counselor: "+this.counselor+" Cabin Number: "+this.cabinNumber+" Session: "+this.session+" Children: "+this.children.toString();
     }
 
+    
+
 }
