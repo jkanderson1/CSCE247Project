@@ -5,6 +5,7 @@ public class Contact {
     public String lastname;
     public String number;
     public String address;
+    public UUID contactID;
 
     public Contact(String firstname,String lastname,String number,String address){
         this.firstname = firstname;
