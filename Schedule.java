@@ -7,3 +7,8 @@ public class Schedule{
     private HashMap <Days,ArrayList<ChildActivities>>ChildHMap = new HashMap <Days,ArrayList<ChildActivities>>();
     private HashMap <Days,ArrayList<TeenActivities>>TeenHMap = new HashMap <Days,ArrayList<TeenActivities>>();
 }
+
+public String toString()
+{
+    //ToString
+}
