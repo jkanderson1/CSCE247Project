@@ -19,14 +19,15 @@ public class Parent extends User{
    }
    
 public String toString(){
-   return firstName+" "+lastName;
+   return firstName+" "+lastName+email+number+address;
 }
 
-/**
- * public void addParent(String firstName, String lastName, String email, String number, String address){
-   parents.add(Parent);
+private  ArrayList<Parent> parent;
+private Parent parent2;
+ public void addParent(String firstName, String lastName, String email, String number, String address){
+   parent.add(parent2);
 }
-*/
+
 
 
 }

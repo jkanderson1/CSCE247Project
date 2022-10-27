@@ -52,8 +52,9 @@ private CounselorCollection viewCounselors(ArrayList<Counselor>counselors){
 private void expelChild(Cabin cabin, String childFirstName, String childLastName){
     
 }
-
+private  ArrayList<Director> director;
+    private Director director2;
 private void addDirector(){
-
+    director.add(director2);
 }
 }

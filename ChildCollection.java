@@ -12,7 +12,7 @@ public class ChildCollection extends Child{
     private Child child;
 
 
-    public void addChild(String childFirstName, String childLastName, String childDOB, String EmergencyContact, String Pediatrician, String restriction){
+    public void addChild(String childFirstname, String childLastname, String childDOB, Contact EmergencyContact, Contact Pediatrician, String restriction){
         children.add(child);
      }
 

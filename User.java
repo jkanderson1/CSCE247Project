@@ -19,7 +19,7 @@ public class User {
     public static void main(String[] args) {
         System.out.println(UUID.randomUUID());
     }
-    private boolean login(){
+    public boolean login(){
         System.out.println("Input username");
         this.username = keyboard.nextLine();
         System.out.println("Input password");
