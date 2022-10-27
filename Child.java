@@ -40,6 +40,37 @@ public class Child {
         }
         else return null;
     }
+//this.uuid.tostring
+    public String childFirstName()
+    {
+    return this.childFirstname;
+    }
+    public String childLastName()
+    {
+    return this.childLastname;
+    }
+    public String childDOB()
+    {
+    return this.childDOB;
+    }
+    public Contact pediatrician()
+    {
+    return this.Pediatrician;
+    }
+    public Contact EmergencyContact()
+    {
+    return this.EmergencyContact;
+    }
+    public String getRestriction()
+    {
+        return this.restriction;
+    }
+    public String getUUID()
+    {
+        return this.childID.toString();
+    }
+
+
 
 
 }

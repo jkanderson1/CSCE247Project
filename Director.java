@@ -53,9 +53,6 @@ private void expelChild(Cabin cabin, String childFirstName, String childLastName
     
 }
 
-private void addDirector(){
-
-}
 public String getUsername()
 {
     return this.username;
@@ -77,8 +74,9 @@ public String getEContactID()
     return this.emergencyContact.contactID.toString();
 
 }
-public String getRestrictions()
+public ArrayList getRestrictions()
 {
-    return this.re
+    return this.restrictions;
 }
+
 }
