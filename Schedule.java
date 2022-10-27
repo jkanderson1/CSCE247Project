@@ -6,9 +6,10 @@ public class Schedule{
     public ArrayList<TeenActivities> TeenActivities = new ArrayList<TeenActivities>();
     private HashMap <Days,ArrayList<ChildActivities>>ChildHMap = new HashMap <Days,ArrayList<ChildActivities>>();
     private HashMap <Days,ArrayList<TeenActivities>>TeenHMap = new HashMap <Days,ArrayList<TeenActivities>>();
-}
 
-public String toString()
+    public String toString()
 {
     //ToString
 }
+}
+

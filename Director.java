@@ -77,8 +77,12 @@ public String getEContactID()
     return this.emergencyContact.contactID.toString();
 
 }
-public String getRestrictions()
+public ArrayList<String> getRestrictions()
 {
-    return this.re
+    return this.restrictions;
+}
+public String getDirectorID()
+{
+    return this.directorID.toString();
 }
 }
