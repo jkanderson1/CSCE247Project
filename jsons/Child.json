@@ -5,8 +5,11 @@
         "childAge":"MM/DD/YYYY",
         "restrictions": "Insert Restrictions",
         
-        "emergencyContact": "Ricky Bobby",
-        "emergencyContactNumber": "111-222-3333",
+        "emergencyContacts":[
+            {
+                "first_name":"ricky"
+            }
+        ] ,
         "pediatrician": "Doctor's Name",
         "pediatricianNumber": "1234567890",
         "UUID": "2a943c4b-2df2-4a0c-a225-3640d27a9a06"

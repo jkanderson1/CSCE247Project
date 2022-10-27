@@ -7,13 +7,10 @@ public class ChildCollection{
     }
 
     private  ArrayList<Child> children;
-
-
     public void addChild(String childFirstName, String childLastName, String childDOB, Contact EmergencyContact, Contact Pediatrician, String restriction){
         Child child = new Child(childFirstName, childLastName, childDOB, restriction, EmergencyContact, Pediatrician);
         this.children.add(child);
     }
-
     public void getChildren(){
         for(int i = 0; i > children.size();i++){
             System.out.println(children.get(i).toString());

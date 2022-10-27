@@ -68,7 +68,16 @@ public class DataReader {
             String childAge = (String)childJson.get("childAge");
             String restrictions = (String)childJson.get("restrictions");
             String address = (String)childJson.get("address");
-            Contact emergencyContact = (Contact)childJson.get("emergencyContact");
+            JSONArray emergencyContactsJSONArray = (JSONArray)childJson.get("emergencyContact");
+
+            //loop through the json array
+
+            //read each json object
+
+            //read the properties of each json object
+            //build a Contact object
+            
+
             //String emergencyContactNumber = (String)childJson.get("emergencyContactNumber");
             String guardian = (String)childJson.get("guardian");
             Contact pediatrician = (Contact)childJson.get("pediatrician");
@@ -142,8 +151,14 @@ public class DataReader {
                 String email = (String)parentJson.get("email");
                 String number = (String)parentJson.get("number");
                 String[] children = (String[])parentJson.get("children");
+                //making string array into ArrayList
+                ArrayList<String> childrenAL = new ArrayList<String>();
+                for (int o =0; o<children.length; o++ )
+                {
+                    childrenAL.add(children[o]);
+                }
                 String address = (String)parentJson.get("address");
-                parentAL.add(new Parent(username, password, firstName, lastName, email, number, address));
+                parentAL.add(new Parent(username, password, firstName, lastName, email, number, address, childrenAL));
             }
         } catch (FileNotFoundException e1) {
             // TODO Auto-generated catch block
@@ -189,6 +204,14 @@ public class DataReader {
             e.printStackTrace();
         }
         return counselorAL;
+    }
+
+    public static void main(String[] args){
+        ArrayList<Child> children = DataReader.getAllChildren();
+
+        for(Child child : children){
+            System.out.println(child);
+        }
     }
 
 }

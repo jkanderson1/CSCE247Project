@@ -3,9 +3,8 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 
-import javax.swing.text.html.HTMLDocument.Iterator;
-
-import org.json.simple.*;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
 
 public class DataWriter {
 
@@ -52,6 +51,7 @@ public static JSONObject getChildJSON(Child child)
 
 }
 
+
 public boolean saveAllCabins(ArrayList<Cabin> cabins)
 {
     JSONArray jsonCabin = new JSONArray();
@@ -91,7 +91,7 @@ public static JSONObject getCabinJSON(Cabin cabin)
     
 
     cabinDetails.put("children", childrenArray);
-    cabinDetails.put("schedule", //Do not know what to do with Scedule bc Schedule is not done//)
+    cabinDetails.put("schedule",null /*Do not know what to do with Scedule bc Schedule is not done*/);
     cabinDetails.put("session", cabin.session);
     cabinDetails.put("UUID", cabin.cabinID.toString());
 
@@ -174,11 +174,91 @@ public JSONObject getCounselorJSON(Counselor counselor)
 
 public boolean saveAllDirectors(ArrayList<Director> directors)
 {
+    JSONArray jsonDirectors = new JSONArray();
+    for (int i = 0; i<directors.size(); i++) 
+    {
+        
+        jsonDirectors.add(getDirectorJSON(directors.get(i)));
 
+    }
+    try(FileWriter directorFile = new FileWriter("Director.json"))
+    {
+        directorFile.write(jsonDirectors.toJSONString());
+        directorFile.flush();
+        return true;
+        
+    } catch (IOException e) {
+        // TODO Auto-generated catch block
+        e.printStackTrace();
+        return false;
+    }
+}
+public JSONObject getDirectorJSON(Director director)
+{
+    JSONObject directorJson = new JSONObject();
+    directorJson.put("username", director.getUsername());
+    directorJson.put("password", director.getPassword());
+    directorJson.put("firstName", director.getFirstName());
+    directorJson.put("lastName", director.getLastName());
+    directorJson.put("emergencyContact", director.getEContactID());
+    //making restrictions into a String array
+    String[] restrictionsArray = new String[director.getRestrictions().size()];
+    for (int i = 0; i<restrictionsArray.length; i++)
+    {
+        restrictionsArray[i]= director.getRestrictions().get(i);
+    }
+    directorJson.put("restrictions", restrictionsArray);
+    directorJson.put("UUID", director.getDirectorID());
+
+    return directorJson;
 }
 
 public boolean saveAllParents(ArrayList<Parent> parents)
 {
+    JSONArray jsonParents = new JSONArray();
+    for (int i = 0; i<parents.size(); i++) 
+    {
+        
+        jsonParents.add(getParentJSON(parents.get(i)));
 
+    }
+    try(FileWriter parentFile = new FileWriter("Parent.json"))
+    {
+        parentFile.write(jsonParents.toJSONString());
+        parentFile.flush();
+        return true;
+        
+    } catch (IOException e) {
+        // TODO Auto-generated catch block
+        e.printStackTrace();
+        return false;
+    }
 }
+
+public JSONObject getParentJSON(Parent parent)
+{
+    JSONObject parentJson = new JSONObject(); 
+    parentJson.put("username", parent.username);
+    parentJson.put("password", parent.password);
+    parentJson.put("firstName", parent.firstName);
+    parentJson.put("lastName", parent.lastName);
+    parentJson.put("email", parent.email);
+    parentJson.put("number", parent.number);
+    //making array to put into json 
+    String[] children = new String[parent.children.size()];
+    for (int i = 0; i<children.length; i++ )
+    {
+        children[i] = parent.children.get(i);
+
+    }
+    parentJson.put("children", children);
+    parentJson.put("UUID", parent.parentID.toString());
+
+    return parentJson;
+}
+
+    public static void main(String[] args){
+        System.out.println("Hello");
+    }
+
 }

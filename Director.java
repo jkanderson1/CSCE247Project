@@ -47,7 +47,6 @@ private void expelChild(Cabin cabin, String childFirstName, String childLastName
     
 }
 
-
 public String getUsername()
 {
     return this.username;

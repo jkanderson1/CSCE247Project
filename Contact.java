@@ -1,16 +1,17 @@
+
+import java.util.ArrayList;
 import java.util.UUID;
 
 public class Contact {
     public String firstname;
     public String lastname;
-    public String phonenumber;
+    public String number;
     public String address;
     public UUID contactID;
-
-    public Contact(String firstname,String lastname,String phonenumber,String address){
+    public Contact(String firstname,String lastname,String number,String address){
         this.firstname = firstname;
         this.lastname = lastname;
-        this.phonenumber = phonenumber;
+        this.number = number;
         this.address = address;
     }
 
@@ -26,7 +27,7 @@ public class Contact {
 
     public String getphonenumber()
     {
-        return this.phonenumber;
+        return this.number;
     }
 
     public String getaddress()
@@ -38,5 +39,4 @@ public class Contact {
     {
         return this.contactID.toString();
     }
-
 }
