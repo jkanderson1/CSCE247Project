@@ -11,7 +11,6 @@ public class Child {
     public String restriction;
     public UUID childID;
 
-    //might remove restrictions;
     public Child(String childFirstname, String childLastname, String childDOB, String restriction, Contact EmergencyContact, Contact Pediatrician){
         this.childFirstname = childFirstname;
         this.childLastname = childLastname;

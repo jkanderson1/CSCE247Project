@@ -23,7 +23,7 @@ public Director(String username, String password, String firstName, String lastN
     this.emergencyContact = emergencyContact; 
     this.restrictions = restrictions; 
 }
-/*
+    /*
      * A static method that generates a UUID randomly
      */
     private static UUID setUUID(){
@@ -31,12 +31,6 @@ public Director(String username, String password, String firstName, String lastN
         return temp;
     }
 
-private void makeChildSchedule(Days ChildActivities){
-
-}
-private void makeTeenSchedule(Days TeenActivities){
-
-}
 private CabinCollection viewCabins(ArrayList<Cabin> cabinList){
     return (CabinCollection)cabins;
 
@@ -52,6 +46,7 @@ private CounselorCollection viewCounselors(ArrayList<Counselor>counselors){
 private void expelChild(Cabin cabin, String childFirstName, String childLastName){
     
 }
+
 
 public String getUsername()
 {
