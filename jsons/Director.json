@@ -12,5 +12,14 @@
         },
         "restrictions": "gluten",
         "UUID": ""
+    },
+    {
+        "username": "davidsmith742",
+        "password": "dsmithword247",
+        "firstName": "David",
+        "lastName": "Smith",
+        "emergencyContact": "8d8dc728-3640-440c-8fa2-d8d4b883617e",
+        "restrictions": ["none"],
+        "UUID": ""
     }
 ]
