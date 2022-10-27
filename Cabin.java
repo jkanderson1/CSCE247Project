@@ -4,7 +4,7 @@ import java.util.UUID;
 
 public class Cabin {
     public static Cabin cabin;
-    private Counselor counselor;
+    public Counselor counselor;
     public ArrayList<Child> children;
     public int cabinNumber;
     public int session;
@@ -13,6 +13,7 @@ public class Cabin {
     public int maxAge;
     public int minAge;
     public String counselorUUID;
+    public Schedule schedule;
     
     public Cabin(int maxAge,int minAge, String counselorUUID, Counselor counselor, int session)
     {
