@@ -31,11 +31,45 @@ public String toString(){
     return firstName+lastName+couselorDOB+address+EmergencyContact+restriction+counselorID;
 }
 /*
-     * A static method that generates a UUID randomly
-     */
-    private static UUID setUUID(){
+ * A static method that generates a UUID randomly
+ */
+ private static UUID setUUID()
+ {
         UUID temp = UUID.randomUUID();
         return temp;
-    }
+}
+
+
+public String getFirstName()
+{
+    return this.firstName;
+}
+public String getLastName()
+{
+    return this.lastName;
 
 }
+public String getCounselorDOB()
+{
+    return this.couselorDOB;
+}
+public String getAddress()
+{
+    return this.address; 
+}
+public Contact getEmergencyContact()
+{
+return this.EmergencyContact;
+}
+public String getRestriction()
+{
+    return this.restriction;
+}
+public UUID getCounselorID()
+{
+    return this.counselorID;
+}
+
+}
+
+
