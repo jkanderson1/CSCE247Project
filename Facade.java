@@ -114,8 +114,8 @@ public void getScheduleByName(String Name){
 }
 
 public void getAllSchedules(){
-    //return null;
-    director.
+    return;
+    //director.
     
 }
 public void getchildCollection(){
