@@ -56,4 +56,21 @@ private void expelChild(Cabin cabin, String childFirstName, String childLastName
 private void addDirector(){
 
 }
+public String getUsername()
+{
+    return this.username;
+}
+public String getPassword()
+{
+    return this.password;
+}
+public String getFirstName()
+{
+    return this.firstName;
+}
+public String getLastName()
+{
+    return this.lastName;
+}
+
 }
