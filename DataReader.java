@@ -69,20 +69,37 @@ public class DataReader {
             String restrictions = (String)childJson.get("restrictions");
             String address = (String)childJson.get("address");
             JSONArray emergencyContactsJSONArray = (JSONArray)childJson.get("emergencyContact");
-
+            Iterator iterator = emergencyContactsJSONArray.iterator();
             //loop through the json array
+            Contact[] ContactArray = new Contact[emergencyContactsJSONArray.size()];
+            for (int o =0; i<ContactArray.length; o++)
+            {
+                JSONObject EContactJson = (JSONObject) emergencyContactsJSONArray.get(o);
+                String FirstName = (String)EContactJson.get("FirstName");
+                String LastName = (String)EContactJson.get("LastName");
+                String Number = (String)EContactJson.get("Number");
+                String Address = (String)EContactJson.get("Address");
+                Contact Econtact = new Contact(FirstName, LastName, Number, Address);
+                ContactArray[o] = Econtact;
 
+                
+            }
+            
+               
+                
+                
+            
             //read each json object
 
             //read the properties of each json object
             //build a Contact object
-            
+
 
             //String emergencyContactNumber = (String)childJson.get("emergencyContactNumber");
             String guardian = (String)childJson.get("guardian");
             Contact pediatrician = (Contact)childJson.get("pediatrician");
             //String pediatricianNumber = (String)childJson.get("pediatricianNumber");
-            Child child = new Child(childFirstName, childLastName, childAge, restrictions, emergencyContact, pediatrician);
+            Child child = new Child(childFirstName, childLastName, childAge, restrictions, ContactArray, pediatrician);
             childAL.add(child);
 
            }
