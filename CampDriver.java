@@ -65,6 +65,5 @@ public class CampDriver{
         children.getChildren();
         System.out.println("===============================================");
         counselors.getCounselors();
-        }
     }
 }

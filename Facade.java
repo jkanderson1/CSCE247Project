@@ -78,7 +78,7 @@ public User signUp(){
             String eNumber = keyboard.nextLine();
             System.out.println("what is their address");
             String eAddress = keyboard.nextLine();
-            Contact EmergencyContact = new Contact(efirstname, elastname, eNumber, eAddress);
+            Contact[] EmergencyContact = new Contact(efirstname, elastname, eNumber, eAddress);
             kids.addChild(childFirstname, childLastname, childDOB, EmergencyContact,Pediatrician, restriction);
             
         }

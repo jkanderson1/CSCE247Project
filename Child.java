@@ -57,7 +57,7 @@ public class Child {
     {
     return this.Pediatrician;
     }
-    public Contact EmergencyContact()
+    public Contact[] EmergencyContact()
     {
     return this.EmergencyContact;
     }

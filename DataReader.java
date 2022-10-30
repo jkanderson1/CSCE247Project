@@ -27,6 +27,7 @@ public class DataReader {
             String lastName = (String)directorJson.get("lastName");
             Contact emergencyContact = (Contact)directorJson.get("emergencyContact");
             JSONArray restrictions = (JSONArray)directorJson.get("restrictions");
+            UUID directorID = (UUID)directorJson.get("UUID");
             ArrayList<String> restrictionsAL = new ArrayList<String>();
 
             Iterator iterator = restrictions.iterator();
@@ -36,7 +37,7 @@ public class DataReader {
                 restrictionsAL.add((String)iterator.next());
             }
 
-            Director director = new Director(username, password, firstName, lastName, emergencyContact, restrictionsAL);
+            Director director = new Director(username, password, firstName, lastName, emergencyContact, restrictionsAL, directorID);
             directorAL.add(director);
         }
        
