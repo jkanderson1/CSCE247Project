@@ -85,21 +85,17 @@ public class DataReader {
 
                 
             }
+            JSONObject pediatricianJson = (JSONObject) childJson.get("pediatrician");
+            String FirstName = (String) pediatricianJson.get("FirstName");
+            String LastName = (String) pediatricianJson.get("LastName");
+            String Number = (String) pediatricianJson.get("Number");
+            String Address = (String) pediatricianJson.get("Address");
             
-               
-                
-                
-            
+            Contact pediatrician = new Contact (FirstName, LastName, Number, Address);
             //read each json object
 
             //read the properties of each json object
             //build a Contact object
-
-
-            //String emergencyContactNumber = (String)childJson.get("emergencyContactNumber");
-            String guardian = (String)childJson.get("guardian");
-            Contact pediatrician = (Contact)childJson.get("pediatrician");
-            //String pediatricianNumber = (String)childJson.get("pediatricianNumber");
             Child child = new Child(childFirstName, childLastName, childAge, restrictions, ContactArray, pediatrician);
             childAL.add(child);
 
@@ -130,15 +126,40 @@ public class DataReader {
            {
             JSONObject cabinJson = (JSONObject)cabinJsonArray.get(i);
             //Can we store a Counselor in JSON ? I think using the UUID like she said is the way to go. 
-            //Counselor counselor = (Counselor)cabinJson.get("counselor");
-            String counselorUUID = (String)cabinJson.get("UUID");
+            
+            JSONObject counselorJson = (JSONObject)cabinJson.get("counselor");
+            //making counselor object to pass into the constructor
+            String counselorUsername = (String)counselorJson.get("username");
+            String counselorPassword = (String)counselorJson.get("password");
+            String counselorFirstName = (String)counselorJson.get("FirstName");
+            String counselorLastName = (String)counselorJson.get("LastName");
+            String counselorDOB = (String)counselorJson.get("counselorDOB");
+            String counselorAddress = (String)counselorJson.get("address");
+            //making Contact object to put into counselor object
+            JSONObject counselorEcontact = (JSONObject)counselorJson.get("emergencyContact");
+            String CEFirstName = (String)counselorEcontact.get("FirstName");
+            String CELastName = (String)counselorEcontact.get("LastName");
+            String CENumber = (String)counselorEcontact.get("Number");
+            String CEAddress = (String)counselorEcontact.get("Address");
+
+            Contact CEContact = new Contact(CEFirstName, CELastName, CENumber, CEAddress);
+            //constructing Counselor
+            
+
+             String counselorUUID = (String)cabinJson.get("UUID");
             int maxAge= (int)cabinJson.get("maxAge");
             int minAge =(int)cabinJson.get("minAge");
-            Counselor counselor =(Counselor)cabinJson.get("Counselor");
+          
             int session = (int)cabinJson.get("session");
             //String ageGroup = (String)cabinJson.get("ageGroup");
-            Cabin cabin = new Cabin(maxAge,minAge,counselorUUID,counselor,session);
-            cabinAL.add(cabin);
+            
+            
+            Cabin cabin = new Cabin(maxAge,minAge,counselorUUID,null,session);
+            Counselor counselor = new Counselor(cabin, counselorFirstName, counselorLastName, counselorDOB, counselorAddress, CEContact, counselorUsername, counselorPassword);
+            cabin.setCounselor(counselor);
+            Counselor counselorV2 = new Counselor(cabin, CEFirstName, CELastName, counselorDOB, CEAddress, CEContact, counselorUUID, counselorUsername, counselorPassword)
+
+            cabinAL.add();
 
            }
         } catch (FileNotFoundException e) {

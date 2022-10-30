@@ -1,7 +1,23 @@
 [
     {
         "cabinNumber": 1,
-	    "counselor": "David Flours",
+	    "counselor": {
+			"username": "username here",
+			"password" : "password here",
+			"FirstName": "FirstName here",
+			"LastName": "LastName here",
+			"counselorDOB" : "MM/DD/YYYY",
+			"address" : "address here",
+
+			"emergencyContact":{
+				"FirstName": "FirstName here",
+				"LastName" : "LastName here", 
+				"Number": "Number here",
+				"Address": "Address here"
+			},
+			"restrictions" : "restrictions here",
+			"UUID" : "UUID here"
+		},
 	    "ageGroup": "5-9",
 	    "children": ["jimmy donahue", "ford lakes", "bob donovan", "daniel finger", "david beets", "jeff brooks", "sam chives", "baker daniels"],
 		"schedule": " ",
@@ -11,7 +27,23 @@
 	},
     {
         "cabinNumber": 2,
-	    "counselor": "Susan Jones",
+		"counselor": {
+			"username": "username here",
+			"password" : "password here",
+			"FirstName": "FirstName here",
+			"LastName": "LastName here",
+			"counselorDOB" : "MM/DD/YYYY",
+			"address" : "address here",
+
+			"emergencyContact":{
+				"FirstName": "FirstName here",
+				"LastName" : "LastName here", 
+				"Number": "Number here",
+				"Address": "Address here"
+			},
+			"restrictions" : "restrictions here",
+			"UUID" : "UUID here"
+		},
 	    "ageGroup": "5-9",
 	    "children": ["jenny donahue", "annie lakes", "susie donovan", "annabelle samuels", "destiny beets", "sam brooks", "sally chives", "gabby daniels"],
 		"schedule" : " ",
