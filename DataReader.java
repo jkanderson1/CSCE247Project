@@ -169,6 +169,7 @@ public class DataReader {
                 String email = (String)parentJson.get("email");
                 String number = (String)parentJson.get("number");
                 String[] children = (String[])parentJson.get("children");
+                UUID parentID = (UUID)parentJson.get("UUID");
                 //making string array into ArrayList
                 ArrayList<String> childrenAL = new ArrayList<String>();
                 for (int o =0; o<children.length; o++ )
@@ -176,7 +177,7 @@ public class DataReader {
                     childrenAL.add(children[o]);
                 }
                 String address = (String)parentJson.get("address");
-                parentAL.add(new Parent(username, password, firstName, lastName, email, number, address, childrenAL));
+                parentAL.add(new Parent(username, password, firstName, lastName, email, number, address, childrenAL, parentID));
             }
         } catch (FileNotFoundException e1) {
             // TODO Auto-generated catch block
