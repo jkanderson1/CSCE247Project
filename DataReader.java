@@ -158,12 +158,10 @@ public class DataReader {
             //String ageGroup = (String)cabinJson.get("ageGroup");
             
             //Cabin and Counselor both need eachother to be constructed :/
-            Cabin cabin = new Cabin(maxAge,minAge,counselorUUID,null,session);
-            Counselor counselor = new Counselor(cabin, counselorFirstName, counselorLastName, counselorDOB, counselorAddress, CEContact, counselorRestrictions, counselorUsername, counselorPassword);
-            cabin.setCounselor(counselor);
-            Counselor counselorV2 = new Counselor(cabin, counselorFirstName, counselorLastName, counselorDOB, counselorAddress, CEContact, counselorRestrictions, counselorUsername, counselorPassword);
-            Cabin cabinV2 = new Cabin(maxAge, minAge, counselorUUID, counselorV2, session);
-            cabinAL.add(cabinV2);
+            Counselor counselor = new Counselor(counselorFirstName, counselorLastName, counselorDOB, counselorAddress, CEContact, counselorRestrictions, counselorUsername, counselorPassword);
+            
+            Cabin cabin = new Cabin(maxAge,minAge,counselorUUID,counselor,session);
+            
 
            }
         } catch (FileNotFoundException e) {
@@ -195,6 +193,7 @@ public class DataReader {
                 String number = (String)parentJson.get("number");
                 String address = (String)parentJson.get("address");
                 JSONArray childJSONArray = (JSONArray) parentJson.get("children");
+                ArrayList<Child> childrenAL = new ArrayList<Child>();
                 for(int o = 0; o<childJSONArray.size(); o++)
                 {
                     JSONObject childJson = (JSONObject)childJSONArray.get(o);
@@ -216,8 +215,10 @@ public class DataReader {
                     String pNumber = (String)pediatricianJson.get("Number");
                     String pAddress = (String)pediatricianJson.get("Address");
                     Contact pediatrician = new Contact(pFirstName, pLastName, pNumber, pAddress);
+                    Child child = new Child(childFirstName, childLastName, childAge, childRestrictions, Econtact, pediatrician);
+
                 }
-                parentAL.add(new Parent(username, password, firstName, lastName, email, number, address, childrenAL, parentID));
+                parentAL.add(new Parent(username, password, firstName, lastName, email, number, address, childrenAL));
             }
         } catch (FileNotFoundException e1) {
             // TODO Auto-generated catch block
@@ -247,10 +248,15 @@ public class DataReader {
                 String lastName = (String)counselorJson.get("LastName");
                 String CounselorDOB = (String)counselorJson.get("CounselorDOB");
                 String address = (String)counselorJson.get("address");
-                Contact emergencyContact = (Contact)counselorJson.get("emergencyContact");
+                JSONObject emergencyContact = (JSONObject)counselorJson.get("emergencyContact");
+                String ECFirstName = (String)emergencyContact.get("FirstName");
+                String ECLastName = (String)emergencyContact.get("LastName");
+                String ECNumber = (String)emergencyContact.get("Number");
+                String ECAddress = (String)emergencyContact.get("Address");
+                Contact counselorEContact = new Contact(ECFirstName, ECLastName, ECNumber, ECAddress);
                 //String emergencyContactNumber = (String)counselorJson.get("emergencyContactNumber");
                 String restrictions = (String)counselorJson.get("restrictions");
-                counselorAL.add(new Counselor(cabin, firstName, lastName, CounselorDOB, address, emergencyContact, restrictions, username, password));
+                counselorAL.add(new Counselor(firstName, lastName, CounselorDOB, address, counselorEContact, restrictions, username, password));
             }
         } catch (FileNotFoundException e1) {
             // TODO Auto-generated catch block

@@ -6,10 +6,10 @@ public class Parent extends User{
    public String email;
    public String number;
    public String address;
-   public ArrayList<String> children;
+   public ArrayList<Child> children;
    public UUID parentID;
    
-   public Parent(String username, String password, String firstName, String lastName, String email, String number, String address, ArrayList<String> children, UUID parentID)
+   public Parent(String username, String password, String firstName, String lastName, String email, String number, String address, ArrayList<Child> children)
    {
       super(username, password);
       this.firstName = firstName;
