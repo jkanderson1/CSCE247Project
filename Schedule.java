@@ -11,6 +11,7 @@ public class Schedule{
         ActivitiesHMap.put(Days.Wednesday, new ArrayList<Activities>());
         ActivitiesHMap.put(Days.Thursday, new ArrayList<Activities>());
         ActivitiesHMap.put(Days.Friday, new ArrayList<Activities>());
+        
     }
 
     public void makeScheduleTwo(){
