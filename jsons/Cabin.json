@@ -19,6 +19,8 @@
 			"UUID" : "UUID here"
 		},
 	    "ageGroup": "7-8",
+	    "minAge": 5,
+		"maxAge":9,
 	    "children": ["jimmy donahue", "ford lakes", "bob donovan", "daniel finger", "david beets", "jeff brooks", "sam chives", "baker daniels"],
 		"schedule": " ",
 		"session" : 1,
