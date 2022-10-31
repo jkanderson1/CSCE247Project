@@ -7,8 +7,8 @@ public class CampDriver{
     static ArrayList<Director> director;
     static ChildCollection children;
     static ArrayList<Parent> parents;
-    private static Facade facade;
-    private static User user;
+    private static Facade facade = new Facade(null, null, null, null);
+    private static  User user = new User(null, null);
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);
         // cabins = DataReader.getAllCabins();
@@ -22,18 +22,7 @@ public class CampDriver{
         System.out.println("4. exit ");
         int option = keyboard.nextInt();
         if (option==1){
-            System.out.println("******Camp Infromation*****");
-            System.out.println("Our camp is located in sunny South Carolina");
-            System.out.println("Our camp runs from August to July");
-            System.out.println("Have 8 camp sessions each with different Themes");
-            System.out.println("Session 1: Hawaiin\nSession 2: Rockstars\nSession 3: Ninja Warriors\nSession 4: Willy Wonka\nSession 5: Hollywood\nSession 6: Legos\nSession 7: Cops and Robbers\nSession 8: Shark Tank\nSession 9: Smores");
-            System.out.println("The activities avaible for your child are listed as the following");
-            System.out.println("Teen Activities: ");
-            System.out.println("Archery\nSwimming\nSoccer\nFootball \nBasketBall\nCooking\nMountainBiking\nPottery \nHorseRiding \nBungeeJumping\nZipLine\nObstacleCourse \nHiking \nWoodShop\nCanoeing ");
-            System.out.println(" ");
-            System.out.println("Child Activities");
-            System.out.println("ArtsandCrafts\nKickBall\nFlagFootball\nScavengerHunt\nBikeRiding\nSandbox\nBirdWatching\nRoastingMarshmallows\nDanceParty\nCaptureTheFlag\nPettingZoo\nShowAndTell\nIceCreamParty\nLaserTag ");
-            System.out.println(" ");
+            System.out.println(facade.campinfo());
             System.out.println("Are you a returning user or new user\n 1:returning user 2: new user ");
             int option1 = keyboard.nextInt();
             if (option1==1){
@@ -64,6 +53,6 @@ public class CampDriver{
         parents = DataReader.getAllParents();
         children.getChildren();
         System.out.println("===============================================");
-        counselors.getCounselors();
+        counselors.getCounselorbyUUID();
     }
 }

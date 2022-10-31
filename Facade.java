@@ -47,6 +47,7 @@ public User signUp(){
         String number= keyboard.nextLine();
         System.out.println("what is your address");
         String address = keyboard.nextLine();
+        parent = new Parent(address, address, firstName, lastName, email, number, address, null, null);
         parent.addParent(firstName, lastName, email, number,address);
         System.out.println("How many children would you like to register?");
         int numOfKids =  keyboard.nextInt();
@@ -78,7 +79,7 @@ public User signUp(){
             String eNumber = keyboard.nextLine();
             System.out.println("what is their address");
             String eAddress = keyboard.nextLine();
-            Contact[] EmergencyContact = new Contact(efirstname, elastname, eNumber, eAddress);
+            Contact EmergencyContact = new Contact(efirstname, elastname, eNumber, eAddress);
             kids.addChild(childFirstname, childLastname, childDOB, EmergencyContact,Pediatrician, restriction);
             
         }
@@ -104,6 +105,7 @@ public User signUp(){
         System.out.println("what is their address");
         String Address = keyboard.nextLine();
         Contact EmergencyContact= new Contact(firstname, lastname, Number, Address);
+        counselorcollection = new CounselorCollection(null);
         counselorcollection.AddCounselor(firstName, lastName,couselorDOB, address,EmergencyContact, restriction);
     }
     return user;
@@ -125,7 +127,19 @@ public void getchildCollection(){
 }
 public void getConselorcollection(){
     //return null;
-    counselorcollection.getCounselors();
+    counselorcollection.getCounselorbyUUID();
     
+}
+public String campinfo(){
+    return ("******Camp Infromation*****"+
+    "\nOur camp is located in sunny South Carolina"+
+    "\nOur camp runs from August to July"+
+    "\nHave 8 camp sessions each with different Themes"+
+    "\nSession 1: Hawaiin\nSession 2: Rockstars\nSession 3: Ninja Warriors\nSession 4: Willy Wonka\nSession 5: Hollywood\nSession 6: Legos\nSession 7: Cops and Robbers\nSession 8: Shark Tank\nSession 9: Smores"+
+    "\n The activities avaible for your child are listed as the following"+
+    "\nTeen Activities: "+
+    "\nArchery\nSwimming\nSoccer\nFootball \nBasketBall\nCooking\nMountainBiking\nPottery \nHorseRiding \nBungeeJumping\nZipLine\nObstacleCourse \nHiking \nWoodShop\nCanoeing\n"+
+    "Child Activities: "+
+    "\nArtsandCrafts\nKickBall\nFlagFootball\nScavengerHunt\nBikeRiding\nSandbox\nBirdWatching\nRoastingMarshmallows\nDanceParty\nCaptureTheFlag\nPettingZoo\nShowAndTell\nIceCreamParty\nLaserTag ");
 }
 }

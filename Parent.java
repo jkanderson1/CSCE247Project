@@ -26,9 +26,10 @@ public String toString(){
 }
 
 private  ArrayList<Parent> parent;
-private Parent parent2;
- public void addParent(String firstName, String lastName, String email, String number, String address){
-   parent.add(parent2);
+private Parent parents;
+ public ArrayList<Parent> addParent(String firstName, String lastName, String email, String number, String address){
+   parent.add(parents);
+   return parent;
 }
 
 public String getfirstname(){
