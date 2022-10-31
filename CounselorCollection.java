@@ -13,10 +13,8 @@ public class CounselorCollection {
         Counselors.add(counselor);
         //adding counselor into the counselor array list
     }
-    public void getCounselors(){
-        for(int i = 0; i > Counselors.size();i++){
-            System.out.println(Counselors.get(i).toString());
-        }
+    public ArrayList getCounselorbyUUID(){
+       return Counselors;
     }
 
     
