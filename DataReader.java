@@ -145,21 +145,21 @@ public class DataReader {
             Contact CEContact = new Contact(CEFirstName, CELastName, CENumber, CEAddress);
             //constructing Counselor
             
-
-             String counselorUUID = (String)cabinJson.get("UUID");
+            String counselorRestrictions = (String)counselorJson.get("restrictions");
+            String counselorUUID = (String)counselorJson.get("UUID");
             int maxAge= (int)cabinJson.get("maxAge");
             int minAge =(int)cabinJson.get("minAge");
           
             int session = (int)cabinJson.get("session");
             //String ageGroup = (String)cabinJson.get("ageGroup");
             
-            
+            //Cabin and Counselor both need eachother to be constructed :/
             Cabin cabin = new Cabin(maxAge,minAge,counselorUUID,null,session);
-            Counselor counselor = new Counselor(cabin, counselorFirstName, counselorLastName, counselorDOB, counselorAddress, CEContact, counselorUsername, counselorPassword);
+            Counselor counselor = new Counselor(cabin, counselorFirstName, counselorLastName, counselorDOB, counselorAddress, CEContact, counselorRestrictions, counselorUsername, counselorPassword);
             cabin.setCounselor(counselor);
-            Counselor counselorV2 = new Counselor(cabin, CEFirstName, CELastName, counselorDOB, CEAddress, CEContact, counselorUUID, counselorUsername, counselorPassword)
-
-            cabinAL.add();
+            Counselor counselorV2 = new Counselor(cabin, counselorFirstName, counselorLastName, counselorDOB, counselorAddress, CEContact, counselorRestrictions, counselorUsername, counselorPassword);
+            Cabin cabinV2 = new Cabin(maxAge, minAge, counselorUUID, counselorV2, session);
+            cabinAL.add(cabinV2);
 
            }
         } catch (FileNotFoundException e) {
