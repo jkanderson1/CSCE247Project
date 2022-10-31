@@ -43,7 +43,7 @@ public class DataReader {
                 restrictionsAL.add((String)restrictionsIterator.next());
             }
 
-            Director director = new Director(username, password, firstName, lastName, ContactArray, restrictionsAL, directorID);
+            Director director = new Director(username, password, firstName, lastName, eContact, restrictionsAL, directorID);
             directorAL.add(director);
         }
        
@@ -76,33 +76,32 @@ public class DataReader {
             String restrictions = (String)childJson.get("restrictions");
             String address = (String)childJson.get("address");
             JSONArray emergencyContactsJSONArray = (JSONArray)childJson.get("emergencyContact");
-            Iterator iterator = emergencyContactsJSONArray.iterator();
+            
             //loop through the json array
-            Contact[] ContactArray = new Contact[emergencyContactsJSONArray.size()];
-            for (int o =0; i<ContactArray.length; o++)
-            {
+     
+            
                 JSONObject EContactJson = (JSONObject) emergencyContactsJSONArray.get(o);
                 String FirstName = (String)EContactJson.get("FirstName");
                 String LastName = (String)EContactJson.get("LastName");
                 String Number = (String)EContactJson.get("Number");
                 String Address = (String)EContactJson.get("Address");
                 Contact Econtact = new Contact(FirstName, LastName, Number, Address);
-                ContactArray[o] = Econtact;
+                
 
                 
-            }
-            JSONObject pediatricianJson = (JSONObject) childJson.get("pediatrician");
-            String FirstName = (String) pediatricianJson.get("FirstName");
-            String LastName = (String) pediatricianJson.get("LastName");
-            String Number = (String) pediatricianJson.get("Number");
-            String Address = (String) pediatricianJson.get("Address");
             
-            Contact pediatrician = new Contact (FirstName, LastName, Number, Address);
+            JSONObject pediatricianJson = (JSONObject) childJson.get("pediatrician");
+            String pFirstName = (String) pediatricianJson.get("FirstName");
+            String pLastName = (String) pediatricianJson.get("LastName");
+            String pNumber = (String) pediatricianJson.get("Number");
+            String pAddress = (String) pediatricianJson.get("Address");
+            
+            Contact pediatrician = new Contact (pFirstName, pLastName, pNumber, pAddress);
             //read each json object
 
             //read the properties of each json object
             //build a Contact object
-            Child child = new Child(childFirstName, childLastName, childAge, restrictions, ContactArray, pediatrician);
+            Child child = new Child(childFirstName, childLastName, childAge, restrictions, Econtact, pediatrician);
             childAL.add(child);
 
            }
