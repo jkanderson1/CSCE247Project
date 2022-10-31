@@ -8,7 +8,7 @@ public class CampDriver{
     static ChildCollection children;
     static ArrayList<Parent> parents;
     private static Facade facade = new Facade(null, null, null, null);
-    private static  User user;
+    private static  User user = new User(null, null);
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);
         // cabins = DataReader.getAllCabins();

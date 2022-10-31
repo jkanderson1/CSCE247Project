@@ -127,7 +127,7 @@ public void getchildCollection(){
 }
 public void getConselorcollection(){
     //return null;
-    counselorcollection.getCounselors();
+    counselorcollection.getCounselorbyUUID();
     
 }
 public String campinfo(){
