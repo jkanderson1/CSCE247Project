@@ -13,8 +13,14 @@
                 "Address": "Address Here"
             }
         ] ,
-        "pediatrician": "Doctor's Name",
-        "pediatricianNumber": "1234567890",
+
+        "pediatrician": {
+            "FirstName" :"First Name Here",
+            "LastName" : "Last Name Here",
+            "Number" : "Number Here",
+            "Address" : "Address Here"
+        },
+
         "UUID": "2a943c4b-2df2-4a0c-a225-3640d27a9a06"
     },
     {
@@ -23,10 +29,22 @@
         "childAge":"10/07/2007",
         "restrictions": "None",
         
-        "emergencyContact": "Ricky Bobby",
-        "emergencyContactNumber": "111-222-3333",
-        "pediatrician": "Doctor's Name",
-        "pediatricianNumber": "1234567890",
+         "emergencyContacts":[
+            {
+                "firstName":"First Name Here",
+                "lastName" :"Last Name Here",
+                "Number": "Number Here",
+                "Address": "Address Here"
+            }
+        ] ,
+
+        "pediatrician": {
+            "FirstName" :"First Name Here",
+            "LastName" : "Last Name Here",
+            "Number" : "Number Here",
+            "Address" : "Address Here"
+        },
+        
         "UUID": ""
     },
     {
@@ -34,10 +52,21 @@
         "childLastName":"Kennedy",
         "childAge":"03/24/2004",
         "restrictions": "Peanut",
-        "emergencyContact": "Ricky Bobby",
-        "emergencyContactNumber": "111-222-3333",
-        "pediatrician": "Doctor's Name",
-        "pediatricianNumber": "1234567890",
+        "emergencyContacts":[
+            {
+                "firstName":"First Name Here",
+                "lastName" :"Last Name Here",
+                "Number": "Number Here",
+                "Address": "Address Here"
+            }
+        ] ,
+
+        "pediatrician": {
+            "FirstName" :"First Name Here",
+            "LastName" : "Last Name Here",
+            "Number" : "Number Here",
+            "Address" : "Address Here"
+        },
         "UUID": ""
     },
     {
