@@ -255,14 +255,14 @@
         "childAge":"12/03/2009",
         "restrictions": "none",
         
-        "emergencyContacts":[
+        "emergencyContacts":
             {
                 "firstName":"Dwayne",
                 "lastName" :"Park",
                 "Number": "8034457897",
                 "Address": "222 parklane rd"
             }
-        ] ,
+         ,
         "pediatrician": "Dr Greg",
         "pediatricianNumber": "1234567890",
         "UUID": ""

@@ -75,12 +75,12 @@ public class DataReader {
             String childAge = (String)childJson.get("childAge");
             String restrictions = (String)childJson.get("restrictions");
             String address = (String)childJson.get("address");
-            JSONArray emergencyContactsJSONArray = (JSONArray)childJson.get("emergencyContact");
+            
             
             //loop through the json array
      
             
-                JSONObject EContactJson = (JSONObject) emergencyContactsJSONArray.get(o);
+                JSONObject EContactJson = (JSONObject)childJson.get("emergencyContact");
                 String FirstName = (String)EContactJson.get("FirstName");
                 String LastName = (String)EContactJson.get("LastName");
                 String Number = (String)EContactJson.get("Number");
