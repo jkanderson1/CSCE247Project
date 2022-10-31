@@ -2,13 +2,16 @@
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.List;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
 public class DataWriter {
+static ArrayList<Director> directors;
 
 public boolean saveAllChildren(ArrayList<Child> children)
+
 {
     JSONArray jsonChildren = new JSONArray();
     for (int i = 0; i<children.size(); i++) 
@@ -172,13 +175,12 @@ public JSONObject getCounselorJSON(Counselor counselor)
     return counselorJson;
 }
 
-public boolean saveAllDirectors(ArrayList<Director> directors)
+public static boolean saveAllDirectors(ArrayList<Director> directors)
 {
     JSONArray jsonDirectors = new JSONArray();
     for (int i = 0; i<directors.size(); i++) 
     {
-        
-        jsonDirectors.add(getDirectorJSON(directors.get(i)));
+        jsonDirectors.set(i, directors.get(i));
 
     }
     try(FileWriter directorFile = new FileWriter("Director.json"))
@@ -259,6 +261,10 @@ public JSONObject getParentJSON(Parent parent)
 
     public static void main(String[] args){
         System.out.println("Hello");
+        directors = DataReader.getAllDirectors();
+        ArrayList<String> restrictions = new ArrayList<String>();
+        restrictions.add("gluten");
+        saveAllDirectors(directors);
     }
 
 }
