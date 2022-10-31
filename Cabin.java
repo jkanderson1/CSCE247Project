@@ -22,8 +22,13 @@ public class Cabin {
         this.counselorUUID = counselorUUID;
         this.session = session;
     }
-    public void fillCabin(){
 
+
+    public void fillCabin(){
+        if(Child.getAge >= minAge && Child.getAge <= maxAge)
+        {
+            children.add(Child);
+        }
     }
 
     public void setCounselor(Counselor counselor)

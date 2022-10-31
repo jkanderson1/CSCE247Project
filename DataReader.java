@@ -1,8 +1,5 @@
 //written by Walker Bowen
 import java.util.ArrayList;
-
-import javax.xml.catalog.GroupEntry.PreferType;
-
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
@@ -29,19 +26,24 @@ public class DataReader {
             String password = (String)directorJson.get("password");
             String firstName = (String)directorJson.get("firstName");
             String lastName = (String)directorJson.get("lastName");
-            Contact emergencyContact = (Contact)directorJson.get("emergencyContact");
+            JSONObject emergencyContact = (JSONObject)directorJson.get("emergencyContact");
+            String eCFirstName = (String)directorJson.get("firstName");
+            String eCLastName = (String)directorJson.get("lastName");
+            String eCNumber = (String)directorJson.get("number");
+            String eCAddress = (String)directorJson.get("address");
+            Contact eContact = new Contact(eCFirstName, eCLastName, eCNumber, eCAddress);
             JSONArray restrictions = (JSONArray)directorJson.get("restrictions");
             UUID directorID = (UUID)directorJson.get("UUID");
             ArrayList<String> restrictionsAL = new ArrayList<String>();
 
-            Iterator iterator = restrictions.iterator();
+            Iterator restrictionsIterator = restrictions.iterator();
 
-            while(iterator.hasNext())
+            while(restrictionsIterator.hasNext())
             {
-                restrictionsAL.add((String)iterator.next());
+                restrictionsAL.add((String)restrictionsIterator.next());
             }
 
-            Director director = new Director(username, password, firstName, lastName, emergencyContact, restrictionsAL, directorID);
+            Director director = new Director(username, password, firstName, lastName, ContactArray, restrictionsAL, directorID);
             directorAL.add(director);
         }
        
