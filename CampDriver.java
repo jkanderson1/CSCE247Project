@@ -53,6 +53,6 @@ public class CampDriver{
         parents = DataReader.getAllParents();
         children.getChildren();
         System.out.println("===============================================");
-        counselors.getCounselors();
+        counselors.getCounselorbyUUID();
     }
 }
