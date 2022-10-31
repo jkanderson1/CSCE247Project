@@ -7,11 +7,13 @@ public class Child {
     public String childLastname;
     public String childDOB;
     public Contact Pediatrician;
-    public Contact EmergencyContact;
+    public Contact[] EmergencyContact;
     public String restriction;
     public UUID childID;
 
-    public Child(String childFirstname, String childLastname, String childDOB, String restriction, Contact EmergencyContact, Contact Pediatrician){
+
+    //might remove restrictions;
+    public Child(String childFirstname, String childLastname, String childDOB, String restriction, Contact[] EmergencyContact, Contact Pediatrician){
         this.childFirstname = childFirstname;
         this.childLastname = childLastname;
         this.childDOB = childDOB;
@@ -56,7 +58,7 @@ public class Child {
     {
     return this.Pediatrician;
     }
-    public Contact EmergencyContact()
+    public Contact[] EmergencyContact()
     {
     return this.EmergencyContact;
     }

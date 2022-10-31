@@ -34,5 +34,108 @@
         "eCNumber": 1234567890,
         "restrictions": "NoSwim",
         "UUID": ""
+    },
+    {
+        "username": "jthebaker",
+        "password" : "cakecake",
+        "FirstName": "John",
+        "LastName": "Baker",
+        "counselorDOB" : "04/04/1999",
+        "address" : "455 cupcake drive",
+
+        "emergencyContact":{
+            "FirstName": "Mary",
+            "LastName" : "Baker", 
+            "Number": "9038877666",
+            "Address": "455 Cupcake drive"
+        },
+        "restrictions" : "none",
+        "UUID" : "UUID here"
+    },
+    {
+        "username": "username here",
+        "password" : "password here",
+        "FirstName": "Alicia",
+        "LastName": "Bill",
+        "counselorDOB" : "02/22/2002",
+        "address" : "123 jackson drive ",
+
+        "emergencyContact":{
+            "FirstName": "phil",
+            "LastName" : "Bill", 
+            "Number": "8035094433",
+            "Address": "123 jackson drive"
+        },
+        "restrictions" : "none",
+        "UUID" : "UUID here"
+    },
+    {
+        "username": "Kixg",
+        "password" : "Gonkix",
+        "FirstName": "Kix",
+        "LastName": "Gonzalez",
+        "counselorDOB" : "05/12/2000",
+        "address" : "343 Belair blvd",
+
+        "emergencyContact":{
+            "FirstName": "Vivian",
+            "LastName" : "Banks", 
+            "Number": "8035083939",
+            "Address": "343 belair blvd"
+        },
+        "restrictions" : "gulten free",
+        "UUID" : "UUID here"
+    },
+    {
+        "username": "dcopper",
+        "password" : "iloveflowers2",
+        "FirstName": "Daisy",
+        "LastName": "Copper",
+        "counselorDOB" : "11/02/2003",
+        "address" : "1432 flowers rd",
+
+        "emergencyContact":{
+            "FirstName": "Rose",
+            "LastName" : "Copper", 
+            "Number": "7679998877",
+            "Address": "1432 flowers drive"
+        },
+        "restrictions" : "peanut allergy",
+        "UUID" : "UUID here"
+    },
+    {
+        "username": "donlee",
+        "password" : "biglee",
+        "FirstName": "Donna",
+        "LastName": "Lee",
+        "counselorDOB" : "05/20/1999",
+        "address" : "999 two notch rd",
+
+        "emergencyContact":{
+            "FirstName": "Bod",
+            "LastName" : "Stroman", 
+            "Number": "7082341234",
+            "Address": "123 point place lane"
+        },
+        "restrictions" : "none",
+        "UUID" : "UUID here"
+    },
+    {
+        "username": "ojman",
+        "password" : "ilovedogs",
+        "FirstName": "Omar",
+        "LastName": "Jones",
+        "counselorDOB" : "09/17/2001",
+        "address" : "123 franklin drive",
+
+        "emergencyContact":{
+            "FirstName": "Manny",
+            "LastName" : "Modern", 
+            "Number": "8034549876",
+            "Address": "434 milli rd"
+        },
+        "restrictions" : "none",
+        "UUID" : "UUID here"
     }
+
 ]

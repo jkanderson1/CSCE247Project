@@ -205,7 +205,7 @@ public JSONObject getDirectorJSON(Director director)
     String[] restrictionsArray = new String[director.getRestrictions().size()];
     for (int i = 0; i<restrictionsArray.length; i++)
     {
-        restrictionsArray[i]= director.getRestrictions().get(i);
+        restrictionsArray[i]= (String) director.getRestrictions().get(i);
     }
     directorJson.put("restrictions", restrictionsArray);
     directorJson.put("UUID", director.getDirectorID());

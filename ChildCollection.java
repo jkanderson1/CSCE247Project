@@ -7,8 +7,8 @@ public class ChildCollection{
     }
 
     private  ArrayList<Child> children;
-    public void addChild(String childFirstName, String childLastName, String childDOB, Contact EmergencyContact, Contact Pediatrician, String restriction){
-        Child child = new Child(childFirstName, childLastName, childDOB, restriction, EmergencyContact, Pediatrician);
+    public void addChild(String childFirstName, String childLastName, String childDOB, Contact[] emergencyContact, Contact Pediatrician, String restriction){
+        Child child = new Child(childFirstName, childLastName, childDOB, restriction, emergencyContact, Pediatrician);
         this.children.add(child);
     }
     public void getChildren(){
