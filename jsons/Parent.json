@@ -14,10 +14,19 @@
                 "childAge":"MM/DD/YYYY",
                 "restrictions": "Insert Restrictions",
         
-                "emergencyContact": "Ricky Bobby",
-                "emergencyContactNumber": "111-222-3333",
-                "pediatrician": "Doctor's Name",
-                "pediatricianNumber": "1234567890",
+                "emergencyContact":{
+                    "FirstName": "FirstName here",
+                    "LastName" : "LastName here", 
+                    "Number": "Number here",
+                    "Address": "Address here"
+                },
+                "pediatrician":{
+                    "FirstName": "FirstName here",
+                    "LastName" : "LastName here", 
+                    "Number": "Number here",
+                    "Address": "Address here"
+                },
+                
                 "UUID": "2a943c4b-2df2-4a0c-a225-3640d27a9a06"
             }
         ],
@@ -31,7 +40,30 @@
         "email": "daisyduck@gmail.com",
         "number": "5556667777",
         "address": "321 Couldesac St",
-        "children": ["david duck", "daffy duck", "daphene duck"],
+        "children": [
+            {
+                "childFirstName":"First Name Here",
+                "childLastName":"Last Name Here",
+                "childAge":"MM/DD/YYYY",
+                "restrictions": "Insert Restrictions",
+        
+                "emergencyContact":{
+                    "FirstName": "FirstName here",
+                    "LastName" : "LastName here", 
+                    "Number": "Number here",
+                    "Address": "Address here"
+                },
+                "pediatrician":{
+                    "FirstName": "FirstName here",
+                    "LastName" : "LastName here", 
+                    "Number": "Number here",
+                    "Address": "Address here"
+                },
+                
+                "UUID": "2a943c4b-2df2-4a0c-a225-3640d27a9a06"
+            }
+        ],
+        
         "UUID": ""
     }
 ]

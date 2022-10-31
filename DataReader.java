@@ -1,8 +1,12 @@
 //written by Walker Bowen
 import java.util.ArrayList;
+
+import javax.xml.catalog.GroupEntry.PreferType;
+
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.security.spec.EdDSAParameterSpec;
 import java.util.*;
 import org.json.simple.*;
 import org.json.simple.parser.*;
@@ -189,15 +193,30 @@ public class DataReader {
                 String lastName = (String)parentJson.get("lastName");
                 String email = (String)parentJson.get("email");
                 String number = (String)parentJson.get("number");
-                String[] children = (String[])parentJson.get("children");
-                UUID parentID = (UUID)parentJson.get("UUID");
-                //making string array into ArrayList
-                ArrayList<String> childrenAL = new ArrayList<String>();
-                for (int o =0; o<children.length; o++ )
-                {
-                    childrenAL.add(children[o]);
-                }
                 String address = (String)parentJson.get("address");
+                JSONArray childJSONArray = (JSONArray) parentJson.get("children");
+                for(int o = 0; o<childJSONArray.size(); o++)
+                {
+                    JSONObject childJson = (JSONObject)childJSONArray.get(o);
+                    String childFirstName = (String)childJson.get("childFirstName");
+                    String childLastName = (String)childJson.get("childLastName");
+                    String childAge = (String)childJson.get("childAge");
+                    String childRestrictions = (String)childJson.get("restrictions");
+                    //emergencyContact Object
+                    JSONObject eContactJson = (JSONObject)childJson.get("emergencyContact");
+                    String EContactFirstName = (String)eContactJson.get("FirstName");
+                    String EContactLastName = (String)eContactJson.get("LastName");
+                    String EContactNumber = (String)eContactJson.get("Number");
+                    String EContactAddress = (String)eContactJson.get("Address");
+                    Contact Econtact = new Contact(EContactFirstName, EContactLastName, EContactNumber, EContactAddress);
+                    //pediatrician Object
+                    JSONObject pediatricianJson = (JSONObject)childJson.get("pediatrician");
+                    String pFirstName = (String)pediatricianJson.get("FirstName");
+                    String pLastName = (String)pediatricianJson.get("LastName");
+                    String pNumber = (String)pediatricianJson.get("Number");
+                    String pAddress = (String)pediatricianJson.get("Address");
+                    Contact pediatrician = new Contact(pFirstName, pLastName, pNumber, pAddress);
+                }
                 parentAL.add(new Parent(username, password, firstName, lastName, email, number, address, childrenAL, parentID));
             }
         } catch (FileNotFoundException e1) {
