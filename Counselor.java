@@ -27,7 +27,7 @@ public Counselor(String firstName, String lastName, String couselorDOB, String a
 }
 
 public String toString(){
-    return firstName+lastName+couselorDOB+address+EmergencyContact+restriction+counselorID;
+    return firstName+" "+lastName+" "+couselorDOB+" "+address+" Contact: "+EmergencyContact+" "+restriction+" "+counselorID+" ";
 }
 /*
  * A static method that generates a UUID randomly

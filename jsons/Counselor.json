@@ -1,37 +1,5 @@
 [
     {
-        "username": "for user class",
-        "password": "for user class",
-        "FirstName":"First Name Here",
-        "LastName":"Last Name Here",
-        "counselorDOB":"MM/DD/YYYY",
-        "address": "Insert Address",
-        "emergencyContact":{
-            "FirstName": "FirstName here",
-            "LastName" : "LastName here", 
-            "Number": "Number here",
-            "Address": "Address here"
-        },
-        "restrictions": "Insert Restriction Enum Here",
-        "UUID": ""
-    },
-    {
-        "username": "dFlours",
-        "password": "for user class",
-        "FirstName":"David",
-        "LastName":"Flour",
-        "counselorDOB":"12/27/1999",
-        "address": "2089 Bluebird Rd",
-        "emergencyContact":{
-            "FirstName": "FirstName here",
-            "LastName" : "LastName here", 
-            "Number": "Number here",
-            "Address": "Address here"
-        },
-        "restrictions": "None",
-        "UUID": ""
-    },
-    {
         "username": "JonesBill96",
         "password": "for user class",
         "FirstName":"Bill",

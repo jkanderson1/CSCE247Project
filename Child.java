@@ -89,6 +89,11 @@ public class Child {
         return childAge;
     }
 
+    public static void main(String[] args) {
+        ChildCollection collection = new ChildCollection(DataReader.getAllChildren());
+        Child child = collection.getChildren();
+    }
+
 
 
 

@@ -152,17 +152,20 @@ public class DataReader {
             
             String counselorRestrictions = (String)counselorJson.get("restrictions");
             String counselorUUID = (String)counselorJson.get("UUID");
-            int minAge=(int)cabinJson.get("minAge");
-            int maxAge=(int)cabinJson.get("maxAge");
+            Long minAge=(Long)cabinJson.get("minAge");
+            Long maxAge=(Long)cabinJson.get("maxAge");
+            int minAgeINT = minAge.intValue();
+            int maxAgeINT = maxAge.intValue();
           
-            int session = (int)cabinJson.get("session");
+            Long session = (Long)cabinJson.get("session");
+            int sessionINT = session.intValue();
             //String ageGroup = (String)cabinJson.get("ageGroup");
             
             //Cabin and Counselor both need eachother to be constructed :/
             Counselor counselor = new Counselor(counselorFirstName, counselorLastName, counselorDOB, counselorAddress, CEContact, counselorRestrictions, counselorUsername, counselorPassword);
             
-            Cabin cabin = new Cabin(maxAge,minAge,counselorUUID,counselor,session);
-            
+            Cabin cabin = new Cabin(maxAgeINT,minAgeINT,counselorUUID,counselor,sessionINT);
+            cabinAL.add(cabin);
 
            }
         } catch (FileNotFoundException e) {
@@ -276,6 +279,7 @@ public class DataReader {
         ArrayList<Cabin> cabins = DataReader.getAllCabins();
 
         for(Cabin cabin : cabins){
+            cabin.fillCabin();
             System.out.println(cabin);
         }
     }
