@@ -8,7 +8,7 @@
 			"LastName": "Baker",
 			"counselorDOB" : "04/04/1999",
 			"address" : "455 cupcake drive",
-
+	
 			"emergencyContact":{
 				"FirstName": "Mary",
 				"LastName" : "Baker", 
@@ -16,26 +16,26 @@
 				"Address": "455 Cupcake drive"
 			},
 			"restrictions" : "none",
-			"UUID" : "UUID here"
+			"UUID" : "8d7ddf9b-7534-482c-ae25-3160c72d3124"
 		},
 	    "minAge":5,
 		"maxAge":9,
 	    "children": ["jimmy donahue", "ford lakes", "bob donovan", "daniel finger", "david beets", "jeff brooks", "sam chives", "baker daniels"],
 		"schedule": " ",
 		"session" : 1,
-		"UUID": ""
+		"UUID": "07cff32b-b578-4dd3-88d0-5101c4ab3467"
 		
 	},
     {
         "cabinNumber": 2,
 		"counselor": {
-			"username": "username here",
-			"password" : "password here",
+			"username": "alib1",
+			"password" : "dollarbill",
 			"FirstName": "Alicia",
 			"LastName": "Bill",
 			"counselorDOB" : "02/22/2002",
 			"address" : "123 jackson drive ",
-
+	
 			"emergencyContact":{
 				"FirstName": "phil",
 				"LastName" : "Bill", 
@@ -43,14 +43,14 @@
 				"Address": "123 jackson drive"
 			},
 			"restrictions" : "none",
-			"UUID" : "UUID here"
+			"UUID" : "5c8ed81e-d8e0-4fe3-b610-bed326ba3752"
 		},
 	    "minAge":7,
 		"maxAge":9,
 	    "children": ["jenny donahue", "annie lakes", "susie donovan", "annabelle samuels", "destiny beets", "sam brooks", "sally chives", "gabby daniels"],
 		"schedule" : " ",
 		"session" : 1,
-		"UUID": ""
+		"UUID": "f27a35b3-273a-4549-9da9-53495be40959"
     },
 	{
         "cabinNumber": 3,
@@ -61,7 +61,7 @@
 			"LastName": "Gonzalez",
 			"counselorDOB" : "05/12/2000",
 			"address" : "343 Belair blvd",
-
+	
 			"emergencyContact":{
 				"FirstName": "Vivian",
 				"LastName" : "Banks", 
@@ -69,14 +69,14 @@
 				"Address": "343 belair blvd"
 			},
 			"restrictions" : "gulten free",
-			"UUID" : "UUID here"
+			"UUID" : "e070e932-8852-4af2-a969-6e459a2a4618"
 		},
 	    "minAge":5,
 		"maxAge":7,
 	    "children": ["jenny donahue", "annie lakes", "susie donovan", "annabelle samuels", "destiny beets", "sam brooks", "sally chives", "gabby daniels"],
 		"schedule" : " ",
 		"session" : 3,
-		"UUID": ""
+		"UUID": "f7d947fe-6fb0-41b7-8455-58b645c82867"
     },
 	{
         "cabinNumber": 4,
@@ -87,7 +87,7 @@
 			"LastName": "Copper",
 			"counselorDOB" : "11/02/2003",
 			"address" : "1432 flowers rd",
-
+	
 			"emergencyContact":{
 				"FirstName": "Rose",
 				"LastName" : "Copper", 
@@ -95,14 +95,14 @@
 				"Address": "1432 flowers drive"
 			},
 			"restrictions" : "peanut allergy",
-			"UUID" : "UUID here"
+			"UUID" : "47fa9be9-a73e-424b-b8f3-f0eb79c032be"
 		},
 	    "minAge":12,
 		"maxAge":14,
 	    "children": ["jenny donahue", "annie lakes", "susie donovan", "annabelle samuels", "destiny beets", "sam brooks", "sally chives", "gabby daniels"],
 		"schedule" : " ",
 		"session" : 1,
-		"UUID": ""
+		"UUID": "f6b4a566-6706-4874-b375-97134454be44"
     },
 	{
         "cabinNumber": 5,
@@ -113,7 +113,7 @@
 			"LastName": "Lee",
 			"counselorDOB" : "05/20/1999",
 			"address" : "999 two notch rd",
-
+	
 			"emergencyContact":{
 				"FirstName": "Bod",
 				"LastName" : "Stroman", 
@@ -121,14 +121,14 @@
 				"Address": "123 point place lane"
 			},
 			"restrictions" : "none",
-			"UUID" : "UUID here"
+			"UUID" : "b1849e10-d852-4d23-b6cf-6fa7930febec"
 		},
 	    "minAge": 15,
 		"maxAge":17,
 	    "children": ["jenny donahue", "annie lakes", "susie donovan", "annabelle samuels", "destiny beets", "sam brooks", "sally chives", "gabby daniels"],
 		"schedule" : " ",
 		"session" : 1,
-		"UUID": ""
+		"UUID": "42f11e45-60f4-4803-a831-81ebe90e3e62"
     },
 	{
         "cabinNumber": 6,
@@ -139,7 +139,7 @@
 			"LastName": "Jones",
 			"counselorDOB" : "09/17/2001",
 			"address" : "123 franklin drive",
-
+	
 			"emergencyContact":{
 				"FirstName": "Manny",
 				"LastName" : "Modern", 
@@ -147,14 +147,14 @@
 				"Address": "434 milli rd"
 			},
 			"restrictions" : "none",
-			"UUID" : "UUID here"
+			"UUID" : "7498960a-d2c7-4ab9-95d0-db8c61b5a403"
 		},
 	    "minAge": 17,
 		"maxAge": 18,
 	    "children": ["jenny donahue", "annie lakes", "susie donovan", "annabelle samuels", "destiny beets", "sam brooks", "sally chives", "gabby daniels"],
 		"schedule" : " ",
 		"session" : 1,
-		"UUID": ""
+		"UUID": "567cc13c-e73a-4722-8ea9-7e9179e8c387"
     }
 
 ]

@@ -27,23 +27,21 @@ public class DataReader {
             String firstName = (String)directorJson.get("firstName");
             String lastName = (String)directorJson.get("lastName");
             JSONObject emergencyContact = (JSONObject)directorJson.get("emergencyContact");
-            String eCFirstName = (String)directorJson.get("firstName");
-            String eCLastName = (String)directorJson.get("lastName");
-            String eCNumber = (String)directorJson.get("number");
-            String eCAddress = (String)directorJson.get("address");
+            String eCFirstName = (String)emergencyContact.get("firstName");
+            String eCLastName = (String)emergencyContact.get("lastName");
+            String eCNumber = (String)emergencyContact.get("number");
+            String eCAddress = (String)emergencyContact.get("address");
             Contact eContact = new Contact(eCFirstName, eCLastName, eCNumber, eCAddress);
-            JSONArray restrictions = (JSONArray)directorJson.get("restrictions");
-            UUID directorID = (UUID)directorJson.get("UUID");
-            ArrayList<String> restrictionsAL = new ArrayList<String>();
+            String restrictions = (String)directorJson.get("restrictions");
+            String directorIDString = (String)directorJson.get("UUID");
+            
+           
 
-            Iterator restrictionsIterator = restrictions.iterator();
+            
 
-            while(restrictionsIterator.hasNext())
-            {
-                restrictionsAL.add((String)restrictionsIterator.next());
-            }
+           
 
-            Director director = new Director(username, password, firstName, lastName, eContact, restrictionsAL, directorID);
+            Director director = new Director(username, password, firstName, lastName, eContact, restrictions);
             directorAL.add(director);
         }
        
@@ -276,7 +274,7 @@ public class DataReader {
     }
 
     public static void main(String[] args){
-        ArrayList<Cabin> cabins = DataReader.getAllCabins();
+        ArrayList<Director> directors = DataReader.getAllDirectors();
 
         for(Cabin cabin : cabins){
             cabin.fillCabin();

@@ -18,7 +18,7 @@ this.director=director;
 this.counselorcollection = counselorcollection;
 }
 
-public User login(String username,String password){
+public User login(){
     while (true){
     if (user.login() ==false)
     {
@@ -47,7 +47,7 @@ public User signUp(){
         String number= keyboard.nextLine();
         System.out.println("what is your address");
         String address = keyboard.nextLine();
-        parent = new Parent(address, address, firstName, lastName, email, number, address, null, null);
+        parent = new Parent(address, address, firstName, lastName, email, number, address, null);
         parent.addParent(firstName, lastName, email, number,address);
         System.out.println("How many children would you like to register?");
         int numOfKids =  keyboard.nextInt();
