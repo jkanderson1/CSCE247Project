@@ -120,7 +120,7 @@ public class DataReader {
     
 
     }
-    public ArrayList<Cabin> getAllCabins(){
+    public static ArrayList<Cabin> getAllCabins(){
 
         ArrayList<Cabin> cabinAL = new ArrayList<Cabin>();
         try {
@@ -273,10 +273,10 @@ public class DataReader {
     }
 
     public static void main(String[] args){
-        ArrayList<Child> children = DataReader.getAllChildren();
+        ArrayList<Cabin> cabins = DataReader.getAllCabins();
 
-        for(Child child : children){
-            System.out.println(child);
+        for(Cabin cabin : cabins){
+            System.out.println(cabin);
         }
     }
 
