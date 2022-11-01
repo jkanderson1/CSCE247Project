@@ -15,14 +15,14 @@ public ChildCollection child;
 public CounselorCollection counselor;
 public CabinCollection cabins;
 
-public Director(String username, String password, String firstName, String lastName, Contact emergencyContact, String restrictions, UUID uuid)
+public Director(String username, String password, String firstName, String lastName, Contact emergencyContact, String restrictions)
 {
     super(username, password);
     this.firstName = firstName;
     this.lastName = lastName; 
     this.emergencyContact = emergencyContact; 
     this.restrictions = restrictions; 
-    this.directorID = uuid;
+    
 }
     /*
      * A static method that generates a UUID randomly
@@ -75,6 +75,10 @@ public ArrayList getRestrictions()
 }
 public UUID getDirectorID() {
     return this.directorID;
+}
+public String toString()
+{
+    return this.firstName+" "+this.lastName+" "+ this.emergencyContact+" "+this.restrictions;
 }
 
 }
