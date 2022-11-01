@@ -3,6 +3,9 @@ public enum Activities {
     Breakfast,
     Lunch,
     Dinner,
+
+    //
+    
     ArtsandCrafts,
     KickBall,
     FlagFootball,
