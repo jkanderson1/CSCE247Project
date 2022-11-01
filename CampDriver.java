@@ -37,7 +37,7 @@ public class CampDriver{
             facade.signUp();
         }
         else if (option ==3){
-            user.login();
+            facade.login();
         }
         else if (option==4){
             System.out.println("GoodBye, have a sunny day!");

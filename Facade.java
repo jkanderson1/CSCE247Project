@@ -18,7 +18,7 @@ this.director=director;
 this.counselorcollection = counselorcollection;
 }
 
-public User login(String username,String password){
+public User login(){
     while (true){
     if (user.login() ==false)
     {

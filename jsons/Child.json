@@ -62,12 +62,13 @@
         ] ,
 
         "pediatrician": {
+            
             "FirstName" :"First Name Here",
             "LastName" : "Last Name Here",
             "Number" : "Number Here",
             "Address" : "Address Here"
         },
-        "UUID": ""
+        "UUID": "b1b091d1-0359-4922-8a1d-d4486b04a336"
     },
     {
         "childFirstName":"May",
@@ -83,9 +84,14 @@
                 "Address": "123 sunset blv"
             }
         ] ,
-        "pediatrician": "Dr.fixx",
-        "pediatricianNumber": "1234567890",
-        "UUID": ""
+        "pediatrician":{
+            "firstName":"Dennis",
+            "lastName" :"fixx",
+            "Number": "8036451234",
+            "Address": "123 moore blv"
+
+        }, 
+        "UUID": "cfbef394-5c87-426f-8502-1666c32b27b8"
     },
     {
         "childFirstName":"Luna",
@@ -101,9 +107,16 @@
                 "Address": "3523 longroad drive"
             }
         ] ,
+        "pediatrician":{
+            "firstName":"Dennis",
+            "lastName" :"fixx",
+            "Number": "8036451234",
+            "Address": "123 moore blv"
+
+        }, 
         "pediatrician": "Dr manning",
         "pediatricianNumber": "1234567890",
-        "UUID": ""
+        "UUID": "2a27b573-dd5c-407c-82da-c42a47b29b59"
     },
     {
         "childFirstName":"jose",
@@ -119,9 +132,16 @@
                 "Address": "2341 miami rd"
             }
         ] ,
+        "pediatrician":{
+            "firstName":"Dennis",
+            "lastName" :"fixx",
+            "Number": "8036451234",
+            "Address": "123 moore blv"
+
+        }, 
         "pediatrician": "Dr miami",
         "pediatricianNumber": "1234567890",
-        "UUID": ""
+        "UUID": "2840829b-06df-469a-9a8a-8d94857e9826"
     },
     {
         "childFirstName":"Maurice",
@@ -137,9 +157,16 @@
                 "Address": "1122 moments rd"
             }
         ] ,
+        "pediatrician":{
+            "firstName":"Dennis",
+            "lastName" :"fixx",
+            "Number": "8036451234",
+            "Address": "123 moore blv"
+
+        }, 
         "pediatrician": "Dr Keefe",
         "pediatricianNumber": "1234567890",
-        "UUID": ""
+        "UUID": "133d5ab8-2e49-4748-ba6f-fae1dc3307be"
     },
     {
         "childFirstName":"Felix",
@@ -155,9 +182,16 @@
                 "Address": "999 brothers lane"
             }
         ] ,
+        "pediatrician":{
+            "firstName":"Dennis",
+            "lastName" :"fixx",
+            "Number": "8036451234",
+            "Address": "123 moore blv"
+
+        }, 
         "pediatrician": "Dr Sanchez",
         "pediatricianNumber": "1234567890",
-        "UUID": ""
+        "UUID": "e5d0f91b-2064-40cd-9aa8-fa8f03242566"
     },
     {
         "childFirstName":"Cruella",
@@ -173,9 +207,16 @@
                 "Address": "123 williams road"
             }
         ] ,
+        "pediatrician":{
+            "firstName":"Dennis",
+            "lastName" :"fixx",
+            "Number": "8036451234",
+            "Address": "123 moore blv"
+
+        }, 
         "pediatrician": "Dr williams",
         "pediatricianNumber": "1234567890",
-        "UUID": ""
+        "UUID": "9cbdc567-2fcf-4de6-bdbd-4fae993c16bc"
     },
     {
         "childFirstName":"Catalina",
@@ -191,9 +232,16 @@
                 "Address": "333 courts road"
             }
         ] ,
+        "pediatrician":{
+            "firstName":"Dennis",
+            "lastName" :"fixx",
+            "Number": "8036451234",
+            "Address": "123 moore blv"
+
+        }, 
         "pediatrician": "Dr Castro",
         "pediatricianNumber": "1234567890",
-        "UUID": ""
+        "UUID": "3bd87d4f-5e12-4d60-9650-1a429e1724c6"
     },
     {
         "childFirstName":"Owen",
@@ -209,9 +257,16 @@
                 "Address": "343 johnson rd"
             }
         ] ,
+        "pediatrician":{
+            "firstName":"Dennis",
+            "lastName" :"fixx",
+            "Number": "8036451234",
+            "Address": "123 moore blv"
+
+        }, 
         "pediatrician": "Dr Ovist",
         "pediatricianNumber": "1234567890",
-        "UUID": ""
+        "UUID": "6429a4de-094f-4648-834c-61343dd264b8"
     },
     {
         "childFirstName":"Kristina",
@@ -227,9 +282,16 @@
                 "Address": "656 eastmont dr"
             }
         ] ,
+        "pediatrician":{
+            "firstName":"Dennis",
+            "lastName" :"fixx",
+            "Number": "8036451234",
+            "Address": "123 moore blv"
+
+        }, 
         "pediatrician": "Dr coleman",
         "pediatricianNumber": "1234567890",
-        "UUID": ""
+        "UUID": "c30ae1fd-062f-45b7-9258-f1c56644a1e4"
     },
     {
         "childFirstName":"Leif",
@@ -245,9 +307,16 @@
                 "Address": "123 whisty lane"
             }
         ] ,
+        "pediatrician":{
+            "firstName":"Dennis",
+            "lastName" :"fixx",
+            "Number": "8036451234",
+            "Address": "123 moore blv"
+
+        }, 
         "pediatrician": "Dr Lee",
         "pediatricianNumber": "1234567890",
-        "UUID": ""
+        "UUID": "4979c3c4-4c3d-4db1-a08d-e84edd253257"
     },
     {
         "childFirstName":"Sophia",
@@ -263,9 +332,16 @@
                 "Address": "222 parklane rd"
             }
         ] ,
+        "pediatrician":{
+            "firstName":"Dennis",
+            "lastName" :"fixx",
+            "Number": "8036451234",
+            "Address": "123 moore blv"
+
+        }, 
         "pediatrician": "Dr Greg",
         "pediatricianNumber": "1234567890",
-        "UUID": ""
+        "UUID": "d892f2b5-79d9-41e9-b507-5756c8bf4fde"
     },
     {
         "childFirstName":"Ariana",
@@ -281,9 +357,16 @@
                 "Address": "777 baker rd"
             }
         ] ,
+        "pediatrician":{
+            "firstName":"Dennis",
+            "lastName" :"fixx",
+            "Number": "8036451234",
+            "Address": "123 moore blv"
+
+        }, 
         "pediatrician": "Dr fixit",
         "pediatricianNumber": "1234567890",
-        "UUID": ""
+        "UUID": "eec95806-5f31-4aa8-81d2-bb4fb8f1a229"
     },
     {
         "childFirstName":"Emir",
@@ -299,9 +382,16 @@
                 "Address": "556 momoas rd"
             }
         ] ,
+        "pediatrician":{
+            "firstName":"Dennis",
+            "lastName" :"fixx",
+            "Number": "8036451234",
+            "Address": "123 moore blv"
+
+        }, 
         "pediatrician": "Dr Gallo",
         "pediatricianNumber": "1234567890",
-        "UUID": ""
+        "UUID": "2faa9d41-c0fe-487d-81e8-9b0917ae4959"
     },
     {
         "childFirstName":"Scarlett",
@@ -317,9 +407,16 @@
                 "Address": "121 Market lane"
             }
         ] ,
+        "pediatrician":{
+            "firstName":"Dennis",
+            "lastName" :"fixx",
+            "Number": "8036451234",
+            "Address": "123 moore blv"
+
+        }, 
         "pediatrician": "Dr Walsh",
         "pediatricianNumber": "1234567890",
-        "UUID": ""
+        "UUID": "66bdb77f-bf7b-4a53-8653-38d91e47ebde"
     },
     {
         "childFirstName":"Ramona",
@@ -335,9 +432,16 @@
                 "Address": "888 guyfury road"
             }
         ] ,
+        "pediatrician":{
+            "firstName":"Dennis",
+            "lastName" :"fixx",
+            "Number": "8036451234",
+            "Address": "123 moore blv"
+
+        }, 
         "pediatrician": "Dr sue",
         "pediatricianNumber": "1234567890",
-        "UUID": ""
+        "UUID": "8daaa5af-2dcc-4da3-883d-07cf4ba1ccf4"
     },
     {
         "childFirstName":"Lulu",
@@ -353,8 +457,15 @@
                 "Address": "212 bobnyjones rd"
             }
         ] ,
+        "pediatrician":{
+            "firstName":"Dennis",
+            "lastName" :"fixx",
+            "Number": "8036451234",
+            "Address": "123 moore blv"
+
+        }, 
         "pediatrician": "Dr Harick",
         "pediatricianNumber": "1234567890",
-        "UUID": ""
+        "UUID": "67a61ca5-37c7-4393-bffc-531336962748"
     }
 ]
