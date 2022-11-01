@@ -18,8 +18,7 @@
 			"restrictions" : "none",
 			"UUID" : "8d7ddf9b-7534-482c-ae25-3160c72d3124"
 		},
-	    "ageGroup": "7-8",
-	    "minAge": 5,
+	    "minAge":5,
 		"maxAge":9,
 	    "children": ["jimmy donahue", "ford lakes", "bob donovan", "daniel finger", "david beets", "jeff brooks", "sam chives", "baker daniels"],
 		"schedule": " ",
@@ -46,7 +45,8 @@
 			"restrictions" : "none",
 			"UUID" : "5c8ed81e-d8e0-4fe3-b610-bed326ba3752"
 		},
-	    "ageGroup": "9-10",
+	    "minAge":7,
+		"maxAge":9,
 	    "children": ["jenny donahue", "annie lakes", "susie donovan", "annabelle samuels", "destiny beets", "sam brooks", "sally chives", "gabby daniels"],
 		"schedule" : " ",
 		"session" : 1,
@@ -71,7 +71,8 @@
 			"restrictions" : "gulten free",
 			"UUID" : "e070e932-8852-4af2-a969-6e459a2a4618"
 		},
-	    "ageGroup": "11-12",
+	    "minAge":5,
+		"maxAge":7,
 	    "children": ["jenny donahue", "annie lakes", "susie donovan", "annabelle samuels", "destiny beets", "sam brooks", "sally chives", "gabby daniels"],
 		"schedule" : " ",
 		"session" : 3,
@@ -96,7 +97,8 @@
 			"restrictions" : "peanut allergy",
 			"UUID" : "47fa9be9-a73e-424b-b8f3-f0eb79c032be"
 		},
-	    "ageGroup": "13-14",
+	    "minAge":12,
+		"maxAge":14,
 	    "children": ["jenny donahue", "annie lakes", "susie donovan", "annabelle samuels", "destiny beets", "sam brooks", "sally chives", "gabby daniels"],
 		"schedule" : " ",
 		"session" : 1,
@@ -121,7 +123,8 @@
 			"restrictions" : "none",
 			"UUID" : "b1849e10-d852-4d23-b6cf-6fa7930febec"
 		},
-	    "ageGroup": "15-16",
+	    "minAge": 15,
+		"maxAge":17,
 	    "children": ["jenny donahue", "annie lakes", "susie donovan", "annabelle samuels", "destiny beets", "sam brooks", "sally chives", "gabby daniels"],
 		"schedule" : " ",
 		"session" : 1,
@@ -146,7 +149,8 @@
 			"restrictions" : "none",
 			"UUID" : "7498960a-d2c7-4ab9-95d0-db8c61b5a403"
 		},
-	    "ageGroup": "17-18",
+	    "minAge": 17,
+		"maxAge": 18,
 	    "children": ["jenny donahue", "annie lakes", "susie donovan", "annabelle samuels", "destiny beets", "sam brooks", "sally chives", "gabby daniels"],
 		"schedule" : " ",
 		"session" : 1,

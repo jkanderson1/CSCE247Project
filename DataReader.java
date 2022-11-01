@@ -32,18 +32,15 @@ public class DataReader {
             String eCNumber = (String)directorJson.get("number");
             String eCAddress = (String)directorJson.get("address");
             Contact eContact = new Contact(eCFirstName, eCLastName, eCNumber, eCAddress);
-            JSONArray restrictions = (JSONArray)directorJson.get("restrictions");
+            String restrictions = (String)directorJson.get("restrictions");
             UUID directorID = (UUID)directorJson.get("UUID");
-            ArrayList<String> restrictionsAL = new ArrayList<String>();
+           
 
-            Iterator restrictionsIterator = restrictions.iterator();
+            
 
-            while(restrictionsIterator.hasNext())
-            {
-                restrictionsAL.add((String)restrictionsIterator.next());
-            }
+           
 
-            Director director = new Director(username, password, firstName, lastName, eContact, restrictionsAL, directorID);
+            Director director = new Director(username, password, firstName, lastName, eContact, restrictions, directorID);
             directorAL.add(director);
         }
        
@@ -80,7 +77,7 @@ public class DataReader {
             //loop through the json array
      
             
-                JSONObject EContactJson = (JSONObject)childJson.get("emergencyContact");
+                JSONObject EContactJson = (JSONObject)childJson.get("emergencyContacts");
                 String FirstName = (String)EContactJson.get("FirstName");
                 String LastName = (String)EContactJson.get("LastName");
                 String Number = (String)EContactJson.get("Number");
@@ -120,7 +117,7 @@ public class DataReader {
     
 
     }
-    public ArrayList<Cabin> getAllCabins(){
+    public static ArrayList<Cabin> getAllCabins(){
 
         ArrayList<Cabin> cabinAL = new ArrayList<Cabin>();
         try {
@@ -152,8 +149,8 @@ public class DataReader {
             
             String counselorRestrictions = (String)counselorJson.get("restrictions");
             String counselorUUID = (String)counselorJson.get("UUID");
-            int maxAge= (int)cabinJson.get("maxAge");
-            int minAge =(int)cabinJson.get("minAge");
+            int minAge=(int)cabinJson.get("minAge");
+            int maxAge=(int)cabinJson.get("maxAge");
           
             int session = (int)cabinJson.get("session");
             //String ageGroup = (String)cabinJson.get("ageGroup");
@@ -162,6 +159,7 @@ public class DataReader {
             Counselor counselor = new Counselor(counselorFirstName, counselorLastName, counselorDOB, counselorAddress, CEContact, counselorRestrictions, counselorUsername, counselorPassword);
             
             Cabin cabin = new Cabin(maxAge,minAge,counselorUUID,counselor,session);
+            cabinAL.add(cabin);
             
 
            }
@@ -273,10 +271,10 @@ public class DataReader {
     }
 
     public static void main(String[] args){
-        ArrayList<Child> children = DataReader.getAllChildren();
+        ArrayList<Director> directors = DataReader.getAllDirectors();
 
-        for(Child child : children){
-            System.out.println(child);
+        for(Director director : directors){
+            System.out.println(director);
         }
     }
 

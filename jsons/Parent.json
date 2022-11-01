@@ -55,11 +55,8 @@
                         "lastName" :"ken",
                         "Number": " 1234567781",
                         "Address": " 123 malibu dr"
-                    }
-                 ,
-        
+                    },  
                 "pediatrician": {
-                    
                     "FirstName" :"skipper",
                     "LastName" : "ron",
                     "Number" : "8032345678",
@@ -212,11 +209,11 @@
         "UUID": "cf0a5a6f-7752-45f1-9018-067e8d4eacd0"
     },
     {
-        "username": " ",
-        "password": " ",
-        "firstName": " ",
-        "lastName": " ",
-        "email": "davis.l@gmail.com",
+        "username": " lennylen",
+        "password": " motzart21",
+        "firstName": " lenny",
+        "lastName": "motzart ",
+        "email": "motzart.l@gmail.com",
         "number": "5556667777",
         "address": "123 Hoover St",
         "children": [

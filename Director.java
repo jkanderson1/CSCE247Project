@@ -9,13 +9,13 @@ private String password;
 private String firstName;
 private String lastName; 
 private Contact emergencyContact; 
-private ArrayList<String> restrictions; 
+private String restrictions; 
 public UUID directorID;
 public ChildCollection child;
 public CounselorCollection counselor;
 public CabinCollection cabins;
 
-public Director(String username, String password, String firstName, String lastName, Contact emergencyContact, ArrayList<String> restrictions, UUID uuid)
+public Director(String username, String password, String firstName, String lastName, Contact emergencyContact, String restrictions, UUID uuid)
 {
     super(username, password);
     this.firstName = firstName;
