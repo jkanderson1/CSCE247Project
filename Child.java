@@ -13,46 +13,7 @@ public class Child {
     public UUID childID;
 
 
-    //might remove restrictions;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
+    //might remove restrictions;  
     public Child(String childFirstname, String childLastname, String childDOB, String restriction, Contact emergencyContact, Contact Pediatrician){
         this.childFirstname = childFirstname;
         this.childLastname = childLastname;

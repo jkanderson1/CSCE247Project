@@ -25,41 +25,6 @@ public class User {
         System.out.println("Input password");
         this.password = keyboard.nextLine();
         ArrayList<Parent> parents = DataReader.getAllParents();
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-
-
-
-
-   
-   
-   
         ArrayList<Director> directors = DataReader.getAllDirectors();
         ArrayList<Counselor> counselors = DataReader.getAllCounselors();
         for (int i = 0; i > parents.size();i++) {
