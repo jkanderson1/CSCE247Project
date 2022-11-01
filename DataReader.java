@@ -265,14 +265,14 @@ public class DataReader {
         return counselorAL;
     }
 
-    public static void main(String[] args){
+    /*public static void main(String[] args){
         ArrayList<Director> directors = DataReader.getAllDirectors();
 
         for(Cabin cabin : cabins){
             cabin.fillCabin();
             System.out.println(cabin);
         }
-    }
+    }*/
 
 }
 
