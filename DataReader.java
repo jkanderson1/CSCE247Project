@@ -33,13 +33,6 @@ public class DataReader {
             Contact eContact = new Contact(eCFirstName, eCLastName, eCNumber, eCAddress);
             String restrictions = (String)directorJson.get("restrictions");
             String directorIDString = (String)directorJson.get("UUID");
-            
-           
-
-            
-
-           
-
             Director director = new Director(username, password, firstName, lastName, eContact, restrictions);
             directorAL.add(director);
         }
