@@ -2,6 +2,7 @@
 import java.time.Period;
 import java.util.ArrayList;
 import java.util.UUID;
+
 public class Child {
     public String childFirstname;
     public String childLastname;
@@ -69,6 +70,23 @@ public class Child {
     public String getUUID()
     {
         return this.childID.toString();
+    }
+
+
+    //method to calculate and return the age of a child
+    public int getAge(){
+        int yearint = Integer.parseInt(childDOB.substring(childDOB.length()-4));
+        int monthint = Integer.parseInt(childDOB.substring(0,2));
+        int dateint = Integer.parseInt(childDOB.substring(3,4));
+        int year = 2022;
+        int childAge = year - yearint;
+        if(monthint < 11){
+            childAge++;
+        }
+        if(monthint == 11 && dateint < 3 ){
+            childAge++;
+        }
+        return childAge;
     }
 
 

@@ -6,8 +6,12 @@
         "LastName":"Last Name Here",
         "counselorDOB":"MM/DD/YYYY",
         "address": "Insert Address",
-        "emergencyContact": "Emergency Contact",
-        "emergencyContactNumber": 1234567890,
+        "emergencyContact":{
+            "FirstName": "FirstName here",
+            "LastName" : "LastName here", 
+            "Number": "Number here",
+            "Address": "Address here"
+        },
         "restrictions": "Insert Restriction Enum Here",
         "UUID": ""
     },
@@ -18,8 +22,12 @@
         "LastName":"Flour",
         "counselorDOB":"12/27/1999",
         "address": "2089 Bluebird Rd",
-        "emergencyContact": "Harry Jobs",
-        "emergencyContactNumber": 1234567890,
+        "emergencyContact":{
+            "FirstName": "FirstName here",
+            "LastName" : "LastName here", 
+            "Number": "Number here",
+            "Address": "Address here"
+        },
         "restrictions": "None",
         "UUID": ""
     },
@@ -30,8 +38,12 @@
         "LastName":"Jones",
         "Age":"08/19/1996",
         "address": "...",
-        "emergencyContact": "Curt Cobain",
-        "eCNumber": 1234567890,
+        "emergencyContact":{
+            "FirstName": "FirstName here",
+            "LastName" : "LastName here", 
+            "Number": "Number here",
+            "Address": "Address here"
+        },
         "restrictions": "NoSwim",
         "UUID": ""
     },

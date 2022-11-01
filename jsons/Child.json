@@ -5,14 +5,14 @@
         "childAge":"MM/DD/YYYY",
         "restrictions": "Insert Restrictions",
         
-        "emergencyContacts":[
+        "emergencyContacts":
             {
                 "firstName":"First Name Here",
                 "lastName" :"Last Name Here",
                 "Number": "Number Here",
                 "Address": "Address Here"
             }
-        ] ,
+        ,
 
         "pediatrician": {
             "FirstName" :"First Name Here",
@@ -29,14 +29,14 @@
         "childAge":"10/07/2007",
         "restrictions": "None",
         
-         "emergencyContacts":[
+         "emergencyContacts":
             {
                 "firstName":"First Name Here",
                 "lastName" :"Last Name Here",
                 "Number": "Number Here",
                 "Address": "Address Here"
             }
-        ] ,
+         ,
 
         "pediatrician": {
             "FirstName" :"First Name Here",
@@ -52,14 +52,14 @@
         "childLastName":"Kennedy",
         "childAge":"03/24/2004",
         "restrictions": "Peanut",
-        "emergencyContacts":[
+        "emergencyContacts":
             {
                 "firstName":"First Name Here",
                 "lastName" :"Last Name Here",
                 "Number": "Number Here",
                 "Address": "Address Here"
             }
-        ] ,
+         ,
 
         "pediatrician": {
             
@@ -76,14 +76,14 @@
         "childAge":"10/15/2009",
         "restrictions": "Lactose intolerance",
         
-        "emergencyContacts":[
+        "emergencyContacts":
             {
                 "firstName":"August",
                 "lastName" :"Mathews",
                 "Number": "8036451234",
                 "Address": "123 sunset blv"
             }
-        ] ,
+         ,
         "pediatrician":{
             "firstName":"Dennis",
             "lastName" :"fixx",
@@ -99,23 +99,21 @@
         "childAge":"09/25/2010",
         "restrictions": "ALlegic to peanuts",
         
-        "emergencyContacts":[
+        "emergencyContacts":
             {
                 "firstName":"mary",
                 "lastName" :"conner",
                 "Number": "8039096886",
                 "Address": "3523 longroad drive"
             }
-        ] ,
+         ,
         "pediatrician":{
-            "firstName":"Dennis",
-            "lastName" :"fixx",
-            "Number": "8036451234",
-            "Address": "123 moore blv"
+            "firstName":"Denny",
+            "lastName" :"manning",
+            "Number": "1234567890",
+            "Address": "123 lefty blv"
 
         }, 
-        "pediatrician": "Dr manning",
-        "pediatricianNumber": "1234567890",
         "UUID": "2a27b573-dd5c-407c-82da-c42a47b29b59"
     },
     {
@@ -124,23 +122,21 @@
         "childAge":"01/01/2008",
         "restrictions": "Choclate allergy",
         
-        "emergencyContacts":[
+        "emergencyContacts":
             {
                 "firstName":"Karesha",
                 "lastName" :"Jackson",
                 "Number": "8748035060",
                 "Address": "2341 miami rd"
             }
-        ] ,
+         ,
         "pediatrician":{
-            "firstName":"Dennis",
-            "lastName" :"fixx",
-            "Number": "8036451234",
-            "Address": "123 moore blv"
+            "firstName":"manny",
+            "lastName" :"miami",
+            "Number": "1234567890",
+            "Address": "123 devine st"
 
         }, 
-        "pediatrician": "Dr miami",
-        "pediatricianNumber": "1234567890",
         "UUID": "2840829b-06df-469a-9a8a-8d94857e9826"
     },
     {
@@ -149,23 +145,21 @@
         "childAge":"10/12/2005",
         "restrictions": "none",
         
-        "emergencyContacts":[
+        "emergencyContacts":
             {
                 "firstName":"Karen",
                 "lastName" :"Mccoy",
                 "Number": "8835067799",
                 "Address": "1122 moments rd"
             }
-        ] ,
+         ,
         "pediatrician":{
-            "firstName":"Dennis",
-            "lastName" :"fixx",
-            "Number": "8036451234",
-            "Address": "123 moore blv"
+            "firstName":"moe",
+            "lastName" :"Keefe",
+            "Number": "1234567890",
+            "Address": "123 morning blv"
 
         }, 
-        "pediatrician": "Dr Keefe",
-        "pediatricianNumber": "1234567890",
         "UUID": "133d5ab8-2e49-4748-ba6f-fae1dc3307be"
     },
     {
@@ -174,23 +168,21 @@
         "childAge":"05/05/2010",
         "restrictions": "none",
         
-        "emergencyContacts":[
+        "emergencyContacts":
             {
                 "firstName":"Henry",
                 "lastName" :"Lass",
                 "Number": "8034557676",
                 "Address": "999 brothers lane"
             }
-        ] ,
+         ,
         "pediatrician":{
-            "firstName":"Dennis",
-            "lastName" :"fixx",
-            "Number": "8036451234",
-            "Address": "123 moore blv"
+            "firstName":"mateo",
+            "lastName" :"Sanchez",
+            "Number": "1234567890",
+            "Address": "123 milkyway blv"
 
         }, 
-        "pediatrician": "Dr Sanchez",
-        "pediatricianNumber": "1234567890",
         "UUID": "e5d0f91b-2064-40cd-9aa8-fa8f03242566"
     },
     {
@@ -199,23 +191,21 @@
         "childAge":"04/22/2012",
         "restrictions": "none",
         
-        "emergencyContacts":[
+        "emergencyContacts":
             {
                 "firstName":"Narmala",
                 "lastName" :"Charles",
                 "Number": "8034467788",
                 "Address": "123 williams road"
             }
-        ] ,
+         ,
         "pediatrician":{
-            "firstName":"Dennis",
-            "lastName" :"fixx",
-            "Number": "8036451234",
-            "Address": "123 moore blv"
+            "firstName":"Dre",
+            "lastName" :"williams",
+            "Number": "1234567890",
+            "Address": "123 mali blv"
 
         }, 
-        "pediatrician": "Dr williams",
-        "pediatricianNumber": "1234567890",
         "UUID": "9cbdc567-2fcf-4de6-bdbd-4fae993c16bc"
     },
     {
@@ -224,23 +214,21 @@
         "childAge":"07/26/2009",
         "restrictions": "Insert Restrictions",
         
-        "emergencyContacts":[
+        "emergencyContacts":
             {
                 "firstName":"Marina",
                 "lastName" :"Vasquez",
                 "Number": "8034451234",
                 "Address": "333 courts road"
             }
-        ] ,
+         ,
         "pediatrician":{
-            "firstName":"Dennis",
-            "lastName" :"fixx",
+            "firstName":"river",
+            "lastName" :"Castro",
             "Number": "8036451234",
-            "Address": "123 moore blv"
+            "Address": "123 george blv"
 
-        }, 
-        "pediatrician": "Dr Castro",
-        "pediatricianNumber": "1234567890",
+        },
         "UUID": "3bd87d4f-5e12-4d60-9650-1a429e1724c6"
     },
     {
@@ -249,23 +237,21 @@
         "childAge":"02/22/2011",
         "restrictions": "no swim",
         
-        "emergencyContacts":[
+        "emergencyContacts":
             {
                 "firstName":"Brandi",
                 "lastName" :"Johnson",
                 "Number": "3228038787",
                 "Address": "343 johnson rd"
             }
-        ] ,
+         ,
         "pediatrician":{
-            "firstName":"Dennis",
-            "lastName" :"fixx",
+            "firstName":"angel",
+            "lastName" :"Ovist",
             "Number": "8036451234",
-            "Address": "123 moore blv"
+            "Address": "123 cherryhill blv"
 
         }, 
-        "pediatrician": "Dr Ovist",
-        "pediatricianNumber": "1234567890",
         "UUID": "6429a4de-094f-4648-834c-61343dd264b8"
     },
     {
@@ -274,23 +260,21 @@
         "childAge":"11/22/2014",
         "restrictions": "none",
         
-        "emergencyContacts":[
+        "emergencyContacts":
             {
                 "firstName":"Christan",
                 "lastName" :"Myers",
                 "Number": "8031219999",
                 "Address": "656 eastmont dr"
             }
-        ] ,
+         ,
         "pediatrician":{
-            "firstName":"Dennis",
-            "lastName" :"fixx",
-            "Number": "8036451234",
-            "Address": "123 moore blv"
+            "firstName":"mary",
+            "lastName" :"coleman",
+            "Number": "8036459872",
+            "Address": "123 lamb blv"
 
         }, 
-        "pediatrician": "Dr coleman",
-        "pediatricianNumber": "1234567890",
         "UUID": "c30ae1fd-062f-45b7-9258-f1c56644a1e4"
     },
     {
@@ -299,23 +283,21 @@
         "childAge":"12/02/2010",
         "restrictions": "none",
         
-        "emergencyContacts":[
+        "emergencyContacts":
             {
                 "firstName":"James",
                 "lastName" :"Jones",
                 "Number": "8034045699",
                 "Address": "123 whisty lane"
             }
-        ] ,
+         ,
         "pediatrician":{
-            "firstName":"Dennis",
-            "lastName" :"fixx",
+            "firstName":"beyonce",
+            "lastName" :"lee",
             "Number": "8036451234",
             "Address": "123 moore blv"
 
         }, 
-        "pediatrician": "Dr Lee",
-        "pediatricianNumber": "1234567890",
         "UUID": "4979c3c4-4c3d-4db1-a08d-e84edd253257"
     },
     {
@@ -324,23 +306,21 @@
         "childAge":"12/03/2009",
         "restrictions": "none",
         
-        "emergencyContacts":[
+        "emergencyContacts":
             {
                 "firstName":"Dwayne",
                 "lastName" :"Park",
                 "Number": "8034457897",
                 "Address": "222 parklane rd"
             }
-        ] ,
+        ,
         "pediatrician":{
-            "firstName":"Dennis",
-            "lastName" :"fixx",
+            "firstName":"sally",
+            "lastName" :"greg",
             "Number": "8036451234",
-            "Address": "123 moore blv"
+            "Address": "123 summer blv"
 
         }, 
-        "pediatrician": "Dr Greg",
-        "pediatricianNumber": "1234567890",
         "UUID": "d892f2b5-79d9-41e9-b507-5756c8bf4fde"
     },
     {
@@ -349,23 +329,21 @@
         "childAge":"10/05/2006",
         "restrictions": "none",
         
-        "emergencyContacts":[
+        "emergencyContacts":
             {
                 "firstName":"Junior",
                 "lastName" :"Jenner",
                 "Number": "8066667070",
                 "Address": "777 baker rd"
             }
-        ] ,
+         ,
         "pediatrician":{
-            "firstName":"Dennis",
-            "lastName" :"fixx",
+            "firstName":"Daffy",
+            "lastName" :"fixit",
             "Number": "8036451234",
-            "Address": "123 moore blv"
+            "Address": "123 rabbit rd"
 
         }, 
-        "pediatrician": "Dr fixit",
-        "pediatricianNumber": "1234567890",
         "UUID": "eec95806-5f31-4aa8-81d2-bb4fb8f1a229"
     },
     {
@@ -374,23 +352,21 @@
         "childAge":"05/14/2009",
         "restrictions": "can not swim",
         
-        "emergencyContacts":[
+        "emergencyContacts":
             {
                 "firstName":"Liam",
                 "lastName" :"Tomas",
                 "Number": "8435661212",
                 "Address": "556 momoas rd"
             }
-        ] ,
+         ,
         "pediatrician":{
-            "firstName":"Dennis",
-            "lastName" :"fixx",
+            "firstName":"Tyrone",
+            "lastName" :"Gallo",
             "Number": "8036451234",
-            "Address": "123 moore blv"
+            "Address": "123 erica blv"
 
         }, 
-        "pediatrician": "Dr Gallo",
-        "pediatricianNumber": "1234567890",
         "UUID": "2faa9d41-c0fe-487d-81e8-9b0917ae4959"
     },
     {
@@ -399,23 +375,21 @@
         "childAge":"11/13/2010",
         "restrictions": "none",
         
-        "emergencyContacts":[
+        "emergencyContacts":
             {
                 "firstName":"Pauly",
                 "lastName" :"Dee",
                 "Number": "6568003435",
                 "Address": "121 Market lane"
             }
-        ] ,
+         ,
         "pediatrician":{
-            "firstName":"Dennis",
-            "lastName" :"fixx",
+            "firstName":"macy",
+            "lastName" :"walsh",
             "Number": "8036451234",
-            "Address": "123 moore blv"
+            "Address": "123 grape blv"
 
         }, 
-        "pediatrician": "Dr Walsh",
-        "pediatricianNumber": "1234567890",
         "UUID": "66bdb77f-bf7b-4a53-8653-38d91e47ebde"
     },
     {
@@ -424,23 +398,21 @@
         "childAge":"08/15/2012",
         "restrictions": "none",
         
-        "emergencyContacts":[
+        "emergencyContacts":
             {
                 "firstName":"Jimmy",
                 "lastName" :"Johns",
                 "Number": "8034445657",
                 "Address": "888 guyfury road"
             }
-        ] ,
+         ,
         "pediatrician":{
-            "firstName":"Dennis",
-            "lastName" :"fixx",
+            "firstName":"catarina",
+            "lastName" :"sue",
             "Number": "8036451234",
-            "Address": "123 moore blv"
+            "Address": "123 marysue blv"
 
-        }, 
-        "pediatrician": "Dr sue",
-        "pediatricianNumber": "1234567890",
+        },
         "UUID": "8daaa5af-2dcc-4da3-883d-07cf4ba1ccf4"
     },
     {
@@ -449,23 +421,21 @@
         "childAge":"02/02/2015",
         "restrictions": "Gluten free",
         
-        "emergencyContacts":[
+        "emergencyContacts":
             {
                 "firstName":"Jim bob",
                 "lastName" :"Dugger",
                 "Number": "7764543423",
                 "Address": "212 bobnyjones rd"
             }
-        ] ,
+         ,
         "pediatrician":{
-            "firstName":"Dennis",
-            "lastName" :"fixx",
+            "firstName":"jimi",
+            "lastName" :"hendrix",
             "Number": "8036451234",
-            "Address": "123 moore blv"
+            "Address": "123 rock rd"
 
-        }, 
-        "pediatrician": "Dr Harick",
-        "pediatricianNumber": "1234567890",
+        },
         "UUID": "67a61ca5-37c7-4393-bffc-531336962748"
     }
 ]

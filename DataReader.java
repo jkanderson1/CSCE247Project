@@ -1,8 +1,5 @@
 //written by Walker Bowen
 import java.util.ArrayList;
-
-import javax.xml.catalog.GroupEntry.PreferType;
-
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
@@ -29,19 +26,24 @@ public class DataReader {
             String password = (String)directorJson.get("password");
             String firstName = (String)directorJson.get("firstName");
             String lastName = (String)directorJson.get("lastName");
-            Contact emergencyContact = (Contact)directorJson.get("emergencyContact");
+            JSONObject emergencyContact = (JSONObject)directorJson.get("emergencyContact");
+            String eCFirstName = (String)directorJson.get("firstName");
+            String eCLastName = (String)directorJson.get("lastName");
+            String eCNumber = (String)directorJson.get("number");
+            String eCAddress = (String)directorJson.get("address");
+            Contact eContact = new Contact(eCFirstName, eCLastName, eCNumber, eCAddress);
             JSONArray restrictions = (JSONArray)directorJson.get("restrictions");
             UUID directorID = (UUID)directorJson.get("UUID");
             ArrayList<String> restrictionsAL = new ArrayList<String>();
 
-            Iterator iterator = restrictions.iterator();
+            Iterator restrictionsIterator = restrictions.iterator();
 
-            while(iterator.hasNext())
+            while(restrictionsIterator.hasNext())
             {
-                restrictionsAL.add((String)iterator.next());
+                restrictionsAL.add((String)restrictionsIterator.next());
             }
 
-            Director director = new Director(username, password, firstName, lastName, emergencyContact, restrictionsAL, directorID);
+            Director director = new Director(username, password, firstName, lastName, eContact, restrictionsAL, directorID);
             directorAL.add(director);
         }
        
@@ -73,34 +75,33 @@ public class DataReader {
             String childAge = (String)childJson.get("childAge");
             String restrictions = (String)childJson.get("restrictions");
             String address = (String)childJson.get("address");
-            JSONArray emergencyContactsJSONArray = (JSONArray)childJson.get("emergencyContact");
-            Iterator iterator = emergencyContactsJSONArray.iterator();
+            
+            
             //loop through the json array
-            Contact[] ContactArray = new Contact[emergencyContactsJSONArray.size()];
-            for (int o =0; i<ContactArray.length; o++)
-            {
-                JSONObject EContactJson = (JSONObject) emergencyContactsJSONArray.get(o);
+     
+            
+                JSONObject EContactJson = (JSONObject)childJson.get("emergencyContact");
                 String FirstName = (String)EContactJson.get("FirstName");
                 String LastName = (String)EContactJson.get("LastName");
                 String Number = (String)EContactJson.get("Number");
                 String Address = (String)EContactJson.get("Address");
                 Contact Econtact = new Contact(FirstName, LastName, Number, Address);
-                ContactArray[o] = Econtact;
+                
 
                 
-            }
-            JSONObject pediatricianJson = (JSONObject) childJson.get("pediatrician");
-            String FirstName = (String) pediatricianJson.get("FirstName");
-            String LastName = (String) pediatricianJson.get("LastName");
-            String Number = (String) pediatricianJson.get("Number");
-            String Address = (String) pediatricianJson.get("Address");
             
-            Contact pediatrician = new Contact (FirstName, LastName, Number, Address);
+            JSONObject pediatricianJson = (JSONObject) childJson.get("pediatrician");
+            String pFirstName = (String) pediatricianJson.get("FirstName");
+            String pLastName = (String) pediatricianJson.get("LastName");
+            String pNumber = (String) pediatricianJson.get("Number");
+            String pAddress = (String) pediatricianJson.get("Address");
+            
+            Contact pediatrician = new Contact (pFirstName, pLastName, pNumber, pAddress);
             //read each json object
 
             //read the properties of each json object
             //build a Contact object
-            Child child = new Child(childFirstName, childLastName, childAge, restrictions, ContactArray, pediatrician);
+            Child child = new Child(childFirstName, childLastName, childAge, restrictions, Econtact, pediatrician);
             childAL.add(child);
 
            }
@@ -158,12 +159,10 @@ public class DataReader {
             //String ageGroup = (String)cabinJson.get("ageGroup");
             
             //Cabin and Counselor both need eachother to be constructed :/
-            Cabin cabin = new Cabin(maxAge,minAge,counselorUUID,null,session);
-            Counselor counselor = new Counselor(cabin, counselorFirstName, counselorLastName, counselorDOB, counselorAddress, CEContact, counselorRestrictions, counselorUsername, counselorPassword);
-            cabin.setCounselor(counselor);
-            Counselor counselorV2 = new Counselor(cabin, counselorFirstName, counselorLastName, counselorDOB, counselorAddress, CEContact, counselorRestrictions, counselorUsername, counselorPassword);
-            Cabin cabinV2 = new Cabin(maxAge, minAge, counselorUUID, counselorV2, session);
-            cabinAL.add(cabinV2);
+            Counselor counselor = new Counselor(counselorFirstName, counselorLastName, counselorDOB, counselorAddress, CEContact, counselorRestrictions, counselorUsername, counselorPassword);
+            
+            Cabin cabin = new Cabin(maxAge,minAge,counselorUUID,counselor,session);
+            
 
            }
         } catch (FileNotFoundException e) {
@@ -195,6 +194,7 @@ public class DataReader {
                 String number = (String)parentJson.get("number");
                 String address = (String)parentJson.get("address");
                 JSONArray childJSONArray = (JSONArray) parentJson.get("children");
+                ArrayList<Child> childrenAL = new ArrayList<Child>();
                 for(int o = 0; o<childJSONArray.size(); o++)
                 {
                     JSONObject childJson = (JSONObject)childJSONArray.get(o);
@@ -216,8 +216,10 @@ public class DataReader {
                     String pNumber = (String)pediatricianJson.get("Number");
                     String pAddress = (String)pediatricianJson.get("Address");
                     Contact pediatrician = new Contact(pFirstName, pLastName, pNumber, pAddress);
+                    Child child = new Child(childFirstName, childLastName, childAge, childRestrictions, Econtact, pediatrician);
+
                 }
-                parentAL.add(new Parent(username, password, firstName, lastName, email, number, address, childrenAL, parentID));
+                parentAL.add(new Parent(username, password, firstName, lastName, email, number, address, childrenAL));
             }
         } catch (FileNotFoundException e1) {
             // TODO Auto-generated catch block
@@ -247,10 +249,15 @@ public class DataReader {
                 String lastName = (String)counselorJson.get("LastName");
                 String CounselorDOB = (String)counselorJson.get("CounselorDOB");
                 String address = (String)counselorJson.get("address");
-                Contact emergencyContact = (Contact)counselorJson.get("emergencyContact");
+                JSONObject emergencyContact = (JSONObject)counselorJson.get("emergencyContact");
+                String ECFirstName = (String)emergencyContact.get("FirstName");
+                String ECLastName = (String)emergencyContact.get("LastName");
+                String ECNumber = (String)emergencyContact.get("Number");
+                String ECAddress = (String)emergencyContact.get("Address");
+                Contact counselorEContact = new Contact(ECFirstName, ECLastName, ECNumber, ECAddress);
                 //String emergencyContactNumber = (String)counselorJson.get("emergencyContactNumber");
                 String restrictions = (String)counselorJson.get("restrictions");
-                counselorAL.add(new Counselor(cabin, firstName, lastName, CounselorDOB, address, emergencyContact, restrictions, username, password));
+                counselorAL.add(new Counselor(firstName, lastName, CounselorDOB, address, counselorEContact, restrictions, username, password));
             }
         } catch (FileNotFoundException e1) {
             // TODO Auto-generated catch block
