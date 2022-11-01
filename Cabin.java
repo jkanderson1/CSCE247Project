@@ -27,6 +27,23 @@ public class Cabin {
     public void fillCabin(){
         if(Child.getAge >= minAge && Child.getAge <= maxAge)
         {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             children.add(Child);
         }
     }

@@ -60,10 +60,311 @@
                     "Address": "Address here"
                 },
                 
-                "UUID": "2a943c4b-2df2-4a0c-a225-3640d27a9a06"
+                "UUID": ""
             }
         ],
         
         "UUID": ""
-    }
+    },
+    {
+        "username": "levdav",
+        "password": "davis123",
+        "firstName": "Levaeh ",
+        "lastName": "Davis",
+        "email": "davis.l@gmail.com",
+        "number": "5556667777",
+        "address": "123 Hoover St",
+        "children": [
+            {
+                "childFirstName":"Nutella ",
+                "childLastName":"Davis",
+                "childAge":"10/02/2006",
+                "restrictions": "Gluten free",
+                
+                "emergencyContacts":
+                    {
+                        "firstName":"Neil",
+                        "lastName" :"Davis",
+                        "Number": "7764543423",
+                        "Address": "212 bobnyjones rd"
+                    }
+                 ,
+                "pediatrician":{
+                    "firstName":"Megan",
+                    "lastName" :" Martin",
+                    "Number": " 803-455-6767",
+                    "Address": "Palmetto Pediatrics"
+        
+                },
+                "UUID": "2c29d6cd-4cb1-41cf-b460-b35d8ffda80f"
+            }
+        ],
+        "UUID": "928ab09c-9eec-45f9-9bba-8a2cd63ef9a4"
+    },
+    {
+        "username": "
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        ",
+        "password": " ",
+        "firstName": " ",
+        "lastName": " ",
+        "email": "davis.l@gmail.com",
+        "number": "5556667777",
+        "address": "123 Hoover St",
+        "children": [
+            {
+                "childFirstName":" ",
+                "childLastName":"",
+                "childAge":"10/02/2006",
+                "restrictions": "",
+                
+                "emergencyContacts":
+                    {
+                        "firstName":"",
+                        "lastName" :"",
+                        "Number": "7764543423",
+                        "Address": "212 bobnyjones rd"
+                    }
+                 ,
+                "pediatrician":{
+                    "firstName":"",
+                    "lastName" :" ",
+                    "Number": " 803-455-6767",
+                    "Address": ""
+        
+                },
+                "UUID": ""
+            }
+        ],
+        "UUID": ""
+    },
+    {
+        "username": " ",
+        "password": " ",
+        "firstName": " ",
+        "lastName": " ",
+        "email": "davis.l@gmail.com",
+        "number": "5556667777",
+        "address": "123 Hoover St",
+        "children": [
+            {
+                "childFirstName":" ",
+                "childLastName":"",
+                "childAge":"10/02/2006",
+                "restrictions": "",
+                
+                "emergencyContacts":
+                    {
+                        "firstName":"",
+                        "lastName" :"",
+                        "Number": "7764543423",
+                        "Address": "212 bobnyjones rd"
+                    }
+                 ,
+                "pediatrician":{
+                    "firstName":"",
+                    "lastName" :" ",
+                    "Number": " 803-455-6767",
+                    "Address": ""
+        
+                },
+                "UUID": ""
+            }
+        ],
+        "UUID": ""
+    },
+    {
+        "username": " ",
+        "password": " ",
+        "firstName": " ",
+        "lastName": " ",
+        "email": "davis.l@gmail.com",
+        "number": "5556667777",
+        "address": "123 Hoover St",
+        "children": [
+            {
+                "childFirstName":" ",
+                "childLastName":"",
+                "childAge":"10/02/2006",
+                "restrictions": "",
+                
+                "emergencyContacts":
+                    {
+                        "firstName":"",
+                        "lastName" :"",
+                        "Number": "7764543423",
+                        "Address": "212 bobnyjones rd"
+                    }
+                 ,
+                "pediatrician":{
+                    "firstName":"",
+                    "lastName" :" ",
+                    "Number": " 803-455-6767",
+                    "Address": ""
+        
+                },
+                "UUID": ""
+            }
+        ],
+        "UUID": ""
+    },
+    {
+        "username": " ",
+        "password": " ",
+        "firstName": " ",
+        "lastName": " ",
+        "email": "davis.l@gmail.com",
+        "number": "5556667777",
+        "address": "123 Hoover St",
+        "children": [
+            {
+                "childFirstName":" ",
+                "childLastName":"",
+                "childAge":"10/02/2006",
+                "restrictions": "",
+                
+                "emergencyContacts":
+                    {
+                        "firstName":"",
+                        "lastName" :"",
+                        "Number": "7764543423",
+                        "Address": "212 bobnyjones rd"
+                    }
+                 ,
+                "pediatrician":{
+                    "firstName":"",
+                    "lastName" :" ",
+                    "Number": " 803-455-6767",
+                    "Address": ""
+        
+                },
+                "UUID": ""
+            }
+        ],
+        "UUID": ""
+    },
+    {
+        "username": " ",
+        "password": " ",
+        "firstName": " ",
+        "lastName": " ",
+        "email": "davis.l@gmail.com",
+        "number": "5556667777",
+        "address": "123 Hoover St",
+        "children": [
+            {
+                "childFirstName":" ",
+                "childLastName":"",
+                "childAge":"10/02/2006",
+                "restrictions": "",
+                
+                "emergencyContacts":
+                    {
+                        "firstName":"",
+                        "lastName" :"",
+                        "Number": "7764543423",
+                        "Address": "212 bobnyjones rd"
+                    }
+                 ,
+                "pediatrician":{
+                    "firstName":"",
+                    "lastName" :" ",
+                    "Number": " 803-455-6767",
+                    "Address": ""
+        
+                },
+                "UUID": ""
+            }
+        ],
+        "UUID": ""
+    },    {
+        "username": " ",
+        "password": " ",
+        "firstName": " ",
+        "lastName": " ",
+        "email": "davis.l@gmail.com",
+        "number": "5556667777",
+        "address": "123 Hoover St",
+        "children": [
+            {
+                "childFirstName":" ",
+                "childLastName":"",
+                "childAge":"10/02/2006",
+                "restrictions": "",
+                
+                "emergencyContacts":
+                    {
+                        "firstName":"",
+                        "lastName" :"",
+                        "Number": "7764543423",
+                        "Address": "212 bobnyjones rd"
+                    }
+                 ,
+                "pediatrician":{
+                    "firstName":"",
+                    "lastName" :" ",
+                    "Number": " 803-455-6767",
+                    "Address": ""
+        
+                },
+                "UUID": ""
+            }
+        ],
+        "UUID": ""
+    },    {
+        "username": " ",
+        "password": " ",
+        "firstName": " ",
+        "lastName": " ",
+        "email": "davis.l@gmail.com",
+        "number": "5556667777",
+        "address": "123 Hoover St",
+        "children": [
+            {
+                "childFirstName":" ",
+                "childLastName":"",
+                "childAge":"10/02/2006",
+                "restrictions": "",
+                
+                "emergencyContacts":
+                    {
+                        "firstName":"",
+                        "lastName" :"",
+                        "Number": "7764543423",
+                        "Address": "212 bobnyjones rd"
+                    }
+                 ,
+                "pediatrician":{
+                    "firstName":"",
+                    "lastName" :" ",
+                    "Number": " 803-455-6767",
+                    "Address": ""
+        
+                },
+                "UUID": ""
+            }
+        ],
+        "UUID": ""
+    },
 ]

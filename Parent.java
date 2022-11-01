@@ -29,7 +29,23 @@ private  ArrayList<Parent> parent;
 private Parent parents;
  public ArrayList<Parent> addParent(String firstName, String lastName, String email, String number, String address){
    parent.add(parents);
-   return parent;
+   return parent
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   ;
 }
 
 public String getfirstname(){
