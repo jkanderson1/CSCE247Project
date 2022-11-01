@@ -149,8 +149,8 @@ public class DataReader {
             
             String counselorRestrictions = (String)counselorJson.get("restrictions");
             String counselorUUID = (String)counselorJson.get("UUID");
-            int maxAge= (int)cabinJson.get("maxAge");
-            int minAge =(int)cabinJson.get("minAge");
+            int minAge=(int)cabinJson.get("minAge");
+            int maxAge=(int)cabinJson.get("maxAge");
           
             int session = (int)cabinJson.get("session");
             //String ageGroup = (String)cabinJson.get("ageGroup");
