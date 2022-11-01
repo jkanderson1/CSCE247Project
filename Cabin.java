@@ -4,6 +4,7 @@ import java.util.UUID;
 
 public class Cabin {
     public Counselor counselor;
+    public Child child;
     public ArrayList<Child> children;
     public int cabinNumber;
     public int session;
@@ -25,9 +26,9 @@ public class Cabin {
 
 
     public void fillCabin(){
-        if(Child.getAge >= minAge && Child.getAge <= maxAge)
+        if(child.getAge() >= minAge && child.getAge() <= maxAge)
         {
-            children.add(Child);
+            children.add(child);
         }
     }
 
