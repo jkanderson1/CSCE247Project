@@ -31,18 +31,18 @@
         
          "emergencyContacts":
             {
-                "firstName":"First Name Here",
-                "lastName" :"Last Name Here",
-                "Number": "Number Here",
-                "Address": "Address Here"
+                "firstName":"betty",
+                "lastName" :"donahue",
+                "Number": "7983560202",
+                "Address": "123 puff st"
             }
          ,
 
         "pediatrician": {
-            "FirstName" :"First Name Here",
-            "LastName" : "Last Name Here",
-            "Number" : "Number Here",
-            "Address" : "Address Here"
+            "FirstName" :"max",
+            "LastName" : "holder",
+            "Number" : "1237654321",
+            "Address" : "323 docter dr"
         },
         
         "UUID": "92681fb9-a6da-47cb-9df7-80a100dd79f6"
@@ -54,24 +54,21 @@
         "restrictions": "Peanut",
         "emergencyContacts":
             {
-                "firstName":"First Name Here",
-                "lastName" :"Last Name Here",
-                "Number": "Number Here",
-                "Address": "Address Here"
+                "firstName":"barbie",
+                "lastName" :"ken",
+                "Number": " 1234567781",
+                "Address": " 123 malibu dr"
             }
          ,
 
         "pediatrician": {
             
-            "FirstName" :"First Name Here",
-            "LastName" : "Last Name Here",
-            "Number" : "Number Here",
-            "Address" : "Address Here"
+            "FirstName" :"skipper",
+            "LastName" : "ron",
+            "Number" : "8032345678",
+            "Address" : "123 dreamhouse dr"
         },
         "UUID": "b1b091d1-0359-4922-8a1d-d4486b04a336"
-    },
-    {
-
     },
     {
         "childFirstName":"Luna",

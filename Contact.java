@@ -41,4 +41,8 @@ public class Contact {
     {
         return this.contactID.toString();
     }
+
+    public String toString(){
+        return firstname+lastname+number+address+contactID;
+    }
 }

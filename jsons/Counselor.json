@@ -62,11 +62,11 @@
             "Address": "455 Cupcake drive"
         },
         "restrictions" : "none",
-        "UUID" : "UUID here"
+        "UUID" : "8d7ddf9b-7534-482c-ae25-3160c72d3124"
     },
     {
-        "username": "username here",
-        "password" : "password here",
+        "username": "alib1",
+        "password" : "dollarbill",
         "FirstName": "Alicia",
         "LastName": "Bill",
         "counselorDOB" : "02/22/2002",
@@ -79,7 +79,7 @@
             "Address": "123 jackson drive"
         },
         "restrictions" : "none",
-        "UUID" : "UUID here"
+        "UUID" : "5c8ed81e-d8e0-4fe3-b610-bed326ba3752"
     },
     {
         "username": "Kixg",
@@ -96,7 +96,7 @@
             "Address": "343 belair blvd"
         },
         "restrictions" : "gulten free",
-        "UUID" : "UUID here"
+        "UUID" : "e070e932-8852-4af2-a969-6e459a2a4618"
     },
     {
         "username": "dcopper",
@@ -113,7 +113,7 @@
             "Address": "1432 flowers drive"
         },
         "restrictions" : "peanut allergy",
-        "UUID" : "UUID here"
+        "UUID" : "47fa9be9-a73e-424b-b8f3-f0eb79c032be"
     },
     {
         "username": "donlee",
@@ -130,7 +130,7 @@
             "Address": "123 point place lane"
         },
         "restrictions" : "none",
-        "UUID" : "UUID here"
+        "UUID" : "b1849e10-d852-4d23-b6cf-6fa7930febec"
     },
     {
         "username": "ojman",
@@ -147,7 +147,7 @@
             "Address": "434 milli rd"
         },
         "restrictions" : "none",
-        "UUID" : "UUID here"
+        "UUID" : "7498960a-d2c7-4ab9-95d0-db8c61b5a403"
     }
 
 ]
