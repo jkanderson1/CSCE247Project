@@ -18,8 +18,7 @@
 			"restrictions" : "none",
 			"UUID" : "UUID here"
 		},
-	    "ageGroup": "7-8",
-	    "minAge": 5,
+	    "minAge":5,
 		"maxAge":9,
 	    "children": ["jimmy donahue", "ford lakes", "bob donovan", "daniel finger", "david beets", "jeff brooks", "sam chives", "baker daniels"],
 		"schedule": " ",
@@ -46,7 +45,8 @@
 			"restrictions" : "none",
 			"UUID" : "UUID here"
 		},
-	    "ageGroup": "9-10",
+	    "minAge":7,
+		"maxAge":9,
 	    "children": ["jenny donahue", "annie lakes", "susie donovan", "annabelle samuels", "destiny beets", "sam brooks", "sally chives", "gabby daniels"],
 		"schedule" : " ",
 		"session" : 1,
@@ -71,7 +71,8 @@
 			"restrictions" : "gulten free",
 			"UUID" : "UUID here"
 		},
-	    "ageGroup": "11-12",
+	    "minAge":5,
+		"maxAge":7,
 	    "children": ["jenny donahue", "annie lakes", "susie donovan", "annabelle samuels", "destiny beets", "sam brooks", "sally chives", "gabby daniels"],
 		"schedule" : " ",
 		"session" : 3,
@@ -96,7 +97,8 @@
 			"restrictions" : "peanut allergy",
 			"UUID" : "UUID here"
 		},
-	    "ageGroup": "13-14",
+	    "minAge":12,
+		"maxAge":14,
 	    "children": ["jenny donahue", "annie lakes", "susie donovan", "annabelle samuels", "destiny beets", "sam brooks", "sally chives", "gabby daniels"],
 		"schedule" : " ",
 		"session" : 1,
@@ -121,7 +123,8 @@
 			"restrictions" : "none",
 			"UUID" : "UUID here"
 		},
-	    "ageGroup": "15-16",
+	    "minAge": 15,
+		"maxAge":17,
 	    "children": ["jenny donahue", "annie lakes", "susie donovan", "annabelle samuels", "destiny beets", "sam brooks", "sally chives", "gabby daniels"],
 		"schedule" : " ",
 		"session" : 1,
@@ -146,7 +149,8 @@
 			"restrictions" : "none",
 			"UUID" : "UUID here"
 		},
-	    "ageGroup": "17-18",
+	    "minAge": 17,
+		"maxAge": 18,
 	    "children": ["jenny donahue", "annie lakes", "susie donovan", "annabelle samuels", "destiny beets", "sam brooks", "sally chives", "gabby daniels"],
 		"schedule" : " ",
 		"session" : 1,
