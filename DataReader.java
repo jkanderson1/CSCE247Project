@@ -26,20 +26,21 @@ public class DataReader {
             String firstName = (String)directorJson.get("firstName");
             String lastName = (String)directorJson.get("lastName");
             JSONObject emergencyContact = (JSONObject)directorJson.get("emergencyContact");
-            String eCFirstName = (String)directorJson.get("firstName");
-            String eCLastName = (String)directorJson.get("lastName");
-            String eCNumber = (String)directorJson.get("number");
-            String eCAddress = (String)directorJson.get("address");
+            String eCFirstName = (String)emergencyContact.get("firstName");
+            String eCLastName = (String)emergencyContact.get("lastName");
+            String eCNumber = (String)emergencyContact.get("number");
+            String eCAddress = (String)emergencyContact.get("address");
             Contact eContact = new Contact(eCFirstName, eCLastName, eCNumber, eCAddress);
             String restrictions = (String)directorJson.get("restrictions");
-            UUID directorID = (UUID)directorJson.get("UUID");
+            String directorIDString = (String)directorJson.get("UUID");
+            
            
 
             
 
            
 
-            Director director = new Director(username, password, firstName, lastName, eContact, restrictions, directorID);
+            Director director = new Director(username, password, firstName, lastName, eContact, restrictions);
             directorAL.add(director);
         }
        
