@@ -69,7 +69,7 @@ public String getEContactID()
     return this.emergencyContact.contactID.toString();
 
 }
-public ArrayList getRestrictions()
+public String getRestrictions()
 {
     return this.restrictions;
 }

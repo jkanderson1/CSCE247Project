@@ -43,10 +43,7 @@ public class Contact {
     }
 
     public String toString(){
-<<<<<<< HEAD
-        return firstname+lastname+number+address+contactID;
-=======
         return this.firstname+" "+this.lastname+" "+this.number+" "+this.address;
->>>>>>> 5539e3c275337be536791c486a5021abf1267969
+
     }
 }

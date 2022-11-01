@@ -11,16 +11,13 @@ public class Facade {
     public String Password;
     public Scanner keyboard = new Scanner(System.in);
     private String usertype;
-public Facade(User user, ChildCollection kids, CounselorCollection counselorcollection, Director director){
-this.user = user;
-this.kids= kids;
-this.director=director;
-this.counselorcollection = counselorcollection;
-}
+
+    public Facade(){
+    }
 
 public User login(){
     while (true){
-    if (user.login() ==false)
+    if (.login() ==false)
     {
         return null;
     }

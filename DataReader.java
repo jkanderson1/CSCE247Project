@@ -3,7 +3,6 @@ import java.util.ArrayList;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.security.spec.EdDSAParameterSpec;
 import java.util.*;
 import org.json.simple.*;
 import org.json.simple.parser.*;
