@@ -80,7 +80,7 @@ public class DataReader {
             //loop through the json array
      
             
-                JSONObject EContactJson = (JSONObject)childJson.get("emergencyContact");
+                JSONObject EContactJson = (JSONObject)childJson.get("emergencyContacts");
                 String FirstName = (String)EContactJson.get("FirstName");
                 String LastName = (String)EContactJson.get("LastName");
                 String Number = (String)EContactJson.get("Number");
