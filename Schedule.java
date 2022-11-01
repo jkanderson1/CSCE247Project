@@ -5,8 +5,6 @@ import java.util.Random;
 public class Schedule{
     public ArrayList<Activities> ActivitiesAL = new ArrayList<Activities>();
     private HashMap <Days,ArrayList<Activities>>ActivitiesHMap = new HashMap <Days,ArrayList<Activities>>();
-
-   
     public void makeSchedule(){
         Random rand = new Random();
         //creating an arraylist of activities for each day
