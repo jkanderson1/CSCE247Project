@@ -32,18 +32,15 @@ public class DataReader {
             String eCNumber = (String)directorJson.get("number");
             String eCAddress = (String)directorJson.get("address");
             Contact eContact = new Contact(eCFirstName, eCLastName, eCNumber, eCAddress);
-            JSONArray restrictions = (JSONArray)directorJson.get("restrictions");
+            String restrictions = (String)directorJson.get("restrictions");
             UUID directorID = (UUID)directorJson.get("UUID");
-            ArrayList<String> restrictionsAL = new ArrayList<String>();
+           
 
-            Iterator restrictionsIterator = restrictions.iterator();
+            
 
-            while(restrictionsIterator.hasNext())
-            {
-                restrictionsAL.add((String)restrictionsIterator.next());
-            }
+           
 
-            Director director = new Director(username, password, firstName, lastName, eContact, restrictionsAL, directorID);
+            Director director = new Director(username, password, firstName, lastName, eContact, restrictions, directorID);
             directorAL.add(director);
         }
        
@@ -162,6 +159,7 @@ public class DataReader {
             Counselor counselor = new Counselor(counselorFirstName, counselorLastName, counselorDOB, counselorAddress, CEContact, counselorRestrictions, counselorUsername, counselorPassword);
             
             Cabin cabin = new Cabin(maxAge,minAge,counselorUUID,counselor,session);
+            cabinAL.add(cabin);
             
 
            }
@@ -273,10 +271,10 @@ public class DataReader {
     }
 
     public static void main(String[] args){
-        ArrayList<Cabin> cabins = DataReader.getAllCabins();
+        ArrayList<Director> directors = DataReader.getAllDirectors();
 
-        for(Cabin cabin : cabins){
-            System.out.println(cabin);
+        for(Director director : directors){
+            System.out.println(director);
         }
     }
 
