@@ -228,13 +228,8 @@ public JSONObject getDirectorJSON(Director director)
     directorJson.put("firstName", director.getFirstName());
     directorJson.put("lastName", director.getLastName());
     directorJson.put("emergencyContact", director.getEContactID());
-    //making restrictions into a String array
-    String[] restrictionsArray = new String[director.getRestrictions().size()];
-    for (int i = 0; i<restrictionsArray.length; i++)
-    {
-        restrictionsArray[i]= (String) director.getRestrictions().get(i);
-    }
-    directorJson.put("restrictions", restrictionsArray);
+    directorJson.put("restrictions", director.getRestrictions());
+    
     directorJson.put("UUID", director.getDirectorID());
 
     return directorJson;

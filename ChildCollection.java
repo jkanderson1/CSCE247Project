@@ -52,5 +52,13 @@ public class ChildCollection{
         return null;
     }
 
+    /**
+     * @return an ArrayList of children from the ChildCollection class 
+     */
+    public ArrayList<Child> getAllChildren()
+    {
+        return ChildCollection.children;
+    }
+
     
 }
