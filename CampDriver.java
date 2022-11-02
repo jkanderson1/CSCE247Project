@@ -35,11 +35,12 @@ public class CampDriver{
             
         }
         else if (option == 2){
-            facade.signUp();
+            user = facade.signUp();
         }
         else if (option ==3){
-            facade.login();
-            
+            user = facade.login();
+            user.access();
+
         }
         else if (option==4){
             System.out.println("GoodBye, have a sunny day!");
