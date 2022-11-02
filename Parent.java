@@ -37,6 +37,10 @@ public class Parent extends User{
       this.children = children;
       this.parentID = UUID.randomUUID();
    }
+public void access(){
+   
+}
+   
 
    /**
     * to string method that returns the difining strings for a parent
