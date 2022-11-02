@@ -38,6 +38,7 @@ public class Parent extends User{
       this.parentID = UUID.randomUUID();
    }
 public void access(){
+   System.out.pritnln("Welcom parent, what would you like to do?\n 1.");
    
 }
    
