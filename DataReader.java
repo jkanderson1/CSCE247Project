@@ -138,7 +138,7 @@ public class DataReader {
             String counselorDOB = (String)counselorJson.get("counselorDOB");
             String counselorAddress = (String)counselorJson.get("address");
             //making Contact object to put into counselor object
-            JSONObject counselorEcontact = (JSONObject)counselorJson.get("emergencyContact");
+            JSONObject counselorEcontact = (JSONObject)counselorJson.get("emergencyContacts");
             String CEFirstName = (String)counselorEcontact.get("FirstName");
             String CELastName = (String)counselorEcontact.get("LastName");
             String CENumber = (String)counselorEcontact.get("Number");
@@ -206,7 +206,7 @@ public class DataReader {
                     String childAge = (String)childJson.get("childAge");
                     String childRestrictions = (String)childJson.get("restrictions");
                     //emergencyContact Object
-                    JSONObject eContactJson = (JSONObject)childJson.get("emergencyContact");
+                    JSONObject eContactJson = (JSONObject)childJson.get("emergencyContacts");
                     String EContactFirstName = (String)eContactJson.get("FirstName");
                     String EContactLastName = (String)eContactJson.get("LastName");
                     String EContactNumber = (String)eContactJson.get("Number");

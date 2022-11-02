@@ -24,56 +24,53 @@ public class User {
         username = keyboard.nextLine();
         System.out.println("Input password");
         password = keyboard.nextLine();
+        User retUser = new User(username, password);
         ArrayList<Parent> parents = DataReader.getAllParents();
         ArrayList<Director> directors = DataReader.getAllDirectors();
         ArrayList<Counselor> counselors = DataReader.getAllCounselors();
         while(true){
-        for (int i = 0; i < parents.size(); i++) {
-            if (username.equals(parents.get(i).getUsername())){
-                System.out.println("Attemping parent login... \n  Input Password");    
-                if (password.equals(parents.get(i).getPassword())){
-                    System.out.println("Successful Login! Welcome "+username);
-                    return User;
+            for(int i = 0;i<parents.size();i++) {   
+                if (parents.get(i).getUsername().equals(username)){        
+                    System.out.println("Attemping parent login... \n  Input Password");    
+                    for(int j = 0;j<parents.size();i++) {
+                        if (parents.get(i).getPassword().equals(password)){
+                            System.out.println("Successful Login! Welcome "+username);
+                            return retUser;
+                        }
+                    }
+                    System.out.println("Incorrect Password");
+                    return null;
                 }
-                System.out.println("Incorrect Password");
-                false;
             }
-            if (username.equals(directors.get(i).getUsername())){
-                System.out.println("Attemping director login... \n  Input Password");    
-                if (password.equals(directors.get(i).getPassword())){
-                    System.out.println("Successful Login! Welcome "+username);
-                    true;
+            for(int i = 0;i<directors.size();i++){    
+                if (directors.get(i).getUsername().equals(username)){
+                    System.out.println("Attemping director login... \n  Input Password");
+                    for(int j = 0;j<directors.size();i++){    
+                        if (directors.get(i).getPassword().equals(password)){
+                            System.out.println("Successful Login! Welcome "+username);
+                            return retUser;
+                        }
+                    }
+                    System.out.println("Incorrect Password");
+                    return null;
                 }
-                System.out.println("Incorrect Password");
-                return false;
             }
-            if (username.equals(counselors.get(i).getUsername())){
-                System.out.println("Attemping counselor login... \n  Input Password");    
-                if (password.equals(counselors.get(i).getUsername())){
-                    System.out.println("Successful Login! Welcome "+username);
-                    return true;
+            for(int i = 0;i<counselors.size();i++){            
+                if (counselors.get(i).getUsername().equals(username)){
+                    System.out.println("Attemping counselor login... \n  Input Password");
+                    for(int j = 0;j<counselors.size();j++)    
+                        if (counselors.get(j).getPassword().equals(password)){
+                            System.out.println("Successful Login! Welcome "+username);
+                            return retUser;
+                        }
+                    System.out.println("Incorrect Password");
+                    return null;
                 }
-                System.out.println("Incorrect Password");
-                return false;
             }
-            else{
-                System.out.println("Incorrect Username! Try again?");
-                return false;
-            }
+            System.out.println("Incorrect Username! Press 0 to try again");
+            if (keyboard.nextLine().equals("0"))
+                continue;
+            return null;
         }
-        return false;
-    }
-}
-
-
-    public static User login1(){
-        System.out.println("Input username");
-        username = keyboard.nextLine();
-        System.out.println("Input password");
-        password = keyboard.nextLine();
-        ArrayList<Parent> parents = DataReader.getAllParents();
-        ArrayList<Director> directors = DataReader.getAllDirectors();
-        ArrayList<Counselor> counselors = DataReader.getAllCounselors();
-
     }
 }
