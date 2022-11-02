@@ -246,14 +246,25 @@ public String getEContactID()
 
 }
 
-
+/**
+ * get restrictions method that returns the list of resctrictions
+ * @return return the list of restrictions
+ */
 public String getRestrictions()
 {
     return this.restrictions;
 }
+/**
+ * get director UUID method
+ * @return returns the user UUID
+ */
 public UUID getDirectorID() {
     return this.directorID;
 }
+/**
+ * to string that returns the defining strings for the director
+ * return first name, last name, emergency contact, and restrictions strings
+ */
 public String toString()
 {
     return this.firstName+" "+this.lastName+" "+ this.emergencyContact+" "+this.restrictions;
