@@ -9,6 +9,7 @@ public class CampDriver{
     static ArrayList<Parent> parents;
     private static Facade facade = new Facade();
     private static  User user = new User(null, null);
+    User ourUser;
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);
         // cabins = DataReader.getAllCabins();
@@ -34,11 +35,12 @@ public class CampDriver{
             
         }
         else if (option == 2){
-            facade.signUp();
+            user = facade.signUp();
         }
         else if (option ==3){
-            facade.login(     
-            );
+            user = facade.login();
+            user.access();
+
         }
         else if (option==4){
             System.out.println("GoodBye, have a sunny day!");
