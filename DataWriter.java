@@ -185,7 +185,7 @@ public void cabinToTXT(Cabin cabin)
         PrintWriter out = new PrintWriter("C:\\Users\\walke\\Documents\\CSCE247Project\\counselor.txt");
         out.println("Counselor:");
         out.println(cabin.counselor.toString());
-        out.println("children");
+        out.println("Children:");
         ArrayList<Child> childList = cabin.collection.getAllChildren();
         for(int i = 0; i<childList.size(); i++)
         {
