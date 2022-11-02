@@ -96,7 +96,7 @@ public void access(){
             System.out.println("Input the session number for this cabin");
             int sessionNum = keyboard.nextInt();
             for(int i = 0;i<cabins.cabinList().size();i++){
-                if(cabins.cabinList().get(i).getNumber()==cabNum){
+                if(cabins.cabinList().get(i).getCabinNumber()==cabNum){
                     System.out.println("Cabin Number match!");
                     for(int j = 0;j<cabins.cabinList().size();j++){
                         if(cabins.cabinList().get(j).getSession()==sessionNum){

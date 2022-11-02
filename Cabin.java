@@ -104,7 +104,7 @@ public class Cabin extends User{
     public int getSession(){
         return this.session;
     }
-    public Schedule getschedule(){
+    public Schedule getSchedule(){
         return this.schedule;
     }
 }
