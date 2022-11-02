@@ -59,6 +59,13 @@ public class ChildCollection{
     {
         return ChildCollection.children;
     }
+    public String toString(){
+        String ret = "";
+        for(int i = 0;i<children.size();i++){
+            ret = ret+children.get(i);
+        }
+        return ret;
+    }
 
     
 }
