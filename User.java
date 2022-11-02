@@ -37,6 +37,7 @@ public class User {
     public String toString(){
         return this.username+" "+this.password+" ";
     }
+    public void access(){}
     public static void main(String[] args) {
         System.out.println(UUID.randomUUID());
     }
