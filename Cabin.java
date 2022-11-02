@@ -98,6 +98,13 @@ public class Cabin extends User{
         return "Counselor: "+this.counselor+" Cabin Number: "+this.cabinNumber+" Session: "+this.session+" Children: "+this.children.toString();
     }
 
-    
-
+    public int getCabinNumber(){
+        return this.cabinNumber;
+    }
+    public int getSession(){
+        return this.session;
+    }
+    public Schedule getschedule(){
+        return this.schedule;
+    }
 }
