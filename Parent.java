@@ -38,8 +38,67 @@ public class Parent extends User{
       this.parentID = UUID.randomUUID();
    }
 public void access(){
-   System.out.pritnln("Welcom parent, what would you like to do?\n 1.");
-   
+   while(true){
+   System.out.println("Welcome "+firstName+", what would you like to do?\n"+
+                     "0 to register a child\n"+
+                     "1 to view registered children\n"+
+                     "2 to view camp/session information"+
+                     "3 to logout");
+   if(keyboard.nextInt()==0){
+      System.out.println("How many children would you like to register?");
+        int numOfKids =  keyboard.nextInt();
+        for (int i= 0; i < numOfKids; i++){
+            System.out.println("what is the child's first name ");
+            String childFirstname = keyboard.nextLine();
+            System.out.println("what is the child's last name ");
+            String childLastname  = keyboard.nextLine();
+            System.out.println("what is the child's date of birth ");
+            String childDOB = keyboard.nextLine();
+            System.out.println("Does the child have any dietary or physical restictions?");
+            String restriction = keyboard.nextLine(); 
+            System.out.println("what is the child's pediatricians information ");
+            System.out.println("what is the pediatrician's first name");
+            String firstname = keyboard.nextLine();
+            System.out.println("what is the pediatrician's last name");
+            String lastname = keyboard.nextLine();
+            System.out.println("what is the pediatricians phone number");
+            String Number = keyboard.nextLine();
+            System.out.println("what is the pediatricians address");
+            String Address = keyboard.nextLine();
+            Contact Pediatrician = new Contact( firstname, lastname, Number, Address);
+            System.out.println("what is the child's emergency contacts name information ");
+            System.out.println("what is their first name");
+            String efirstname = keyboard.nextLine();
+            System.out.println("what is their last name");
+            String elastname = keyboard.nextLine();
+            System.out.println("what is their phone number");
+            String eNumber = keyboard.nextLine();
+            System.out.println("what is their address");
+            String eAddress = keyboard.nextLine();
+            Contact EmergencyContact = new Contact(efirstname, elastname, eNumber, eAddress);
+            children.add(new Child(childFirstname, childLastname, childDOB, restriction,EmergencyContact,Pediatrician));
+            
+        }
+   }
+   if(keyboard.nextInt()==1){
+      System.out.println(children.toString());
+   }
+   if(keyboard.nextInt()==2){
+      System.out.println("******Camp Infromation*****"+
+      "\nOur camp is located in sunny South Carolina"+
+      "\nOur camp runs from August to July"+
+      "\nHave 8 camp sessions each with different Themes"+
+      "\nSession 1: Hawaiin\nSession 2: Rockstars\nSession 3: Ninja Warriors\nSession 4: Willy Wonka\nSession 5: Hollywood\nSession 6: Legos\nSession 7: Cops and Robbers\nSession 8: Shark Tank\nSession 9: Smores"+
+      "\n The activities avaible for your child are listed as the following"+
+      "\nTeen Activities: "+
+      "\nArchery\nSwimming\nSoccer\nFootball \nBasketBall\nCooking\nMountainBiking\nPottery \nHorseRiding \nBungeeJumping\nZipLine\nObstacleCourse \nHiking \nWoodShop\nCanoeing\n"+
+      "Child Activities: "+
+      "\nArtsandCrafts\nKickBall\nFlagFootball\nScavengerHunt\nBikeRiding\nSandbox\nBirdWatching\nRoastingMarshmallows\nDanceParty\nCaptureTheFlag\nPettingZoo\nShowAndTell\nIceCreamParty\nLaserTag ");
+   }
+   if(keyboard.nextInt()==3){
+      break;
+   }
+}
 }
    
 
