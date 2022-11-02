@@ -52,7 +52,6 @@ public class Cabin extends User{
         this.counselor = counselor;
     }
 
-    //make maximum amount of children per cabin and keep track of each child
 
 
     /**

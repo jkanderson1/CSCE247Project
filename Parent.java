@@ -20,6 +20,9 @@ public class Parent extends User{
       this.children = children;
       this.parentID = UUID.randomUUID();
    }
+public void access(){
+   
+}
    
 public String toString(){
    return firstName+" "+lastName+email+number+address;
