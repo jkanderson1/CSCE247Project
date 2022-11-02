@@ -17,13 +17,7 @@ public class Facade {
     }
 
 public User login(){
-    while (true){
-    if (user.login() ==false)
-    {
-        return null;
-    }
-        return user;
-    }
+    return user.login();
 }
 public User signUp(){
   
