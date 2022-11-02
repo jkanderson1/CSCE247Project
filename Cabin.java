@@ -36,6 +36,31 @@ public class Cabin extends User{
         this.session = session;
     }
 
+    /**
+     * access method that allows the user to view specific cabin details
+     */
+    public void access(){
+        while(true){
+        System.out.println("Welcome "+counselor.getFirstName()+" Select a number for an option:"+
+                            "\n0 for Cabin Roster (Simple)"+
+                            "\n1 for Cabin Details Printout (Complex)"+
+                            "\n2 for Cabin Schedule"+
+                            "\n3 for logout");
+        if(keyboard.nextInt()==0){
+            System.out.println(collection.toString());
+        }
+        else if(keyboard.nextInt()==1){
+            DataWriter.cabinToTXT(this);
+        }
+        else if(keyboard.nextInt()==2){
+            System.out.println(schedule.toString());
+        }
+        else if(keyboard.nextInt()==3){
+            return;
+        }
+    }
+    }
+
 
     /**
      * fill cabin method which puts the specified amount of children into the cabin

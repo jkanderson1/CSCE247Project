@@ -178,7 +178,7 @@ public JSONObject getCounselorJSON(Counselor counselor)
     return counselorJson;
 }
 
-public void cabinToTXT(Cabin cabin)
+public static void cabinToTXT(Cabin cabin)
 {
     File counselorFile = new File("C:\\Users\\walke\\Documents\\CSCE247Project\\counselor.txt");
     try {
