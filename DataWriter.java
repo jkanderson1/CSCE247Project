@@ -1,6 +1,9 @@
 //Written by Walker Bowen
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -173,6 +176,19 @@ public JSONObject getCounselorJSON(Counselor counselor)
     counselorJson.put("UUID", counselor.getCounselorID().toString());
 
     return counselorJson;
+}
+
+public void cabinToTXT(Cabin cabin)
+{
+    File counselorFile = new File("C:\\Users\\walke\\Documents\\CSCE247Project\\counselor.txt");
+    try {
+        PrintWriter out = new PrintWriter("C:\\Users\\walke\\Documents\\counselor.txt");
+
+    } catch (FileNotFoundException e) {
+        // TODO Auto-generated catch block
+        e.printStackTrace();
+    }
+
 }
 
 public static boolean saveAllDirectors(ArrayList<Director> directors)
