@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.UUID;
+import java.util.Scanner;
 
 /**
  * Director class that stores all the properties of the director
@@ -7,6 +8,7 @@ import java.util.UUID;
 public class Director extends User{
 private ArrayList<Child> children;
 private ArrayList<String> parentname;
+public static Scanner keyboard = new Scanner(System.in);
 
 private String firstName;
 private String lastName; 
@@ -52,9 +54,10 @@ public Director(String username, String password, String firstName, String lastN
  * Takes in user input and runs the appropriate methods for the input
  */
 public void access(){
-    System.out.println("welcome director what would you like to do?\n 1. view all cabins\n 2.view all campers\n 3. view all counselors \n4. set session themes\n5.view schedule by cabin and session\n 6. log out");
-    int option = keyboard.nextInt();
+
     while(true){
+        System.out.println("welcome director what would you like to do?\n 1. view all cabins\n 2.view all campers\n 3. view all counselors \n4. set session themes\n5.view schedule by cabin and session\n 6. log out");
+        int option = keyboard.nextInt();
         if (option==1){
            cabins.cabinList();
         }
@@ -65,6 +68,7 @@ public void access(){
             counselor.getAllCounselors();;
         }
         else if (option==4){
+            keyboard.nextLine();
             System.out.println("what is the theme for session 1 ");
             String theme1 = keyboard.nextLine();
             System.out.println("what is the theme for session 2 ");
@@ -83,7 +87,8 @@ public void access(){
             String theme8 = keyboard.nextLine();
             System.out.println("what is the theme for session 9 ");
             String theme9 = keyboard.nextLine();
-            break;
+            
+        
         }
         else if (option== 5){
             System.out.println("Input the cabin number you'd like to search");
@@ -108,7 +113,7 @@ public void access(){
         else {
             System.out.println("invalid number, try again.");
         }
-        break;
+        
     }
 }
 
