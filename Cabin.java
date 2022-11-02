@@ -36,6 +36,9 @@ public class Cabin extends User{
         this.session = session;
     }
 
+    /**
+     * access method that allows the user to view specific cabin details
+     */
     public void access(){
         while(true){
         System.out.println("Welcome "+counselor.getFirstName()+" Select a number for an option:"+
