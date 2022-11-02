@@ -1,3 +1,4 @@
+import java.util.Scanner;
 import java.util.UUID;
 /**
  * Counselor class that extends user and stores all the properties of the User of type counselor
@@ -41,6 +42,7 @@ public Counselor(String firstName, String lastName, String couselorDOB, String a
     this.EmergencyContact = EmergencyContact;
     this.restriction = restriction;
     this.counselorID = setUUID();
+    
 }
 
 /**

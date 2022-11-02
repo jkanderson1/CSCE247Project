@@ -1,6 +1,9 @@
 import java.util.ArrayList;
 import java.util.UUID;
 
+/**
+ * Director class that stores all the properties of the director
+ */
 public class Director extends User{
 private ArrayList<Child> children;
 private ArrayList<String> parentname;
@@ -23,6 +26,15 @@ private String theme7;
 private String theme8;
 private String theme9;
 
+/**
+ * Creating director that has the following parameters
+ * @param username director username
+ * @param password director password
+ * @param firstName director first name
+ * @param lastName director last name
+ * @param emergencyContact director emergency contact
+ * @param restrictions director restrictions
+ */
 public Director(String username, String password, String firstName, String lastName, Contact emergencyContact, String restrictions)
 {
     super(username, password);
@@ -80,25 +92,40 @@ public Director(String username, String password, String firstName, String lastN
     
 }
 
+
 public String getthemes(){
     return "session 1: "+this.theme1+ " session 2: "+this.theme2+ " session 3: "+this.theme3+ " session 4: "+this.theme4+ " session 5: "+this.theme5+ " session 6: "+this.theme6+" session 7: "+this.theme7+ " session 8: "+this.theme8+ " session 9: "+this.theme9;
 }
     /*
      * A static method that generates a UUID randomly
+     * @return the UUID
      */
     private static UUID setUUID(){
         UUID temp = UUID.randomUUID();
         return temp;
     }
-
+/**
+ * View cabins method that returns the whole array list of cabins
+ * @param cabinList
+ * @return list of cabins from cabin collection
+ */
 private CabinCollection viewCabins(ArrayList<Cabin> cabinList){
     return (CabinCollection)cabins;
 
 }
+/**
+ * view child method that returns the whole array list of children
+ * @param Children
+ * @return list of children from child collection
+ */
 private ChildCollection viewChildren(ArrayList<Child> Children){
     return (ChildCollection)child;
-
 }
+/**
+ * 
+ * @param counselors
+ * @return
+ */
 private CounselorCollection viewCounselors(ArrayList<Counselor>counselors){
     return (CounselorCollection)counselor;
 
