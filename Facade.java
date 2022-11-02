@@ -15,10 +15,18 @@ public class Facade {
     public Facade(){
         
     }
-
+/**
+ * log in method that returns the results from the login method in the user
+ * @return the results of the login method in the user class
+ */
 public User login(){
     return user.login();
 }
+/**
+ * sign up method that prompts a new user to input their information and stores it in order to create a new user 
+ * further allowing them to login with that information in the future
+ * @return this user
+ */
 public User signUp(){
   
     System.out.println("Create your username");
@@ -103,25 +111,40 @@ public User signUp(){
     return user;
 
 }
+/**
+ * get schedule by name method that takes in a string and returns the schedule that matches that string
+ * @param Name of the schedule that the user is searching for
+ */
 public void getScheduleByName(String Name){
 
 }
-
+/**
+ * get all schedules method that allows the director to view all of the schedules
+ */
 public void getAllSchedules(){
     return;
     //director.
     
 }
+/**
+ * get child collection method that runs runs the get children method in child collection 
+ */
 public void getchildCollection(){
     //return null;
     kids.getChildren();
-    
 }
+/**
+ * get counselor collection method that runs the get counselor by UUID method from counselor collection
+ */
 public void getConselorcollection(){
     //return null;
     counselorcollection.getCounselorbyUUID();
     
 }
+/**
+ * camp info method that prints out a string that displays all the camp information to the user in the terminal
+ * @return string of camp information
+ */
 public String campinfo(){
     return ("******Camp Infromation*****"+
     "\nOur camp is located in sunny South Carolina"+
