@@ -13,6 +13,7 @@ public class Facade {
     private String usertype;
 
     public Facade(){
+        
     }
 
 public User login(){

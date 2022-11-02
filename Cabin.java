@@ -46,6 +46,9 @@ public class Cabin {
         UUID temp = UUID.randomUUID();
         return temp;
     }
+    /* (non-Javadoc)
+     * @see java.lang.Object#toString()
+     */
     public String toString(){
         return "Counselor: "+this.counselor+" Cabin Number: "+this.cabinNumber+" Session: "+this.session+" Children: "+this.children.toString();
     }

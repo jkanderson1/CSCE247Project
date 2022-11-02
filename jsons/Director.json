@@ -1,9 +1,9 @@
 [
     {
-        "username": "superdirector15",
-        "password": "summercamp99",
-        "firstName": "Samuel",
-        "lastName": "Flours",
+        "username": "sammys",
+        "password": "samsame1",
+        "firstName": "Samantha ",
+        "lastName": "Samuels",
         "emergencyContact":{
             "firstName": "Daniel",
             "lastName": "Weathers",
@@ -11,20 +11,6 @@
             "address": "12 Pristine Court"
         },
         "restrictions": "gluten",
-        "UUID": ""
-    },
-    {
-        "username": "davidsmith742",
-        "password": "dsmithword247",
-        "firstName": "David",
-        "lastName": "Smith",
-        "emergencyContact":{
-            "firstName": "Daniel",
-            "lastName": "Weathers",
-            "number": "8038412343",
-            "address": "12 Pristine Court"
-        },
-        "restrictions": "none",
-        "UUID": ""
+        "UUID": "a17ac4a0-fab0-4b72-9988-3aaa292003e8"
     }
 ]

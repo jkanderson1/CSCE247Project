@@ -18,9 +18,55 @@
 			"restrictions" : "none",
 			"UUID" : "8d7ddf9b-7534-482c-ae25-3160c72d3124"
 		},
-	    "minAge":5,
-		"maxAge":9,
-	    "children": ["jimmy donahue", "ford lakes", "bob donovan", "daniel finger", "david beets", "jeff brooks", "sam chives", "baker daniels"],
+	    "minAge":7,
+		"maxAge":8,
+	    "children": [     
+			{
+			"childFirstName":"Lulu",
+			"childLastName":"Lefiti",
+			"childAge":"02/02/2015",
+			"restrictions": "Gluten free",
+			
+			"emergencyContacts":
+				{
+					"firstName":"Jim bob",
+					"lastName" :"Dugger",
+					"Number": "7764543423",
+					"Address": "212 bobnyjones rd"
+				},
+			"pediatrician":{
+				"firstName":"jimi",
+				"lastName" :"hendrix",
+				"Number": "8036451234",
+				"Address": "123 rock rd"
+	
+			},
+			"UUID": "67a61ca5-37c7-4393-bffc-531336962748"
+		},
+		{
+			"childFirstName":"Kristina",
+			"childLastName":"Akerman",
+			"childAge":"11/22/2014",
+			"restrictions": "none",
+			
+			"emergencyContacts":
+				{
+					"firstName":"Christan",
+					"lastName" :"Myers",
+					"Number": "8031219999",
+					"Address": "656 eastmont dr"
+				} ,
+			"pediatrician":{
+				"firstName":"mary",
+				"lastName" :"coleman",
+				"Number": "8036459872",
+				"Address": "123 lamb blv"
+	
+			}, 
+			"UUID": "c30ae1fd-062f-45b7-9258-f1c56644a1e4"
+		}
+
+	],
 		"schedule": " ",
 		"session" : 1,
 		"UUID": "07cff32b-b578-4dd3-88d0-5101c4ab3467"
@@ -45,9 +91,56 @@
 			"restrictions" : "none",
 			"UUID" : "5c8ed81e-d8e0-4fe3-b610-bed326ba3752"
 		},
-	    "minAge":7,
-		"maxAge":9,
-	    "children": ["jenny donahue", "annie lakes", "susie donovan", "annabelle samuels", "destiny beets", "sam brooks", "sally chives", "gabby daniels"],
+	    "minAge":9,
+		"maxAge":10,
+	    "children": [
+			{
+				"childFirstName":"Cruella",
+				"childLastName":"Wood",
+				"childAge":"04/22/2012",
+				"restrictions": "none",
+				
+				"emergencyContacts":
+					{
+						"firstName":"Narmala",
+						"lastName" :"Charles",
+						"Number": "8034467788",
+						"Address": "123 williams road"
+					}
+				 ,
+				"pediatrician":{
+					"firstName":"Dre",
+					"lastName" :"williams",
+					"Number": "1234567890",
+					"Address": "123 mali blv"
+		
+				}, 
+				"UUID": "9cbdc567-2fcf-4de6-bdbd-4fae993c16bc"
+			},
+			{
+				"childFirstName":"Ramona",
+				"childLastName":"Castro",
+				"childAge":"08/15/2012",
+				"restrictions": "none",
+				
+				"emergencyContacts":
+					{
+						"firstName":"Jimmy",
+						"lastName" :"Johns",
+						"Number": "8034445657",
+						"Address": "888 guyfury road"
+					}
+				 ,
+				"pediatrician":{
+					"firstName":"catarina",
+					"lastName" :"sue",
+					"Number": "8036451234",
+					"Address": "123 marysue blv"
+		
+				},
+				"UUID": "8daaa5af-2dcc-4da3-883d-07cf4ba1ccf4"
+			}
+		],
 		"schedule" : " ",
 		"session" : 1,
 		"UUID": "f27a35b3-273a-4549-9da9-53495be40959"
@@ -71,9 +164,146 @@
 			"restrictions" : "gulten free",
 			"UUID" : "e070e932-8852-4af2-a969-6e459a2a4618"
 		},
-	    "minAge":5,
-		"maxAge":7,
-	    "children": ["jenny donahue", "annie lakes", "susie donovan", "annabelle samuels", "destiny beets", "sam brooks", "sally chives", "gabby daniels"],
+	    "minAge":11,
+		"maxAge":12,
+	    "children": [   
+			{
+			"childFirstName":"Daisy",
+			"childLastName":"Boo",
+			"childAge":"10/02/2010",
+			"restrictions": "she is allergic to pine nuts, and sunflowers. She needs to take 5ml of zertec at breakfast daily",
+			"emergencyContacts":
+				{
+					"firstName":"Neil",
+					"lastName" :"Davis",
+					"Number": "7764543423",
+					"Address": "212 bobnyjones rd"
+				}
+			 ,
+			"pediatrician":{
+				"firstName":"Megan",
+				"lastName" :" Martin",
+				"Number": " 803-455-6767",
+				"Address": "Palmetto Pediatrics"
+	
+			},
+			"UUID": "c3ae9a81-08c2-4049-bb05-80064be2b0be"
+		},
+		{
+			"childFirstName":"Luna",
+			"childLastName":"conner",
+			"childAge":"09/25/2010",
+			"restrictions": "ALlegic to peanuts",
+			
+			"emergencyContacts":
+				{
+					"firstName":"mary",
+					"lastName" :"conner",
+					"Number": "8039096886",
+					"Address": "3523 longroad drive"
+				}
+			 ,
+			"pediatrician":{
+				"firstName":"Denny",
+				"lastName" :"manning",
+				"Number": "1234567890",
+				"Address": "123 lefty blv"
+	
+			}, 
+			"UUID": "2a27b573-dd5c-407c-82da-c42a47b29b59"
+		},
+		{
+			"childFirstName":"Felix",
+			"childLastName":"mozart",
+			"childAge":"05/05/2010",
+			"restrictions": "none",
+			
+			"emergencyContacts":
+				{
+					"firstName":"Henry",
+					"lastName" :"Lass",
+					"Number": "8034557676",
+					"Address": "999 brothers lane"
+				}
+			 ,
+			"pediatrician":{
+				"firstName":"mateo",
+				"lastName" :"Sanchez",
+				"Number": "1234567890",
+				"Address": "123 milkyway blv"
+	
+			}, 
+			"UUID": "e5d0f91b-2064-40cd-9aa8-fa8f03242566"
+		},
+		{
+			"childFirstName":"Owen",
+			"childLastName":"Morel",
+			"childAge":"02/22/2011",
+			"restrictions": "no swim",
+			
+			"emergencyContacts":
+				{
+					"firstName":"Brandi",
+					"lastName" :"Johnson",
+					"Number": "3228038787",
+					"Address": "343 johnson rd"
+				},
+			"pediatrician":{
+				"firstName":"angel",
+				"lastName" :"Ovist",
+				"Number": "8036451234",
+				"Address": "123 cherryhill blv"
+	
+			}, 
+			"UUID": "6429a4de-094f-4648-834c-61343dd264b8"
+		},
+		{
+			"childFirstName":"Leif",
+			"childLastName":"Knutsen",
+			"childAge":"12/02/2010",
+			"restrictions": "none",
+			
+			"emergencyContacts":
+				{
+					"firstName":"James",
+					"lastName" :"Jones",
+					"Number": "8034045699",
+					"Address": "123 whisty lane"
+				}
+			 ,
+			"pediatrician":{
+				"firstName":"beyonce",
+				"lastName" :"lee",
+				"Number": "8036451234",
+				"Address": "123 moore blv"
+	
+			}, 
+			"UUID": "4979c3c4-4c3d-4db1-a08d-e84edd253257"
+		},
+		{
+			"childFirstName":"Scarlett",
+			"childLastName":"Hill",
+			"childAge":"11/13/2010",
+			"restrictions": "none",
+			
+			"emergencyContacts":
+				{
+					"firstName":"Pauly",
+					"lastName" :"Dee",
+					"Number": "6568003435",
+					"Address": "121 Market lane"
+				}
+			 ,
+			"pediatrician":{
+				"firstName":"macy",
+				"lastName" :"walsh",
+				"Number": "8036451234",
+				"Address": "123 grape blv"
+	
+			}, 
+			"UUID": "66bdb77f-bf7b-4a53-8653-38d91e47ebde"
+		}
+	],
 		"schedule" : " ",
 		"session" : 3,
 		"UUID": "f7d947fe-6fb0-41b7-8455-58b645c82867"
@@ -97,9 +327,77 @@
 			"restrictions" : "peanut allergy",
 			"UUID" : "47fa9be9-a73e-424b-b8f3-f0eb79c032be"
 		},
-	    "minAge":12,
+	    "minAge":13,
 		"maxAge":14,
-	    "children": ["jenny donahue", "annie lakes", "susie donovan", "annabelle samuels", "destiny beets", "sam brooks", "sally chives", "gabby daniels"],
+	    "children": [
+			{
+			"childFirstName":"Catalina",
+			"childLastName":"Vasquez",
+			"childAge":"07/26/2009",
+			"restrictions": "Insert Restrictions",
+			
+			"emergencyContacts":
+				{
+					"firstName":"Marina",
+					"lastName" :"Vasquez",
+					"Number": "8034451234",
+					"Address": "333 courts road"
+				},
+			"pediatrician":{
+				"firstName":"river",
+				"lastName" :"Castro",
+				"Number": "8036451234",
+				"Address": "123 george blv"
+	
+			},
+			"UUID": "3bd87d4f-5e12-4d60-9650-1a429e1724c6"
+		},
+		{
+			"childFirstName":"Sophia",
+			"childLastName":"Berger",
+			"childAge":"12/03/2009",
+			"restrictions": "none",
+			
+			"emergencyContacts":
+				{
+					"firstName":"Dwayne",
+					"lastName" :"Park",
+					"Number": "8034457897",
+					"Address": "222 parklane rd"
+				}
+			,
+			"pediatrician":{
+				"firstName":"sally",
+				"lastName" :"greg",
+				"Number": "8036451234",
+				"Address": "123 summer blv"
+	
+			}, 
+			"UUID": "d892f2b5-79d9-41e9-b507-5756c8bf4fde"
+		},
+		{
+			"childFirstName":"Emir",
+			"childLastName":"Raj",
+			"childAge":"05/14/2009",
+			"restrictions": "can not swim",
+			
+			"emergencyContacts":
+				{
+					"firstName":"Liam",
+					"lastName" :"Tomas",
+					"Number": "8435661212",
+					"Address": "556 momoas rd"
+				},
+			"pediatrician":{
+				"firstName":"Tyrone",
+				"lastName" :"Gallo",
+				"Number": "8036451234",
+				"Address": "123 erica blv"
+	
+			}, 
+			"UUID": "2faa9d41-c0fe-487d-81e8-9b0917ae4959"
+		}
+		],
 		"schedule" : " ",
 		"session" : 1,
 		"UUID": "f6b4a566-6706-4874-b375-97134454be44"
@@ -124,12 +422,241 @@
 			"UUID" : "b1849e10-d852-4d23-b6cf-6fa7930febec"
 		},
 	    "minAge": 15,
-		"maxAge":17,
-	    "children": ["jenny donahue", "annie lakes", "susie donovan", "annabelle samuels", "destiny beets", "sam brooks", "sally chives", "gabby daniels"],
+		"maxAge":16,
+	    "children": [
+
+		{
+			"childFirstName":"Jimmy",
+			"childLastName":"Donahue",
+			"childAge":"10/07/2007",
+			"restrictions": "None",
+			 "emergencyContacts":
+				{
+					"firstName":"betty",
+					"lastName" :"donahue",
+					"Number": "7983560202",
+					"Address": "123 puff st"
+				} ,
+			"pediatrician": {
+				"FirstName" :"max",
+				"LastName" : "holder",
+				"Number" : "1237654321",
+				"Address" : "323 docter dr"
+			},
+			
+			"UUID": "92681fb9-a6da-47cb-9df7-80a100dd79f6"
+		},
+		{
+			"childFirstName":"jose",
+			"childLastName":"sosa",
+			"childAge":"01/01/2007",
+			"restrictions": "Choclate allergy",
+			
+			"emergencyContacts":
+				{
+					"firstName":"Karesha",
+					"lastName" :"Jackson",
+					"Number": "8748035060",
+					"Address": "2341 miami rd"
+				}
+			 ,
+			"pediatrician":{
+				"firstName":"manny",
+				"lastName" :"miami",
+				"Number": "1234567890",
+				"Address": "123 devine st"
+	
+			}, 
+			"UUID": "2840829b-06df-469a-9a8a-8d94857e9826"
+		},
+		{
+			"childFirstName":"Maurice",
+			"childLastName":"Mccoy",
+			"childAge":"10/12/2006",
+			"restrictions": "none",
+			
+			"emergencyContacts":
+				{
+					"firstName":"Karen",
+					"lastName" :"Mccoy",
+					"Number": "8835067799",
+					"Address": "1122 moments rd"
+				},
+			"pediatrician":{
+				"firstName":"moe",
+				"lastName" :"Keefe",
+				"Number": "1234567890",
+				"Address": "123 morning blv"
+	
+			}, 
+			"UUID": "133d5ab8-2e49-4748-ba6f-fae1dc3307be"
+		},
+		{
+			"childFirstName":"Ariana",
+			"childLastName":"Bacca",
+			"childAge":"10/05/2006",
+			"restrictions": "none",
+			
+			"emergencyContacts":
+				{
+					"firstName":"Junior",
+					"lastName" :"Jenner",
+					"Number": "8066667070",
+					"Address": "777 baker rd"
+				}
+			 ,
+			"pediatrician":{
+				"firstName":"Daffy",
+				"lastName" :"fixit",
+				"Number": "8036451234",
+				"Address": "123 rabbit rd"
+	
+			}, 
+			"UUID": "eec95806-5f31-4aa8-81d2-bb4fb8f1a229"
+		}
+	],
 		"schedule" : " ",
-		"session" : 1,
+		"session" : 2,
 		"UUID": "42f11e45-60f4-4803-a831-81ebe90e3e62"
     },
+	{
+	"cabinNumber": 5,
+	"counselor": {
+		"username": "donlee",
+		"password" : "biglee",
+		"FirstName": "Donna",
+		"LastName": "Lee",
+		"counselorDOB" : "05/20/1999",
+		"address" : "999 two notch rd",
+
+		"emergencyContact":{
+			"FirstName": "Bod",
+			"LastName" : "Stroman", 
+			"Number": "7082341234",
+			"Address": "123 point place lane"
+		},
+		"restrictions" : "none",
+		"UUID" : "b1849e10-d852-4d23-b6cf-6fa7930febec"
+	},
+	"minAge": 15,
+	"maxAge":16,
+	"children": [  {
+        "childFirstName":"Nutella ",
+        "childLastName":"Davis",
+        "childAge":"10/02/2006",
+        "restrictions": "Gluten free",
+        
+        "emergencyContacts":
+            {
+                "firstName":"Neil",
+                "lastName" :"Davis",
+                "Number": "7764543423",
+                "Address": "212 bobnyjones rd"
+            }
+         ,
+        "pediatrician":{
+            "firstName":"Megan",
+            "lastName" :" Martin",
+            "Number": " 803-455-6767",
+            "Address": "Palmetto Pediatrics"
+
+        },
+        "UUID": "2c29d6cd-4cb1-41cf-b460-b35d8ffda80f"
+    },
+	{
+        "childFirstName":"Jimmy",
+        "childLastName":"Donahue",
+        "childAge":"10/07/2007",
+        "restrictions": "None",
+         "emergencyContacts":
+            {
+                "firstName":"betty",
+                "lastName" :"donahue",
+                "Number": "7983560202",
+                "Address": "123 puff st"
+            } ,
+        "pediatrician": {
+            "FirstName" :"max",
+            "LastName" : "holder",
+            "Number" : "1237654321",
+            "Address" : "323 docter dr"
+        },
+        
+        "UUID": "92681fb9-a6da-47cb-9df7-80a100dd79f6"
+    },
+	{
+        "childFirstName":"jose",
+        "childLastName":"sosa",
+        "childAge":"01/01/2007",
+        "restrictions": "Choclate allergy",
+        
+        "emergencyContacts":
+            {
+                "firstName":"Karesha",
+                "lastName" :"Jackson",
+                "Number": "8748035060",
+                "Address": "2341 miami rd"
+            }
+         ,
+        "pediatrician":{
+            "firstName":"manny",
+            "lastName" :"miami",
+            "Number": "1234567890",
+            "Address": "123 devine st"
+
+        }, 
+        "UUID": "2840829b-06df-469a-9a8a-8d94857e9826"
+	},
+	{
+        "childFirstName":"Maurice",
+        "childLastName":"Mccoy",
+        "childAge":"10/12/2006",
+        "restrictions": "none",
+        
+        "emergencyContacts":
+            {
+                "firstName":"Karen",
+                "lastName" :"Mccoy",
+                "Number": "8835067799",
+                "Address": "1122 moments rd"
+            },
+        "pediatrician":{
+            "firstName":"moe",
+            "lastName" :"Keefe",
+            "Number": "1234567890",
+            "Address": "123 morning blv"
+
+        }, 
+        "UUID": "133d5ab8-2e49-4748-ba6f-fae1dc3307be"
+    },
+	{
+        "childFirstName":"Ariana",
+        "childLastName":"Bacca",
+        "childAge":"10/05/2006",
+        "restrictions": "none",
+        
+        "emergencyContacts":
+            {
+                "firstName":"Junior",
+                "lastName" :"Jenner",
+                "Number": "8066667070",
+                "Address": "777 baker rd"
+            }
+         ,
+        "pediatrician":{
+            "firstName":"Daffy",
+            "lastName" :"fixit",
+            "Number": "8036451234",
+            "Address": "123 rabbit rd"
+
+        }, 
+        "UUID": "eec95806-5f31-4aa8-81d2-bb4fb8f1a229"
+    }
+    ],
+	"schedule" : " ",
+	"session" : 3,
+	"UUID": "42f11e45-60f4-4803-a831-81ebe90e3e62"
+	},
 	{
         "cabinNumber": 6,
 		"counselor": {
@@ -151,7 +678,30 @@
 		},
 	    "minAge": 17,
 		"maxAge": 18,
-	    "children": ["jenny donahue", "annie lakes", "susie donovan", "annabelle samuels", "destiny beets", "sam brooks", "sally chives", "gabby daniels"],
+	    "children": [
+			{
+				"childFirstName":"Samantha",
+				"childLastName":"Kennedy",
+				"childAge":"03/24/2004",
+				"restrictions": "Peanut",
+				"emergencyContacts":
+					{
+						"firstName":"barbie",
+						"lastName" :"ken",
+						"Number": " 1234567781",
+						"Address": " 123 malibu dr"
+					},
+				"pediatrician": {
+					
+					"FirstName" :"skipper",
+					"LastName" : "ron",
+					"Number" : "8032345678",
+					"Address" : "123 dreamhouse dr"
+				},
+		
+				"UUID": "b1b091d1-0359-4922-8a1d-d4486b04a336"
+			}
+		],
 		"schedule" : " ",
 		"session" : 1,
 		"UUID": "567cc13c-e73a-4722-8ea9-7e9179e8c387"

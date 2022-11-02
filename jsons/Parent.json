@@ -99,7 +99,30 @@
         
                 },
                 "UUID": "2c29d6cd-4cb1-41cf-b460-b35d8ffda80f"
+            },
+            {
+                "childFirstName":"Daisy",
+                "childLastName":"Boo",
+                "childAge":"10/02/2010",
+                "restrictions": "she is allergic to pine nuts, and sunflowers. She needs to take 5ml of zertec at breakfast daily",
+                "emergencyContacts":
+                    {
+                        "firstName":"Neil",
+                        "lastName" :"Davis",
+                        "Number": "7764543423",
+                        "Address": "212 bobnyjones rd"
+                    }
+                 ,
+                "pediatrician":{
+                    "firstName":"Megan",
+                    "lastName" :" Martin",
+                    "Number": " 803-455-6767",
+                    "Address": "Palmetto Pediatrics"
+        
+                },
+                "UUID": "c3ae9a81-08c2-4049-bb05-80064be2b0be"
             }
+
         ],
         "UUID": "928ab09c-9eec-45f9-9bba-8a2cd63ef9a4"
     },
