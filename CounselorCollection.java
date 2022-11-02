@@ -28,6 +28,10 @@ public class CounselorCollection {
     public ArrayList getCounselorbyUUID(){
        return Counselors;
     }
-
+    public void getAllCounselors(){
+        for(int i = 0; i > Counselors.size();i++){
+            System.out.println(Counselors.get(i).toString());
+        }
+    }
     
 }

@@ -182,7 +182,16 @@ public void cabinToTXT(Cabin cabin)
 {
     File counselorFile = new File("C:\\Users\\walke\\Documents\\CSCE247Project\\counselor.txt");
     try {
-        PrintWriter out = new PrintWriter("C:\\Users\\walke\\Documents\\counselor.txt");
+        PrintWriter out = new PrintWriter("C:\\Users\\walke\\Documents\\CSCE247Project\\counselor.txt");
+        out.println("Counselor:");
+        out.println(cabin.counselor.toString());
+        out.println("children");
+        ArrayList<Child> childList = cabin.collection.getAllChildren();
+        for(int i = 0; i<childList.size(); i++)
+        {
+            out.println(childList.get(i).toString());
+        }
+        out.close();
 
     } catch (FileNotFoundException e) {
         // TODO Auto-generated catch block
