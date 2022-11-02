@@ -2,21 +2,44 @@
 import java.util.ArrayList;
 
 public class ChildCollection{
-
+    
+    private static ArrayList<Child> children;
+    /**
+     * returning array list that represents the children
+     * @param children
+     */
     public ChildCollection(ArrayList<Child> children) {
         this.children = children;
     }
-
-    private static ArrayList<Child> children;
+    /**
+     * add child method that adds a child to the array list of children
+     * @param childFirstName represents the childs first name
+     * @param childLastName represents the childs last name
+     * @param childDOB represents the childs date of birth
+     * @param emergencyContact the childs emergency contact
+     * @param Pediatrician the childs pediatrician
+     * @param restriction the childs restriction
+     */
     public void addChild(String childFirstName, String childLastName, String childDOB, Contact emergencyContact, Contact Pediatrician, String restriction){
         Child child = new Child(childFirstName, childLastName, childDOB, restriction, emergencyContact, Pediatrician);
         this.children.add(child);
     }
+    /**
+     * getchild method that returns the string that represents an instance of child in the arraylist of children
+     */
     public void getChildren(){
         for(int i = 0; i > children.size();i++){
             System.out.println(children.get(i).toString());
         }
     }
+
+    /**
+     * get Child method that returns a child with a specific maximum and minimum age in order to fill 
+     * the appropraite cabin
+     * @param minAge minimum age that a child can be to enter the cabin
+     * @param maxAge maximum age that a child can be to enter the cabin
+     * @return the specific instance of child that fits those parameters
+     */
     public static Child getChild(int minAge, int maxAge){
         Child retChild;
         for(int i = 0;i<children.size();i++){
