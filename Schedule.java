@@ -5,16 +5,20 @@ import java.util.Random;
 public class Schedule{
     public ArrayList<Activities> ActivitiesAL = new ArrayList<Activities>();
     private HashMap <Days,ArrayList<Activities>>ActivitiesHMap = new HashMap <Days,ArrayList<Activities>>();
+
+    ArrayList<Activities> mondayActivities = new ArrayList<Activities>();
+    ArrayList<Activities> tuesdayActivities = new ArrayList<Activities>();
+    ArrayList<Activities> wednesdayActivities = new ArrayList<Activities>();
+    ArrayList<Activities> thursdayActivities = new ArrayList<Activities>();
+    ArrayList<Activities> fridayActivities = new ArrayList<Activities>();
+    ArrayList<Activities> saturdayActivities = new ArrayList<Activities>();
+    ArrayList<Activities> sundayActivities = new ArrayList<Activities>();
+    
+    
     public void makeSchedule(){
         Random rand = new Random();
         //creating an arraylist of activities for each day
-        ArrayList<Activities> mondayActivities = new ArrayList<Activities>();
-        ArrayList<Activities> tuesdayActivities = new ArrayList<Activities>();
-        ArrayList<Activities> wednesdayActivities = new ArrayList<Activities>();
-        ArrayList<Activities> thursdayActivities = new ArrayList<Activities>();
-        ArrayList<Activities> fridayActivities = new ArrayList<Activities>();
-        ArrayList<Activities> saturdayActivities = new ArrayList<Activities>();
-        ArrayList<Activities> sundayActivities = new ArrayList<Activities>();
+       
         //picking random activities for each day
         int pick = rand.nextInt(Activities.values().length);
         Activities activity1 = Activities.values()[pick];
@@ -139,7 +143,11 @@ public class Schedule{
         ActivitiesHMap.put(Days.Saturday, saturdayActivities);
         ActivitiesHMap.put(Days.Sunday, sundayActivities);
 
-        //printing out the schedule for each day after making it 
+        
+    }
+
+    //printing out the schedule for each day after theyre made
+    public String toString(){
         System.out.println(mondayActivities.toString());
         System.out.println(tuesdayActivities.toString());
         System.out.println(wednesdayActivities.toString());
@@ -147,7 +155,7 @@ public class Schedule{
         System.out.println(fridayActivities.toString());
         System.out.println(saturdayActivities.toString());
         System.out.println(sundayActivities.toString());
-        
+        return "";
     }
     
 }
