@@ -153,6 +153,7 @@ public class Schedule{
     /**
      * to string method  that returns the string that represents the schedules for each of the days by 
      * printint out the string representation of the enumerations within the arraylists
+     * @return the strings of each arraylist 
      */
     public String toString(){
         System.out.println(mondayActivities.toString());
