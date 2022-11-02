@@ -4,8 +4,7 @@ import java.util.UUID;
 public class Director extends User{
 private ArrayList<Child> children;
 private ArrayList<String> parentname;
-private String username;
-private String password; 
+
 private String firstName;
 private String lastName; 
 private Contact emergencyContact; 
@@ -41,7 +40,7 @@ public Director(String username, String password, String firstName, String lastN
             child.getChildren();
         }
         else if (option==3){
-            counselor.CounselorCollection();
+            counselor.getAllCounselors();;
         }
         else if (option==4){
             System.out.println("what is the theme for session 1 ");
@@ -141,14 +140,6 @@ public String gettheme8(){
 
 public String gettheme9(){
     return this.theme9;
-}
-public String getUsername()
-{
-    return this.username;
-}
-public String getPassword()
-{
-    return this.password;
 }
 public String getFirstName()
 {
