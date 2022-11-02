@@ -1,4 +1,7 @@
 
+/**
+ * Activities enumeration that lists out the avaialable activities for the camp
+ */
 public enum Activities {
     Breakfast,
     Lunch,
