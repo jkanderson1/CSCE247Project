@@ -1,7 +1,9 @@
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Random;
-
+/**
+ * Schedule class that stores all the necessary properties and array list for the schedule
+ */
 public class Schedule{
     public ArrayList<Activities> ActivitiesAL = new ArrayList<Activities>();
     private HashMap <Days,ArrayList<Activities>>ActivitiesHMap = new HashMap <Days,ArrayList<Activities>>();
@@ -14,7 +16,10 @@ public class Schedule{
     ArrayList<Activities> saturdayActivities = new ArrayList<Activities>();
     ArrayList<Activities> sundayActivities = new ArrayList<Activities>();
     
-    
+    /**
+     * make schedule method that uses the arraylists of activities for each day to create a hashmap 
+     * between the enumeration of days and the arraylist and then creates a schedule 
+     */
     public void makeSchedule(){
         Random rand = new Random();
         //creating an arraylist of activities for each day
@@ -145,8 +150,11 @@ public class Schedule{
 
         
     }
-
-    //printing out the schedule for each day after theyre made
+    /**
+     * to string method  that returns the string that represents the schedules for each of the days by 
+     * printint out the string representation of the enumerations within the arraylists
+     * @return the strings of each arraylist 
+     */
     public String toString(){
         System.out.println(mondayActivities.toString());
         System.out.println(tuesdayActivities.toString());
