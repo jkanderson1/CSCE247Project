@@ -87,8 +87,6 @@ public Director(String username, String password, String firstName, String lastN
         }
         break;
     }
-
-
     
 }
 
