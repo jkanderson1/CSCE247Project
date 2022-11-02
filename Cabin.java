@@ -2,6 +2,9 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.UUID;
 
+/**
+ * Cabin class that stores all of the properties for a cabin
+ */
 public class Cabin extends User{
     public Counselor counselor;
     public ArrayList<Child> children = new ArrayList<Child>(8);

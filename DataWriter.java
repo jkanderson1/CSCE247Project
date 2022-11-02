@@ -182,7 +182,16 @@ public void cabinToTXT(Cabin cabin)
 {
     File counselorFile = new File("C:\\Users\\walke\\Documents\\CSCE247Project\\counselor.txt");
     try {
-        PrintWriter out = new PrintWriter("C:\\Users\\walke\\Documents\\counselor.txt");
+        PrintWriter out = new PrintWriter("C:\\Users\\walke\\Documents\\CSCE247Project\\counselor.txt");
+        out.println("Counselor:");
+        out.println(cabin.counselor.toString());
+        out.println("Children:");
+        ArrayList<Child> childList = cabin.collection.getAllChildren();
+        for(int i = 0; i<childList.size(); i++)
+        {
+            out.println(childList.get(i).toString());
+        }
+        out.close();
 
     } catch (FileNotFoundException e) {
         // TODO Auto-generated catch block
@@ -219,13 +228,8 @@ public JSONObject getDirectorJSON(Director director)
     directorJson.put("firstName", director.getFirstName());
     directorJson.put("lastName", director.getLastName());
     directorJson.put("emergencyContact", director.getEContactID());
-    //making restrictions into a String array
-    String[] restrictionsArray = new String[director.getRestrictions().size()];
-    for (int i = 0; i<restrictionsArray.length; i++)
-    {
-        restrictionsArray[i]= (String) director.getRestrictions().get(i);
-    }
-    directorJson.put("restrictions", restrictionsArray);
+    directorJson.put("restrictions", director.getRestrictions());
+    
     directorJson.put("UUID", director.getDirectorID());
 
     return directorJson;
