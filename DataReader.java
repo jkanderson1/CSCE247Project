@@ -9,11 +9,11 @@ import org.json.simple.parser.*;
 
 public class DataReader {
     JSONParser parser = new JSONParser();
+    /**
+     * @return an ArrayList of Directors from the Director.json 
+     */
     public static ArrayList<Director> getAllDirectors(){
-        /*
-         * why does director.json have all of this stuff if the director only has a children and parentname arraylist. 
-         * 
-         */
+
         ArrayList<Director> directorAL = new ArrayList<Director>(); 
        try {
          FileReader reader = new FileReader("jsons/Director.json");
@@ -50,6 +50,10 @@ public class DataReader {
     }
     return directorAL; 
     }
+
+    /**
+     * @return an ArrayList of Children from Child.json
+     */
     public static ArrayList<Child> getAllChildren(){
     
         ArrayList<Child> childAL = new ArrayList<Child>();
@@ -110,6 +114,9 @@ public class DataReader {
     
 
     }
+    /**
+     * @return an ArrayList of Cabins from the Cabin.json 
+     */
     public static ArrayList<Cabin> getAllCabins(){
 
         ArrayList<Cabin> cabinAL = new ArrayList<Cabin>();
@@ -170,6 +177,9 @@ public class DataReader {
         }
         return cabinAL;
     }
+    /**
+     * @return an ArrayList of parents from the  Parent.json
+     */
     public static ArrayList<Parent> getAllParents(){
 
         ArrayList<Parent> parentAL = new ArrayList<Parent>();
