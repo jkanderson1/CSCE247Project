@@ -146,7 +146,7 @@ public class Schedule{
         
     }
 
-    //printing out the schedule for each day after theyre made
+    //printing out the schedule for each day after they are made
     public String toString(){
         System.out.println(mondayActivities.toString());
         System.out.println(tuesdayActivities.toString());
