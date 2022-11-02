@@ -45,6 +45,9 @@ public Director(String username, String password, String firstName, String lastN
     this.cabins = new CabinCollection(DataReader.getAllCabins());
     this.child = new ChildCollection(DataReader.getAllChildren());
     this.counselor = new CounselorCollection(DataReader.getAllCounselors());
+    
+}
+public void access(){
     System.out.println("welcome director what would you like to do?\n 1. view all cabins\n 2.view all campers\n 3. view all counselors \n4. set session themes\n5.view schedule by cabin and session\n 6. log out");
     int option = keyboard.nextInt();
     while(true){
@@ -90,7 +93,6 @@ public Director(String username, String password, String firstName, String lastN
         }
         break;
     }
-    
 }
 
 
