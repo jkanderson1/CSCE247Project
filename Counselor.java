@@ -1,3 +1,4 @@
+import java.util.Scanner;
 import java.util.UUID;
 
 public class Counselor extends User{
@@ -25,6 +26,7 @@ public Counselor(String firstName, String lastName, String couselorDOB, String a
     this.EmergencyContact = EmergencyContact;
     this.restriction = restriction;
     this.counselorID = setUUID();
+    
 }
 
 public String toString(){

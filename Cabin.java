@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.UUID;
 
-public class Cabin {
+public class Cabin extends User{
     public Counselor counselor;
     public ArrayList<Child> children = new ArrayList<Child>(8);
     public int cabinNumber;
@@ -17,6 +17,7 @@ public class Cabin {
     
     public Cabin(int maxAge,int minAge, String counselorUUID, Counselor counselor, int session)
     {
+        super(counselor.getUsername(),counselor.getPassword());
         this.counselor = counselor;
         this.maxAge = maxAge;
         this.minAge = minAge;
