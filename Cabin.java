@@ -63,7 +63,9 @@ public class Cabin extends User{
         else if(keyboard.nextInt()==3){
             return;
         }
+    
     }
+    
     }
 
 
