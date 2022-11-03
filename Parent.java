@@ -90,6 +90,7 @@ public void access(){
          System.out.println(children.get(i).toString());
 
       }
+      keyboard.nextLine();
       System.out.println("what session would you like to sign your children up for\nSession 1: Hawaiin\nSession 2: Rockstars\nSession 3: Ninja Warriors\nSession 4: Willy Wonka\nSession 5: Hollywood\nSession 6: Legos\nSession 7: Cops and Robbers\nSession 8: Shark Tank\nSession 9: Smores");
       String sessionpicked = keyboard.nextLine();
       System.out.println("Okay your child/children are signed up for session "+sessionpicked);
