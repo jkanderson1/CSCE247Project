@@ -159,13 +159,53 @@ public class DataReader {
             Long cabinNumber = (Long)cabinJson.get("cabinNumber");
             int cabinNumberINT = cabinNumber.intValue();
             String cabinSchedule = (String)cabinJson.get("schedule");
+            JSONArray cabinKids = (JSONArray)cabinJson.get("children");
+            ArrayList<Child> childAL = new ArrayList<Child>();
+            for(int o = 0; o<cabinKids.size(); o++)
+            {
+            JSONObject childJson = (JSONObject)cabinKids.get(o);
+            String childFirstName = (String)childJson.get("childFirstName");
+            String childLastName = (String)childJson.get("childLastName");
+            String childAge = (String)childJson.get("childAge");
+            String restrictions = (String)childJson.get("restrictions");
+            String address = (String)childJson.get("address");
+            
+            
+            //loop through the json array
+     
+            
+                JSONObject EContactJson = (JSONObject)childJson.get("emergencyContacts");
+                String FirstName = (String)EContactJson.get("FirstName");
+                String LastName = (String)EContactJson.get("LastName");
+                String Number = (String)EContactJson.get("Number");
+                String Address = (String)EContactJson.get("Address");
+                Contact Econtact = new Contact(FirstName, LastName, Number, Address);
+                
+
+                
+            
+            JSONObject pediatricianJson = (JSONObject) childJson.get("pediatrician");
+            String pFirstName = (String) pediatricianJson.get("FirstName");
+            String pLastName = (String) pediatricianJson.get("LastName");
+            String pNumber = (String) pediatricianJson.get("Number");
+            String pAddress = (String) pediatricianJson.get("Address");
+            
+            Contact pediatrician = new Contact (pFirstName, pLastName, pNumber, pAddress);
+            //read each json object
+
+            //read the properties of each json object
+            //build a Contact object
+            Child child = new Child(childFirstName, childLastName, childAge, restrictions, Econtact, pediatrician);
+                childAL.add(child);
+
+            }
 
             //String ageGroup = (String)cabinJson.get("ageGroup");
             
             //Cabin and Counselor both need eachother to be constructed :/
             Counselor counselor = new Counselor(counselorFirstName, counselorLastName, counselorDOB, counselorAddress, CEContact, counselorRestrictions, counselorUsername, counselorPassword);
             
-            Cabin cabin = new Cabin(maxAgeINT,minAgeINT,counselorUUID,counselor,sessionINT,cabinNumberINT, cabinSchedule);
+            Cabin cabin = new Cabin(maxAgeINT,minAgeINT,counselorUUID,counselor,sessionINT,cabinNumberINT, cabinSchedule, childAL);
             cabinAL.add(cabin);
 
            }
