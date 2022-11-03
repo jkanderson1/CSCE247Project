@@ -27,7 +27,7 @@ public class Cabin extends User{
      * @param session Session for the cabin
      * @param cabinNumber Arbitrary Cabin Number
      */
-    public Cabin(int maxAge,int minAge, String counselorUUID, Counselor counselor, int session, int cabinNumber, String schedule)
+    public Cabin(int maxAge,int minAge, String counselorUUID, Counselor counselor, int session, int cabinNumber, String schedule, ArrayList<Child> children)
     {
         super(counselor.getUsername(),counselor.getPassword());
         this.counselor = counselor;
@@ -37,6 +37,7 @@ public class Cabin extends User{
         this.session = session;
         this.cabinNumber = cabinNumber;
         this.schedule = schedule;
+        this.children = children;
     }
 
     /**
@@ -59,7 +60,12 @@ public class Cabin extends User{
             DataWriter.cabinToTXT(this);
         }
         else if(keyboard.nextInt()==2){
-            System.out.println(schedule.toString());
+            ArrayList<Cabin> cabins = DataReader.getAllCabins();
+            for(int i = 0;i<cabins.size();i++){
+                if(cabins.get(i).getCabinNumber()==cabinNumber && cabins.get(i).getSession()==session){
+                    System.out.println(cabins.get(i).getSchedule().toString());
+                }
+            }
         }
         else if(keyboard.nextInt()==3){
             return;
