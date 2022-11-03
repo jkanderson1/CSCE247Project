@@ -48,15 +48,17 @@ public class User {
      * @return the user with those properties if there is a user with those properties
      */
     public static User login(){
-        System.out.println("Input username");
-        String username1 = keyboard.nextLine();
-        System.out.println("Input password");
-        String password1 = keyboard.nextLine();
-        User retUser = new User(username1, password1);
         ArrayList<Parent> parents = DataReader.getAllParents();
         ArrayList<Director> directors = DataReader.getAllDirectors();
         ArrayList<Cabin> counselors = DataReader.getAllCabins();
         while(true){
+            System.out.println("Input username");
+            String username1 = keyboard.nextLine();
+            keyboard.nextLine();
+            System.out.println("Input password");
+            String password1 = keyboard.nextLine();
+            keyboard.nextLine();
+            User retUser = new User(username1, password1);
             for(int i = 0;i<parents.size();i++) {   
                 if (parents.get(i).getUsername().equals(username1)){        
                     System.out.println("Attemping parent login...");    
