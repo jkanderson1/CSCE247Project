@@ -61,12 +61,7 @@ public class Cabin extends User{
             DataWriter.cabinToTXT(this);
         }
         else if(keyboard.nextInt()==2){
-            ArrayList<Cabin> cabins = DataReader.getAllCabins();
-            for(int i = 0;i<cabins.size();i++){
-                if(cabins.get(i).getCabinNumber()==cabinNumber && cabins.get(i).getSession()==session){
-                    System.out.println(cabins.get(i).getSchedule().toString());
-                }
-            }
+            System.out.println(this.schedule);
         }
         else if(keyboard.nextInt()==3){
             return;
