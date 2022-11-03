@@ -61,7 +61,7 @@ public class Cabin extends User{
             DataWriter.cabinToTXT(this);
         }
         else if(keyboard.nextInt()==2){
-            System.out.println(this.schedule);
+            System.out.print(schedule);
         }
         else if(keyboard.nextInt()==3){
             return;
