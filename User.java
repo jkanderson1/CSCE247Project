@@ -60,7 +60,7 @@ public class User {
             for(int i = 0;i<parents.size();i++) {   
                 if (parents.get(i).getUsername().equals(username1)){        
                     System.out.println("Attemping parent login...");    
-                    for(int j = 0;j<parents.size();i++) {
+                    for(int j = 0;j<parents.size();j++) {
                         if (parents.get(j).getPassword().equals(password1)){
                             System.out.println("Successful Login! Welcome "+username1);
                             retUser = parents.get(j);
