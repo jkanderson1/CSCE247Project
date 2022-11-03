@@ -218,8 +218,8 @@ public class DataReader {
                     Contact Econtact = new Contact(EContactFirstName, EContactLastName, EContactNumber, EContactAddress);
                     //pediatrician Object
                     JSONObject pediatricianJson = (JSONObject)childJson.get("pediatrician");
-                    String pFirstName = (String)pediatricianJson.get("FirstName");
-                    String pLastName = (String)pediatricianJson.get("LastName");
+                    String pFirstName = (String)pediatricianJson.get("firstName");
+                    String pLastName = (String)pediatricianJson.get("lastName");
                     String pNumber = (String)pediatricianJson.get("Number");
                     String pAddress = (String)pediatricianJson.get("Address");
                     Contact pediatrician = new Contact(pFirstName, pLastName, pNumber, pAddress);

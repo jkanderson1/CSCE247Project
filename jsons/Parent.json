@@ -24,8 +24,8 @@
                  ,
         
                 "pediatrician": {
-                    "FirstName" :"max",
-                    "LastName" : "holder",
+                    "firstName" :"max",
+                    "lastName" : "holder",
                     "Number" : "1237654321",
                     "Address" : "323 docter dr"
                 },
