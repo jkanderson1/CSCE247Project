@@ -224,6 +224,7 @@ public class DataReader {
                     String pAddress = (String)pediatricianJson.get("Address");
                     Contact pediatrician = new Contact(pFirstName, pLastName, pNumber, pAddress);
                     Child child = new Child(childFirstName, childLastName, childAge, childRestrictions, Econtact, pediatrician);
+                    childrenAL.add(child);
 
                 }
                 parentAL.add(new Parent(username, password, firstName, lastName, email, number, address, childrenAL));
