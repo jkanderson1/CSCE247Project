@@ -653,7 +653,7 @@
         "UUID": "eec95806-5f31-4aa8-81d2-bb4fb8f1a229"
     }
     ],
-	"schedule" : " Monday: Breakfast, Arts and crafts, Lunch, ",
+	"schedule" : " Monday: Breakfast, Arts and crafts, Lunch, KickBall, Dinner\nTuesday: Breakfast, flag Football, Lunch, FlagFootball, Dinner\n Wednesday: Breakfast, Scavenger Hunt, Lunch, Bike Riding, Dinner\nThursday: Breakfast, Sandbox, Lunch, Bird Watching, Dinner\nFriday: Breakfast, Roasting Marshmallows, Lunch, Dance Party, Dinner\nSaturday: Breakfast, Capture the Flag, Lunch, Petting zoo, Dinner\nSunday: Breakfast, Show and Tel, Lunch, Ice Cream party, Dinner",
 	"session" : 3,
 	"UUID": "42f11e45-60f4-4803-a831-81ebe90e3e62"
 	},
