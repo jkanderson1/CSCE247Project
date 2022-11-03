@@ -50,20 +50,21 @@ public class Cabin extends User{
                             "\n1 for Cabin Details Printout (Complex)"+
                             "\n2 for Cabin Schedule"+
                             "\n3 for logout");
-        if(keyboard.nextInt()==0){
+        int option = keyboard.nextInt();
+        if(option==0){
            for (int i =0; i<children.size(); i++)
            {
                 System.out.println(" ");
                 System.out.println(children.get(i));
            }
         }
-        else if(keyboard.nextInt()==1){
+        else if(option==1){
             DataWriter.cabinToTXT(this);
         }
-        else if(keyboard.nextInt()==2){
-            System.out.print("Monday: Breakfast, Soccer, Lunch, Pottery, Dinner \nTuesday: Breakfast, BasketBall, Lunch, Hiking, Dinner \nWednesday: Breakfast, WoodShop, Lunch, LaserTag, Dinner \n Thursday: Breakfast, Cooking, Lunch, Football, Dinner \n Friday: Breakfast, Archery, Lunch, MountainBiking, Dinner \n Saturday: Breakfast, CaptureTheFlag, Lunch, IceCreamParty, Dinner \n Sunday: Breakfast, Sandbox, Lunch, ObstacleCourse, Dinner");
+        else if(option==2){
+            System.out.print(schedule);
         }
-        else if(keyboard.nextInt()==3){
+        else if(option==3){
             return;
         }
     
