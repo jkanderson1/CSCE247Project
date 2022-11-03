@@ -15,7 +15,7 @@ public class Cabin extends User{
     public int maxAge;
     public int minAge;
     public String counselorUUID;
-    public Schedule schedule;
+    public String schedule;
     ChildCollection collection = new ChildCollection(DataReader.getAllChildren());
     
     /**
@@ -27,7 +27,7 @@ public class Cabin extends User{
      * @param session Session for the cabin
      * @param cabinNumber Arbitrary Cabin Number
      */
-    public Cabin(int maxAge,int minAge, String counselorUUID, Counselor counselor, int session, int cabinNumber)
+    public Cabin(int maxAge,int minAge, String counselorUUID, Counselor counselor, int session, int cabinNumber, String schedule)
     {
         super(counselor.getUsername(),counselor.getPassword());
         this.counselor = counselor;
@@ -36,6 +36,7 @@ public class Cabin extends User{
         this.counselorUUID = counselorUUID;
         this.session = session;
         this.cabinNumber = cabinNumber;
+        this.schedule = schedule;
     }
 
     /**
@@ -106,7 +107,7 @@ public class Cabin extends User{
     public int getSession(){
         return this.session;
     }
-    public Schedule getSchedule(){
+    public String getSchedule(){
         return this.schedule;
     }
 }
