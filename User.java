@@ -56,7 +56,6 @@ public class User {
         ArrayList<Parent> parents = DataReader.getAllParents();
         ArrayList<Director> directors = DataReader.getAllDirectors();
         ArrayList<Cabin> counselors = DataReader.getAllCabins();
-        System.out.println(retUser.toString()+parents.get(0).toString()+directors.get(0)+counselors.get(0));
         while(true){
             for(int i = 0;i<parents.size();i++) {   
                 if (parents.get(i).getUsername().equals(username1)){        
@@ -72,7 +71,6 @@ public class User {
                     return null;
                 }
             }
-            System.out.println(directors.get(0).toString());    
             if (directors.get(0).getUsername().equals(username1)){
                 System.out.println("Attemping director login..."); 
                 if (directors.get(0).getPassword().equals(password1)){
