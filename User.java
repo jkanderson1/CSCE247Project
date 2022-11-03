@@ -83,7 +83,8 @@ public class User {
                 System.out.println("Incorrect Password");
                 return null;
             }
-            for(int i = 0;i<counselors.size();i++){            
+            for(int i = 0;i<counselors.size();i++){ 
+                System.out.println(counselors.get(i).getUsername());           
                 if (counselors.get(i).getUsername().equals(username1)){
                     System.out.println("Attemping counselor login...");
                     for(int j = 0;j<counselors.size();j++)    
