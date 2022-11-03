@@ -156,12 +156,15 @@ public class DataReader {
           
             Long session = (Long)cabinJson.get("session");
             int sessionINT = session.intValue();
+            Long cabinNumber = (Long)cabinJson.get("cabinNumber");
+            int cabinNumberINT = cabinNumber.intValue();
+
             //String ageGroup = (String)cabinJson.get("ageGroup");
             
             //Cabin and Counselor both need eachother to be constructed :/
             Counselor counselor = new Counselor(counselorFirstName, counselorLastName, counselorDOB, counselorAddress, CEContact, counselorRestrictions, counselorUsername, counselorPassword);
             
-            Cabin cabin = new Cabin(maxAgeINT,minAgeINT,counselorUUID,counselor,sessionINT);
+            Cabin cabin = new Cabin(maxAgeINT,minAgeINT,counselorUUID,counselor,sessionINT,cabinNumberINT);
             cabinAL.add(cabin);
 
            }
@@ -279,14 +282,14 @@ public class DataReader {
         return counselorAL;
     }
 
-    /*public static void main(String[] args){
-        ArrayList<Director> directors = DataReader.getAllDirectors();
+    public static void main(String[] args){
+        ArrayList<Cabin> cabins = DataReader.getAllCabins();
 
         for(Cabin cabin : cabins){
             cabin.fillCabin();
             System.out.println(cabin);
         }
-    }*/
+    }
 
 }
 
