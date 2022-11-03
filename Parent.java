@@ -91,8 +91,6 @@ public void access(){
          String sessionpicked = keyboard.nextLine();
          System.out.println("Okay your child/children are signed up for session"+sessionpicked);
       }
-      //System.out.println(children.toString());
-
 
    }
    if(options==2){

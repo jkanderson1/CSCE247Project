@@ -15,7 +15,7 @@ public class Cabin extends User{
     public int maxAge;
     public int minAge;
     public String counselorUUID;
-    public Schedule schedule;
+    public String schedule;
     ChildCollection collection = new ChildCollection(DataReader.getAllChildren());
     
     /**
@@ -27,7 +27,7 @@ public class Cabin extends User{
      * @param session Session for the cabin
      * @param cabinNumber Arbitrary Cabin Number
      */
-    public Cabin(int maxAge,int minAge, String counselorUUID, Counselor counselor, int session, int cabinNumber)
+    public Cabin(int maxAge,int minAge, String counselorUUID, Counselor counselor, int session, int cabinNumber, String schedule)
     {
         super(counselor.getUsername(),counselor.getPassword());
         this.counselor = counselor;
@@ -36,6 +36,7 @@ public class Cabin extends User{
         this.counselorUUID = counselorUUID;
         this.session = session;
         this.cabinNumber = cabinNumber;
+        this.schedule = schedule;
     }
 
     /**
@@ -48,18 +49,20 @@ public class Cabin extends User{
                             "\n1 for Cabin Details Printout (Complex)"+
                             "\n2 for Cabin Schedule"+
                             "\n3 for logout");
-        int options = keyboard.nextInt();
-        if(options ==0){
-            System.out.println(collection.toString());
+        if(keyboard.nextInt()==0){
+           for (int i =0; i<collection.getAllChildren().size(); i++)
+           {
+            System.out.println(collection.getAllChildren().get(i));
+           }
         }
-        else if(options==1){
+        else if(keyboard.nextInt()==1){
             DataWriter.cabinToTXT(this);
         }
-        else if(options==2){
+        else if(keyboard.nextInt()==2){
             System.out.println(schedule.toString());
         }
-        else if(options==3){
-            break;
+        else if(keyboard.nextInt()==3){
+            return;
         }
     
     }
@@ -109,7 +112,7 @@ public class Cabin extends User{
     public int getSession(){
         return this.session;
     }
-    public Schedule getSchedule(){
+    public String getSchedule(){
         return this.schedule;
     }
 }
