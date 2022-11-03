@@ -42,7 +42,7 @@ public void access(){
    System.out.println("Welcome "+firstName+", what would you like to do?\n"+
                      "0 to register a child\n"+
                      "1 to view registered children\n"+
-                     "2 to view camp/session information"+
+                     "2 to view camp/session information\n"+
                      "3 to logout");
    if(keyboard.nextInt()==0){
       System.out.println("How many children would you like to register?");
@@ -82,6 +82,10 @@ public void access(){
    }
    if(keyboard.nextInt()==1){
       System.out.println(children.toString());
+      System.out.println("what session would you like to sign your children up for\nSession 1: Hawaiin\nSession 2: Rockstars\nSession 3: Ninja Warriors\nSession 4: Willy Wonka\nSession 5: Hollywood\nSession 6: Legos\nSession 7: Cops and Robbers\nSession 8: Shark Tank\nSession 9: Smores");
+      String sessionpicked = keyboard.nextLine();
+      System.out.println("Okay your child/children are signed up for session"+sessionpicked);
+
    }
    if(keyboard.nextInt()==2){
       System.out.println("******Camp Infromation*****"+
