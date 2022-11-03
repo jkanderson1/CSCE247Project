@@ -515,7 +515,7 @@
 			"UUID": "eec95806-5f31-4aa8-81d2-bb4fb8f1a229"
 		}
 	],
-		"schedule" : "Monday: Breakfast, Canoeing, Lunch, Woodshop, Dinner/n Tuesday: Breakfast, Hiking, Lunch, ObstacleCourse, Dinner/n Wedenesday: Breakfast, ZipLine, Lunch, BungeeJumping, Dinner/n Thursday: Breakfast, HorseRiding, Lunch, Pottery, Dinner/n Friday: Breakfast, MountainBiking, Lunch, Cooking, Dinner/n Saturday: Breakfast, BasketBall, Lunch, Football, Dinner/n Sunday: Breakfast, Soccer, Lunch, Swimming, Dinner ",
+		"schedule" : "Monday: Breakfast, Canoeing, Lunch, Woodshop, Dinner\n Tuesday: Breakfast, Hiking, Lunch, ObstacleCourse, Dinner\n Wedenesday: Breakfast, ZipLine, Lunch, BungeeJumping, Dinner\n Thursday: Breakfast, HorseRiding, Lunch, Pottery, Dinner\n Friday: Breakfast, MountainBiking, Lunch, Cooking, Dinner\n Saturday: Breakfast, BasketBall, Lunch, Football, Dinner\n Sunday: Breakfast, Soccer, Lunch, Swimming, Dinner ",
 		"session" : 2,
 		"UUID": "42f11e45-60f4-4803-a831-81ebe90e3e62"
     },
