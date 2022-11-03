@@ -49,7 +49,10 @@ public class Cabin extends User{
                             "\n2 for Cabin Schedule"+
                             "\n3 for logout");
         if(keyboard.nextInt()==0){
-            System.out.println(collection.toString());
+           for (int i =0; i<collection.getAllChildren().size(); i++)
+           {
+            System.out.println(collection.getAllChildren().get(i));
+           }
         }
         else if(keyboard.nextInt()==1){
             DataWriter.cabinToTXT(this);
