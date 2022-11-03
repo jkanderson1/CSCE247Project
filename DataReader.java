@@ -175,8 +175,8 @@ public class DataReader {
      
             
                 JSONObject EContactJson = (JSONObject)childJson.get("emergencyContacts");
-                String FirstName = (String)EContactJson.get("FirstName");
-                String LastName = (String)EContactJson.get("LastName");
+                String FirstName = (String)EContactJson.get("firstName");
+                String LastName = (String)EContactJson.get("lastName");
                 String Number = (String)EContactJson.get("Number");
                 String Address = (String)EContactJson.get("Address");
                 Contact Econtact = new Contact(FirstName, LastName, Number, Address);
@@ -185,8 +185,8 @@ public class DataReader {
                 
             
             JSONObject pediatricianJson = (JSONObject) childJson.get("pediatrician");
-            String pFirstName = (String) pediatricianJson.get("FirstName");
-            String pLastName = (String) pediatricianJson.get("LastName");
+            String pFirstName = (String) pediatricianJson.get("firstName");
+            String pLastName = (String) pediatricianJson.get("lastName");
             String pNumber = (String) pediatricianJson.get("Number");
             String pAddress = (String) pediatricianJson.get("Address");
             

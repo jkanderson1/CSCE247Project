@@ -12,7 +12,6 @@ public class Child {
     public Contact Pediatrician;
     public Contact EmergencyContact;
     public String restriction;
-    public UUID childID;
 
     /**
      * Creating a child with the follow parameters 
@@ -30,15 +29,6 @@ public class Child {
         this.restriction = restriction;
         this.Pediatrician = Pediatrician;
         this.EmergencyContact = emergencyContact;
-        this.childID = setUUID();
-    }
-    /**
-     * A static method that generates a UUID randomly
-     * @return UUID
-     */
-    private static UUID setUUID(){
-        UUID temp = UUID.randomUUID();
-        return temp;
     }
 
     /**
@@ -46,7 +36,7 @@ public class Child {
      * @return  child first name, child last name, child date of birth, child restriction, pediatricin, emergency contact, amd UUID
      */
     public String toString(){
-        return childFirstname+ childLastname+childDOB+restriction+Pediatrician+EmergencyContact+childID.toString();
+        return childFirstname+ childLastname+childDOB+restriction+Pediatrician+EmergencyContact;
     }
 
     /**
@@ -116,14 +106,6 @@ public class Child {
         return this.restriction;
     }
 
-    /**
-     * get UUID method that returns the childs first name
-     * @return childs UUID
-     */
-    public String getUUID()
-    {
-        return this.childID.toString();
-    }
     
     /**
      * getAge method that calculates and returns the age of a child using the child date of birth parameter
