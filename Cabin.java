@@ -48,19 +48,22 @@ public class Cabin extends User{
                             "\n1 for Cabin Details Printout (Complex)"+
                             "\n2 for Cabin Schedule"+
                             "\n3 for logout");
-        if(keyboard.nextInt()==0){
+        int options = keyboard.nextInt();
+        if(options ==0){
             System.out.println(collection.toString());
         }
-        else if(keyboard.nextInt()==1){
+        else if(options==1){
             DataWriter.cabinToTXT(this);
         }
-        else if(keyboard.nextInt()==2){
+        else if(options==2){
             System.out.println(schedule.toString());
         }
-        else if(keyboard.nextInt()==3){
-            return;
+        else if(options==3){
+            break;
         }
+    
     }
+    
     }
 
 
