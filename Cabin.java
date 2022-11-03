@@ -25,8 +25,9 @@ public class Cabin extends User{
      * @param counselorUUID UUID of the counselor in the cabin
      * @param counselor Counselor in the cabin
      * @param session Session for the cabin
+     * @param cabinNumber Arbitrary Cabin Number
      */
-    public Cabin(int maxAge,int minAge, String counselorUUID, Counselor counselor, int session)
+    public Cabin(int maxAge,int minAge, String counselorUUID, Counselor counselor, int session, int cabinNumber)
     {
         super(counselor.getUsername(),counselor.getPassword());
         this.counselor = counselor;
@@ -34,6 +35,7 @@ public class Cabin extends User{
         this.minAge = minAge;
         this.counselorUUID = counselorUUID;
         this.session = session;
+        this.cabinNumber = cabinNumber;
     }
 
     /**

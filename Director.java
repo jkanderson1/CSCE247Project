@@ -95,12 +95,14 @@ public void access(){
             int cabNum = keyboard.nextInt();
             System.out.println("Input the session number for this cabin");
             int sessionNum = keyboard.nextInt();
-            for(int i = 0;i<cabins.cabinList().size();i++){
-                if(cabins.cabinList().get(i).getCabinNumber()==cabNum){
+            ArrayList<Cabin> theCabins = cabins.cabinList();
+            System.out.println("Number"+cabNum+"oNumber"+theCabins.get(0).getCabinNumber()+"Session"+sessionNum+"oSession"+theCabins.get(0).getSession());
+            for(int i = 0;i<theCabins.size();i++){
+                if(theCabins.get(i).getCabinNumber()==cabNum){
                     System.out.println("Cabin Number match!");
-                    for(int j = 0;j<cabins.cabinList().size();j++){
-                        if(cabins.cabinList().get(j).getSession()==sessionNum){
-                            System.out.println(cabins.cabinList().get(j).getSchedule().toString());
+                    for(int j = 0;j<theCabins.size();j++){
+                        if(theCabins.get(j).getSession()==sessionNum){
+                            System.out.println(theCabins.get(j).getSchedule().toString());
                         }
                     }
                 }
