@@ -53,7 +53,8 @@ public class Cabin extends User{
         if(keyboard.nextInt()==0){
            for (int i =0; i<children.size(); i++)
            {
-            System.out.println(children.get(i));
+                System.out.println(" ");
+                System.out.println(children.get(i));
            }
         }
         else if(keyboard.nextInt()==1){
