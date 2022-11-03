@@ -2,6 +2,9 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.UUID;
 
+/**
+ * Cabin class that stores all of the properties for a cabin
+ */
 public class Cabin extends User{
     public Counselor counselor;
     public ArrayList<Child> children = new ArrayList<Child>(8);
@@ -33,6 +36,31 @@ public class Cabin extends User{
         this.session = session;
     }
 
+    /**
+     * access method that allows the user to view specific cabin details
+     */
+    public void access(){
+        while(true){
+        System.out.println("Welcome "+counselor.getFirstName()+" Select a number for an option:"+
+                            "\n0 for Cabin Roster (Simple)"+
+                            "\n1 for Cabin Details Printout (Complex)"+
+                            "\n2 for Cabin Schedule"+
+                            "\n3 for logout");
+        if(keyboard.nextInt()==0){
+            System.out.println(collection.toString());
+        }
+        else if(keyboard.nextInt()==1){
+            DataWriter.cabinToTXT(this);
+        }
+        else if(keyboard.nextInt()==2){
+            System.out.println(schedule.toString());
+        }
+        else if(keyboard.nextInt()==3){
+            return;
+        }
+    }
+    }
+
 
     /**
      * fill cabin method which puts the specified amount of children into the cabin
@@ -52,7 +80,6 @@ public class Cabin extends User{
         this.counselor = counselor;
     }
 
-    //make maximum amount of children per cabin and keep track of each child
 
 
     /**
@@ -71,6 +98,13 @@ public class Cabin extends User{
         return "Counselor: "+this.counselor+" Cabin Number: "+this.cabinNumber+" Session: "+this.session+" Children: "+this.children.toString();
     }
 
-    
-
+    public int getCabinNumber(){
+        return this.cabinNumber;
+    }
+    public int getSession(){
+        return this.session;
+    }
+    public Schedule getSchedule(){
+        return this.schedule;
+    }
 }
