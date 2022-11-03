@@ -13,6 +13,10 @@ import org.json.simple.JSONObject;
 public class DataWriter {
 static ArrayList<Director> directors;
 
+/**
+ * @param children
+ * @return a boolean indicating if the children ArrayList got saved
+ */
 public boolean saveAllChildren(ArrayList<Child> children)
 
 {
@@ -40,6 +44,10 @@ public boolean saveAllChildren(ArrayList<Child> children)
 
     
 }
+/**
+ * @param child
+ * @return A JSONObject for the saveAllChildren method to use
+ */
 public static JSONObject getChildJSON(Child child)
 {
     JSONObject childDetails = new JSONObject();
@@ -58,6 +66,10 @@ public static JSONObject getChildJSON(Child child)
 }
 
 
+/**
+ * @param cabins
+ * @return a boolean indicating if saving to the Cabin.json was succesful
+ */
 public boolean saveAllCabins(ArrayList<Cabin> cabins)
 {
     JSONArray jsonCabin = new JSONArray();
@@ -81,6 +93,10 @@ public boolean saveAllCabins(ArrayList<Cabin> cabins)
     
 }
 
+/**
+ * @param cabin
+ * @return a JSONObject that the saveAllCabins method uses to store the cabins
+ */
 public static JSONObject getCabinJSON(Cabin cabin)
 {
 
@@ -106,6 +122,10 @@ public static JSONObject getCabinJSON(Cabin cabin)
 
 }
 
+/**
+ * @param contacts
+ * @return a boolean indicating if the save to Contact.json was succesful
+ */
 public boolean saveAllContacts(ArrayList<Contact> contacts)
 {
     JSONArray jsonContact = new JSONArray();
@@ -127,6 +147,11 @@ public boolean saveAllContacts(ArrayList<Contact> contacts)
         return false;
     }
 }
+
+/**
+ * @param contact
+ * @return a JSONObject for the saveAllContacts to use
+ */
 public JSONObject getContactJSON(Contact contact)
 {
     JSONObject contactJson = new JSONObject();
@@ -138,6 +163,10 @@ public JSONObject getContactJSON(Contact contact)
     return contactJson;
 }
 
+/**
+ * @param counselors
+ * @return a boolean indicating if the Counselor.json save was succesfull
+ */
 public boolean saveAllCounselors(ArrayList<Counselor> counselors)
 {
     JSONArray jsonCounselor = new JSONArray();
@@ -161,6 +190,10 @@ public boolean saveAllCounselors(ArrayList<Counselor> counselors)
 
 }
 
+/**
+ * @param counselor
+ * @return a JSONObject for the saveAllCounselors method to use
+ */
 public JSONObject getCounselorJSON(Counselor counselor)
 {
     JSONObject counselorJson = new JSONObject();
@@ -178,7 +211,11 @@ public JSONObject getCounselorJSON(Counselor counselor)
     return counselorJson;
 }
 
-public void cabinToTXT(Cabin cabin)
+/**
+ * @param cabin
+ * prints the contents of a cabin to a .txt file
+ */
+public static void cabinToTXT(Cabin cabin)
 {
     File counselorFile = new File("C:\\Users\\walke\\Documents\\CSCE247Project\\counselor.txt");
     try {
@@ -200,6 +237,10 @@ public void cabinToTXT(Cabin cabin)
 
 }
 
+/**
+ * @param directors
+ * @return a boolean indicating if the save to Director.json 
+ */
 public static boolean saveAllDirectors(ArrayList<Director> directors)
 {
     JSONArray jsonDirectors = new JSONArray();
@@ -220,6 +261,10 @@ public static boolean saveAllDirectors(ArrayList<Director> directors)
         return false;
     }
 }
+/**
+ * @param director
+ * @return a JSONObject for the saveAllDirectors method
+ */
 public JSONObject getDirectorJSON(Director director)
 {
     JSONObject directorJson = new JSONObject();
@@ -235,6 +280,10 @@ public JSONObject getDirectorJSON(Director director)
     return directorJson;
 }
 
+/**
+ * @param parents
+ * @return a boolean indicating if the save to Parent.json was succesful 
+ */
 public boolean saveAllParents(ArrayList<Parent> parents)
 {
     JSONArray jsonParents = new JSONArray();
@@ -257,6 +306,10 @@ public boolean saveAllParents(ArrayList<Parent> parents)
     }
 }
 
+/**
+ * @param parent
+ * @return a JSONObject for 
+ */
 public JSONObject getParentJSON(Parent parent)
 {
     JSONObject parentJson = new JSONObject(); 

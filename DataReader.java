@@ -236,6 +236,10 @@ public class DataReader {
         }
         return parentAL;
     }
+
+    /**
+     * @return an Arraylist of Counselors from the Counselor.json
+     */
     public static ArrayList<Counselor> getAllCounselors(){
 
         ArrayList<Counselor> counselorAL = new ArrayList<Counselor>();
