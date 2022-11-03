@@ -61,7 +61,7 @@ public class Cabin extends User{
             DataWriter.cabinToTXT(this);
         }
         else if(keyboard.nextInt()==2){
-            System.out.print(schedule);
+            System.out.print("Monday: Breakfast, Soccer, Lunch, Pottery, Dinner \nTuesday: Breakfast, BasketBall, Lunch, Hiking, Dinner \nWednesday: Breakfast, WoodShop, Lunch, LaserTag, Dinner \n Thursday: Breakfast, Cooking, Lunch, Football, Dinner \n Friday: Breakfast, Archery, Lunch, MountainBiking, Dinner \n Saturday: Breakfast, CaptureTheFlag, Lunch, IceCreamParty, Dinner \n Sunday: Breakfast, Sandbox, Lunch, ObstacleCourse, Dinner");
         }
         else if(keyboard.nextInt()==3){
             return;
