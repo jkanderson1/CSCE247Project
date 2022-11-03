@@ -36,6 +36,7 @@ public class Parent extends User{
       this.address = address; 
       this.children = children;
       this.parentID = UUID.randomUUID();
+      
    }
 public void access(){
    while(true){
@@ -82,14 +83,16 @@ public void access(){
         }
    }
    if(options==1){
+      System.out.println(children.toString());
       for(int i = 0; i<children.size(); i++)
       {
          System.out.println(children.get(i).toString());
+         System.out.println("what session would you like to sign your children up for\nSession 1: Hawaiin\nSession 2: Rockstars\nSession 3: Ninja Warriors\nSession 4: Willy Wonka\nSession 5: Hollywood\nSession 6: Legos\nSession 7: Cops and Robbers\nSession 8: Shark Tank\nSession 9: Smores");
+         String sessionpicked = keyboard.nextLine();
+         System.out.println("Okay your child/children are signed up for session"+sessionpicked);
       }
       //System.out.println(children.toString());
-      System.out.println("what session would you like to sign your children up for\nSession 1: Hawaiin\nSession 2: Rockstars\nSession 3: Ninja Warriors\nSession 4: Willy Wonka\nSession 5: Hollywood\nSession 6: Legos\nSession 7: Cops and Robbers\nSession 8: Shark Tank\nSession 9: Smores");
-      String sessionpicked = keyboard.nextLine();
-      System.out.println("Okay your child/children are signed up for session"+sessionpicked);
+
 
    }
    if(options==2){
