@@ -211,8 +211,8 @@ public class DataReader {
                     String childRestrictions = (String)childJson.get("restrictions");
                     //emergencyContact Object
                     JSONObject eContactJson = (JSONObject)childJson.get("emergencyContacts");
-                    String EContactFirstName = (String)eContactJson.get("FirstName");
-                    String EContactLastName = (String)eContactJson.get("LastName");
+                    String EContactFirstName = (String)eContactJson.get("firstName");
+                    String EContactLastName = (String)eContactJson.get("lastName");
                     String EContactNumber = (String)eContactJson.get("Number");
                     String EContactAddress = (String)eContactJson.get("Address");
                     Contact Econtact = new Contact(EContactFirstName, EContactLastName, EContactNumber, EContactAddress);
