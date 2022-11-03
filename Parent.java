@@ -44,7 +44,8 @@ public void access(){
                      "1 to view registered children\n"+
                      "2 to view camp/session information\n"+
                      "3 to logout");
-   if(keyboard.nextInt()==0){
+   int options = keyboard.nextInt();
+   if(options ==0){
       System.out.println("How many children would you like to register?");
         int numOfKids =  keyboard.nextInt();
         for (int i= 0; i < numOfKids; i++){
@@ -80,7 +81,7 @@ public void access(){
             
         }
    }
-   if(keyboard.nextInt()==1){
+   if(options==1){
       for(int i = 0; i<children.size(); i++)
       {
          System.out.println(children.get(i).toString());
@@ -91,7 +92,7 @@ public void access(){
       System.out.println("Okay your child/children are signed up for session"+sessionpicked);
 
    }
-   if(keyboard.nextInt()==2){
+   if(options==2){
       System.out.println("******Camp Infromation*****"+
       "\nOur camp is located in sunny South Carolina"+
       "\nOur camp runs from August to July"+
@@ -103,7 +104,7 @@ public void access(){
       "Child Activities: "+
       "\nArtsandCrafts\nKickBall\nFlagFootball\nScavengerHunt\nBikeRiding\nSandbox\nBirdWatching\nRoastingMarshmallows\nDanceParty\nCaptureTheFlag\nPettingZoo\nShowAndTell\nIceCreamParty\nLaserTag ");
    }
-   if(keyboard.nextInt()==3){
+   if(options==3){
       break;
    }
 }
