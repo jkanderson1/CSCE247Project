@@ -141,7 +141,7 @@
 				"UUID": "8daaa5af-2dcc-4da3-883d-07cf4ba1ccf4"
 			}
 		],
-		"schedule" : "Monday: Breakfast, LaserTag, Lunch, IceCreamParty, Dinner/n Tuesday: Breakfast, ShowAndTell, Lunch, PettingZoo, Dinner/n Wednesday: Breakfast, CaptureTheFlag, Lunch, DanceParty, Dinner/n Thursday: Breakfast, RoastingMarshmallows, Lunch, BirdWatching, Dinner/n Friday: Breakfast, Sandbox, Lunch, BikeRiding, Dinner/n Saturday: Breakfast, ScavengerHunt, Lunch, FlagFootball, Dinner/n Sunday: Breakfast, KickBall, Lunch, ArtsandCrafts, Dinner ",
+		"schedule" : "Monday: Breakfast, LaserTag, Lunch, IceCreamParty, Dinner\n Tuesday: Breakfast, ShowAndTell, Lunch, PettingZoo, Dinner\n Wednesday: Breakfast, CaptureTheFlag, Lunch, DanceParty, Dinner\n Thursday: Breakfast, RoastingMarshmallows, Lunch, BirdWatching, Dinner\n Friday: Breakfast, Sandbox, Lunch, BikeRiding, Dinner\n Saturday: Breakfast, ScavengerHunt, Lunch, FlagFootball, Dinner\n Sunday: Breakfast, KickBall, Lunch, ArtsandCrafts, Dinner ",
 		"session" : 2,
 		"UUID": "f27a35b3-273a-4549-9da9-53495be40959"
     },
