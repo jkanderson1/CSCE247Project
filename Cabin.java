@@ -92,7 +92,6 @@ public class Cabin extends User{
     }
 
 
-
     /**
      * A static method that generates the UUID randomly
      * @return the UUID
