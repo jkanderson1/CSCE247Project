@@ -16,7 +16,7 @@ public class DataReader {
 
         ArrayList<Director> directorAL = new ArrayList<Director>(); 
        try {
-         FileReader reader = new FileReader("jsons/Director.json");
+         FileReader reader = new FileReader("jsons/DirectorTest.json");
          JSONParser parser = new JSONParser();
         JSONArray directorJsonArray = (JSONArray)new JSONParser().parse(reader);
         for (int i = 0; i<directorJsonArray.size(); i++){
@@ -58,7 +58,7 @@ public class DataReader {
     
         ArrayList<Child> childAL = new ArrayList<Child>();
         try {
-           FileReader reader = new FileReader("jsons/Child.json");
+           FileReader reader = new FileReader("jsons/ChildTest.json");
            JSONArray childJsonArray = (JSONArray)new JSONParser().parse(reader);
            JSONParser parser = new JSONParser();
            for(int i =0; i<childJsonArray.size();i++)
