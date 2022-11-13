@@ -72,7 +72,6 @@ public class Cabin extends User{
     
     }
 
-
     /**
      * fill cabin method which puts the specified amount of children into the cabin
      */
