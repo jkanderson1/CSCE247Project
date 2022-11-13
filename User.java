@@ -5,8 +5,8 @@ import java.util.UUID;
  * User class that stores the properties for each user 
  */
 public class User {
-    public String username;
-    public String password;
+    public static String username;
+    public static String password;
     public static Scanner keyboard = new Scanner(System.in);
 /**
  * Creating a user with the following parameters
