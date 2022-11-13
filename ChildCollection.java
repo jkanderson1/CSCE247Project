@@ -2,7 +2,7 @@
 import java.util.ArrayList;
 
 public class ChildCollection{
-    
+    public static ChildCollection childcollection;
     private static ArrayList<Child> children;
     /**
      * returning array list that represents the children
@@ -55,7 +55,7 @@ public class ChildCollection{
     /**
      * @return an ArrayList of children from the ChildCollection class 
      */
-    public ArrayList<Child> getAllChildren()
+    public static ArrayList<Child> getAllChildren()
     {
         return ChildCollection.children;
     }
@@ -67,5 +67,25 @@ public class ChildCollection{
         return ret;
     }
 
+    public static ChildCollection getinstance(){
+        if (childcollection==null){
+            childcollection = new ChildCollection(children);
+        }
+        return childcollection;
+    }
+
+    public boolean haveChild(String childFirstName){
+        for (Child child :children){
+            if ( child.getchildFirstName().equals(childFirstName)){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public ArrayList<Child> getkids(){
+        return children;
+    }
+  
     
 }

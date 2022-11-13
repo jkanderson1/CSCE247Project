@@ -39,7 +39,7 @@ public class User {
     }
     public void access(){}
     public static void main(String[] args) {
-        System.out.println(UUID.randomUUID());
+        
     }
     /**
      * login method that prompts the user to input their username and password and then allows them to log in 
