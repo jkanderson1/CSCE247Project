@@ -1,0 +1,26 @@
+[
+    {
+        "childFirstName":"testFirstName",
+        "childLastName":"testLastName",
+        "childAge":"testDOB",
+        "restrictions": "testRestriction",
+        
+        "emergencyContacts":
+            {
+                "firstName":"testECFirstName",
+                "lastName" :"testECLastName",
+                "Number": "testECNumber",
+                "Address": "testECAddress"
+            }
+        ,
+
+        "pediatrician": {
+            "FirstName" :"testPFirstName",
+            "LastName" : "testPLastName",
+            "Number" : "testPNumber",
+            "Address" : "testPAddress"
+        },
+
+        "UUID": "2a943c4b-2df2-4a0c-a225-3640d27a9a06"
+    }
+]
