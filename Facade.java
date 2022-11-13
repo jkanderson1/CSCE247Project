@@ -116,7 +116,7 @@ public User signUp(){
  * @param Name of the schedule that the user is searching for
  */
 public void getScheduleByName(String Name){
-
+return;
 }
 /**
  * get all schedules method that allows the director to view all of the schedules
