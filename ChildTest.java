@@ -30,8 +30,4 @@ public class ChildTest {
         assertTrue(check);
     }
 
-    public static void main(String[] args) {
-       testHasRestriction();
-       testGetAge();
-    }
 }

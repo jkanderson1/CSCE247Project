@@ -18,9 +18,5 @@ public class CabinTest {
         check = false;
         assertTrue(check);
     }
-
-    public static void main(String[] args) {
-        testFillCabin();
-     }
     
 }
