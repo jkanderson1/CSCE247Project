@@ -8,7 +8,7 @@ import java.util.UUID;
 public class Child {
     public String childFirstname;
     public String childLastname;
-    public String childDOB;
+    public static String childDOB;
     public Contact Pediatrician;
     public Contact EmergencyContact;
     public String restriction;
@@ -25,7 +25,7 @@ public class Child {
     public Child(String childFirstname, String childLastname, String childDOB, String restriction, Contact emergencyContact, Contact Pediatrician){
         this.childFirstname = childFirstname;
         this.childLastname = childLastname;
-        this.childDOB = childDOB;
+        Child.childDOB = childDOB;
         this.restriction = restriction;
         this.Pediatrician = Pediatrician;
         this.EmergencyContact = emergencyContact;
@@ -45,12 +45,13 @@ public class Child {
      * @param restriction restrictions of the child
      * @return retriction or null
      */
-    public String hasRestriction(String restriction){
+    public static boolean hasRestriction(String restriction){
         if (restriction != null)
         {
-            return restriction;
+            System.out.println(restriction);
+            return true;
         }
-        else return null;
+        else return false;
     }
     
     /**
@@ -111,17 +112,17 @@ public class Child {
      * getAge method that calculates and returns the age of a child using the child date of birth parameter
      * @return integer that represents childs age
      */
-    public int getAge(){
+    public static int getAge(){
         int yearint = Integer.parseInt(childDOB.substring(childDOB.length()-4));
         int monthint = Integer.parseInt(childDOB.substring(0,2));
         int dateint = Integer.parseInt(childDOB.substring(3,4));
         int year = 2022;
         int childAge = year - yearint;
-        if(monthint < 11){
-            childAge++;
+        if(monthint > 11){
+            childAge--;
         }
         if(monthint == 11 && dateint < 3 ){
-            childAge++;
+            childAge--;
         }
         return childAge;
     }

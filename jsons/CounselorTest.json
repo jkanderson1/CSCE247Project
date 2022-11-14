@@ -1,0 +1,18 @@
+[
+    {
+        "username": "tesetUsername",
+        "password": "testPassword",
+        "FirstName":"testFirstName",
+        "LastName":"testLastName",
+        "Age":"testDOB",
+        "address": "testAddress",
+        "emergencyContact":{
+            "FirstName": "testECFirstName",
+            "LastName" : "testECLastName", 
+            "Number": "testECNumber",
+            "Address": "testECAddress"
+        },
+        "restrictions": "testRestrictions",
+        "UUID": ""
+    }
+]
