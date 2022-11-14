@@ -8,18 +8,19 @@ import org.junit.jupiter.api.Test;
 public class ParentTest {
     private Parent parent = Parent.getinstance();
     private ArrayList<Parent> parental = parent.getParents();
-    private ArrayList <Parent> parenttestAL;
+    private ArrayList <Parent> parenttestAL = new ArrayList<>();
 
     @BeforeEach
     public void set(){
-       // parental.clear();
+       parenttestAL.clear();
         //parental.add(new Parent("jillw", "watson123","jill", "Watson"," watson123@aol.com", "8032314567"," 123 apple rd", null));
         parenttestAL.add(new Parent("jillw", "watson123","jill", "Watson"," watson123@aol.com", "8032314567"," 123 apple rd", null));
     }
 
     @AfterEach
     public void tearDown(){
-        ChildCollection.getinstance().getkids();
+        //ChildCollection.getinstance().getkids().clear();
+        parenttestAL.clear();
     }
 
     public boolean haveParent(String username, String password, String firstName, String lastName, String email, String number, String address){
@@ -40,19 +41,19 @@ public class ParentTest {
     @Test
 	void testHaveParentInValid() {
 		boolean hasSophie = haveParent("joyw", "wheeler","joy", "Wheeler"," joy13@aol.com", "8032314567"," 123 marryway rd");
-		assertFalse(hasSophie);
+		assertTrue(hasSophie);
 	}
 
     @Test
 	void testHaveParentEmpty() {
 		boolean hasEmpty = haveParent(" ", " ", " ", " ", "", "", "");
-		assertFalse(hasEmpty);
+		assertTrue(hasEmpty);
 	}
 
     @Test
 	void testHaveParentNull() {
 		boolean hasNull = haveParent(null, null, null, null, null, null, null);
-		assertFalse(hasNull);
+		assertTrue(hasNull);
 	}
 
 }  
