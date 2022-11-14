@@ -19,6 +19,7 @@ public class Contact {
      * @param number counselors phone number
      * @param address counselors address
      */
+    
     public Contact(String firstname,String lastname,String number,String address){
         this.firstname = firstname;
         this.lastname = lastname;

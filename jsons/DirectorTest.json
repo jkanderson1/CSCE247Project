@@ -2,7 +2,7 @@
     {
         "username": "testUsername",
         "password": "testPassword",
-        "firstName": "testFirstName ",
+        "firstName": "testFirstName",
         "lastName": "testLastName",
         "emergencyContact":{
             "firstName": "testContactFirstName",

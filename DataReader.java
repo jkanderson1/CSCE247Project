@@ -121,7 +121,7 @@ public class DataReader {
 
         ArrayList<Cabin> cabinAL = new ArrayList<Cabin>();
         try {
-            FileReader reader = new FileReader("jsons/Cabin.json");
+            FileReader reader = new FileReader("jsons/CabinTest.json");
             JSONArray cabinJsonArray = (JSONArray)new JSONParser().parse(reader);
            JSONParser parser = new JSONParser();
            for(int i = 0; i<cabinJsonArray.size(); i++)
@@ -228,7 +228,7 @@ public class DataReader {
 
         ArrayList<Parent> parentAL = new ArrayList<Parent>();
         try{
-            FileReader reader = new FileReader("jsons/Parent.json");
+            FileReader reader = new FileReader("jsons/ParentTest.json");
             JSONArray parentJsonArray = (JSONArray)new JSONParser().parse(reader);
             JSONParser parser = new JSONParser();
             for(int i = 0;i<parentJsonArray.size();i++){
@@ -289,7 +289,7 @@ public class DataReader {
 
         ArrayList<Counselor> counselorAL = new ArrayList<Counselor>();
         try{
-            FileReader reader = new FileReader("jsons/Counselor.json");
+            FileReader reader = new FileReader("jsons/CounselorTest.json");
             JSONArray counselorJsonArray = (JSONArray)new JSONParser().parse(reader);
             JSONParser parser = new JSONParser();
             for(int i = 0;i<counselorJsonArray.size();i++){

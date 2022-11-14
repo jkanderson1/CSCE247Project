@@ -5,15 +5,15 @@ import java.util.UUID;
  * stores all the properties of a parent
  */
 public class Parent extends User{
-   public String firstName;
-   public String lastName;
-   public String email;
-   public String number;
-   public String address;
-   public ArrayList<Child> children;
+   public static String firstName;
+   public static String lastName;
+   public static String email;
+   public static String number;
+   public static String address;
+   public static ArrayList<Child> children;
    public UUID parentID;
-   private  ArrayList<Parent> parent;
-   private Parent parents;
+   private  static ArrayList<Parent> parental;
+   private static Parent parents;
    
    /**
     * creating a parent with the following parameters
@@ -130,9 +130,9 @@ public String toString(){
  * @param address parents address
  * @return the parent that was added to the arrylist
  */
- public ArrayList<Parent> addParent(String firstName, String lastName, String email, String number, String address){
-   parent.add(parents);
-   return parent;
+ public ArrayList<Parent> addParent(String username, String password, String firstName, String lastName, String email, String number, String address){
+   parental.add(parents);
+   return parental;
 }
 /**
  * get first name method that returns the parents first name
@@ -174,7 +174,27 @@ public String getphonenumber()
     {
         return this.address;
     }
+   public static ArrayList<Parent> getAllParents(){
+      return Parent.parental;
+   }
+   public static Parent getinstance(){
+      if (parents == null){
+         parents = new Parent(username, password, firstName, lastName, email, number, address, children);
+      }
+      return parents;
+   }
 
-   
+   public boolean haveParent(String username, String password, String firstName, String lastName, String email, String number, String address){
+      for (Parent parent :parental){
+         if (parent.getUsername().equals(username)&& parent.getPassword().equals(password) && parent.getfirstname().equals(firstName)&& parent.getlastname().equals(lastName) && parent.getemail().equals(email) && parent.getphonenumber().equals(number) && parent.getaddress().equals(address)){
+            return true;
+         }
+      }
+      return false;
+   }
+
+   public ArrayList<Parent> getParents(){
+      return parental;
+   }
 
 }

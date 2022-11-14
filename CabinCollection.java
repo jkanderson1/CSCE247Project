@@ -10,6 +10,7 @@ public class CabinCollection {
     public CabinCollection(ArrayList<Cabin> cabins){
         this.cabins = cabins;
     }
+    
 /**
  * Creating an array list of cabins
  * @return array list of cabins

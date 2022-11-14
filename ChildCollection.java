@@ -74,9 +74,9 @@ public class ChildCollection{
         return childcollection;
     }
 
-    public boolean haveChild(String childFirstName){
+    public boolean haveChild(String childFirstName, String childLastName, String childDOB, String restriction, Contact Pediatrician, Contact emergencyContact ){
         for (Child child :children){
-            if ( child.getchildFirstName().equals(childFirstName)){
+            if ( child.getchildFirstName().equals(childFirstName)&& child.getchildLastName().equals(childLastName)&& child.getchildDOB().equals(childDOB)&& child.getEmergencyContact().equals(emergencyContact) && child.getpediatrician().equals(Pediatrician)&& child.getRestriction().equals(restriction)){
                 return true;
             }
         }
