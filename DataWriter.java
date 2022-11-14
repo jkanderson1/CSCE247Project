@@ -59,7 +59,7 @@ public static JSONObject getChildJSON(Child child)
     childDetails.put("emergencyContactNumber", child.EmergencyContact.number);
     childDetails.put("pediatrician", child.Pediatrician.firstname+" "+child.Pediatrician.lastname);
     childDetails.put("pediatricianNumber", child.Pediatrician.number);
-    childDetails.put("UUID", child.childID.toString());
+    
     
     return childDetails;
 
@@ -249,7 +249,7 @@ public static boolean saveAllDirectors(ArrayList<Director> directors)
         jsonDirectors.set(i, directors.get(i));
 
     }
-    try(FileWriter directorFile = new FileWriter("Director.json"))
+    try(FileWriter directorFile = new FileWriter("DirectorDWTest.json"))
     {
         directorFile.write(jsonDirectors.toJSONString());
         directorFile.flush();
@@ -272,7 +272,12 @@ public JSONObject getDirectorJSON(Director director)
     directorJson.put("password", director.getPassword());
     directorJson.put("firstName", director.getFirstName());
     directorJson.put("lastName", director.getLastName());
-    directorJson.put("emergencyContact", director.getEContactID());
+    JSONObject EContactJson = new JSONObject();
+    EContactJson.put("firstName",director.emergencyContact.firstname);
+    EContactJson.put("lastName",director.emergencyContact.lastname);
+    EContactJson.put("number", director.emergencyContact.number);
+    EContactJson.put("address", director.emergencyContact.address);
+    directorJson.put("emergencyContact",EContactJson );
     directorJson.put("restrictions", director.getRestrictions());
     
     directorJson.put("UUID", director.getDirectorID());

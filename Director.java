@@ -10,10 +10,10 @@ private ArrayList<Child> children;
 private ArrayList<String> parentname;
 public static Scanner keyboard = new Scanner(System.in);
 
-private String firstName;
-private String lastName; 
-private Contact emergencyContact; 
-private String restrictions; 
+public String firstName;
+public String lastName; 
+public Contact emergencyContact; 
+public String restrictions; 
 public UUID directorID;
 public ChildCollection child;
 public CounselorCollection counselor;
