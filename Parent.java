@@ -193,7 +193,7 @@ public String getphonenumber()
       return false;
    }
 
-   public ArrayList<Parent> getcounselors(){
+   public ArrayList<Parent> getParents(){
       return parental;
    }
 

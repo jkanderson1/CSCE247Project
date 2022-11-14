@@ -8,18 +8,19 @@ import org.junit.jupiter.api.Test;
 
 class CounselorCollectionTest{
     private CounselorCollection counselorcollection = CounselorCollection.getinstance();
-    private static ArrayList<Counselor> Counselors = CounselorCollection.getAllCounselors();
+    private ArrayList<Counselor> Counselors = counselorcollection.getCounselors();
 
     @BeforeEach
-    public void set(){
+    public void setup(){
         Counselors.clear();
         Counselors.add(new Counselor("Bobby", "Settles","10/12/2002","213 newhouse dr",(new Contact("Bob", "Settles", "8031234567", "123 logger drive")), "none", "bobbys", "thesettes"));
-
+        
     }
 
     @AfterEach
     public void tearDown(){
         CounselorCollection.getinstance().getCounselors().clear();
+        
     }
 
     @Test

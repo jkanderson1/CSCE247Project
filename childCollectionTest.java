@@ -8,16 +8,16 @@ import org.junit.jupiter.api.Test;
 
 class childCollectionTest{
     private ChildCollection childcollection = ChildCollection.getinstance();
-    private static ArrayList<Child> children = ChildCollection.getAllChildren();
+    private ArrayList<Child> children = childcollection.getkids();
 
     @BeforeEach
     public void set(){
-        children.clear();
+        //children.clear();
         children.add(new Child("Sally", "Martin","10/12/2010","none",(new Contact("Bob", "Manning", "8031234567", "123 house drive")),(new Contact("Jonny", "Cash", "8031234567", "123 Barbie drive"))));
 
     }
 
-    @AfterEach
+  @AfterEach
     public void tearDown(){
         ChildCollection.getinstance().getkids().clear();
     }
