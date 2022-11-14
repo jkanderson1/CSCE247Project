@@ -5,19 +5,12 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 public class ChildTest {
-    private ChildCollection childcollection = ChildCollection.getinstance();
-    private static ArrayList<Child> children = ChildCollection.getAllChildren();
 
     @BeforeEach
     public void setup(){
-        children.clear();
-        children.add(new Child("Lucas", "Sinclair","04/22/2012","peanuts",(new Contact("Bob", "Manning", "8031234567", "123 house drive")),(new Contact("Jonny", "Cash", "8031234567", "123 Barbie drive"))));
+        Child aChild = new Child("Lucas", "Sinclair","06/18/20015", "peanuts", null, null);
     }
 
-    @AfterEach
-    public void tearDown(){
-        ChildCollection.getinstance().getkids().clear();
-    }
 
     @Test
     void testHasRestriction(){
