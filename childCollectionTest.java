@@ -14,8 +14,8 @@ class childCollectionTest{
     public void set(){
         children.clear();
         children.add(new Child("Sally", "Martin","10/12/2010","none",(new Contact("Bob", "Manning", "8031234567", "123 house drive")),(new Contact("Jonny", "Cash", "8031234567", "123 Barbie drive"))));
-        children.add(new Child("Mike", "Sully","02/22/2010","none",(new Contact("Blake", "Uni", "8031234567", "123 lake drive")),(new Contact("Jonny", "Cash", "8031234567", "123 Barbie drive"))));
-        
+        //children.add(new Child("Mike", "Sully","02/22/2010","none",(new Contact("Blake", "Uni", "8031234567", "123 lake drive")),(new Contact("Jonny", "Cash", "8031234567", "123 Barbie drive"))));
+
     }
 
     @AfterEach
@@ -25,30 +25,25 @@ class childCollectionTest{
 
     @Test
     void testHaveUserValidFirstname() {
-		boolean hasSally = childcollection.haveChild("Sally");
+		boolean hasSally = childcollection.haveChild("Sally", "Martin","10/12/2010","none",(new Contact("Bob", "Manning", "8031234567", "123 house drive")),(new Contact("Jonny", "Cash", "8031234567", "123 Barbie drive")));
 		assertTrue(hasSally);
-	}
-    @Test
-	void testHaveUserValidLastname() {
-		boolean hasMike = childcollection.haveChild("bwhite");
-		assertTrue(hasMike);
 	}
 
     @Test
 	void testHaveUserInValid() {
-		boolean hasSophie = childcollection.haveChild("jsmith");
+		boolean hasSophie = childcollection.haveChild("Mike", "Sully","02/22/2010","none",(new Contact("Blake", "Uni", "8031234567", "123 lake drive")),(new Contact("Jonny", "Cash", "8031234567", "123 Barbie drive")));
 		assertFalse(hasSophie);
 	}
 
     @Test
 	void testHaveUserEmpty() {
-		boolean hasEmpty = childcollection.haveChild("");
+		boolean hasEmpty = childcollection.haveChild(" ", " ", " ", " ", (new Contact(" ", " ", "", "")),(new Contact("", "", "", "")));
 		assertFalse(hasEmpty);
 	}
 
     @Test
 	void testHaveUserNull() {
-		boolean hasNull = childcollection.haveChild(null);
+		boolean hasNull = childcollection.haveChild(null, null, null, null, null, null);
 		assertFalse(hasNull);
 	}
 

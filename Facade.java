@@ -48,7 +48,7 @@ public User signUp(){
         System.out.println("what is your address");
         String address = keyboard.nextLine();
         parent = new Parent(address, address, firstName, lastName, email, number, address, null);
-        parent.addParent(firstName, lastName, email, number,address);
+        parent.addParent(Username, Password, firstName, lastName, email, number,address);
         System.out.println("How many children would you like to register?");
         int numOfKids =  keyboard.nextInt();
         for (int i= 0; i < numOfKids; i++){
@@ -116,7 +116,7 @@ public User signUp(){
  * @param Name of the schedule that the user is searching for
  */
 public void getScheduleByName(String Name){
-
+return;
 }
 /**
  * get all schedules method that allows the director to view all of the schedules

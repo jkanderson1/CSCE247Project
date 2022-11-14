@@ -6,6 +6,7 @@ import java.util.ArrayList;
  */
 public class CounselorCollection {
     private static ArrayList<Counselor> Counselors;
+    private static CounselorCollection counselorcollection;
     private static Counselor counselor;
     /**
      * Counselor collection class that returns the collection of all counselors as an arraylist
@@ -28,10 +29,30 @@ public class CounselorCollection {
     public ArrayList getCounselorbyUUID(){
        return Counselors;
     }
-    public void getAllCounselors(){
+    public static ArrayList<Counselor> getAllCounselors(){
         for(int i = 0; i > Counselors.size();i++){
             System.out.println(Counselors.get(i).toString());
         }
+        return Counselors;
     }
+
+    public static CounselorCollection getinstance(){
+        if (counselorcollection==null){
+            counselorcollection = new CounselorCollection(Counselors);
+        }
+        return counselorcollection;
+    }  
     
+    public boolean haveCounselor(String firstName, String lastName, String couselorDOB, String address, Contact EmergencyContact, String restriction, String username, String password){
+        for (Counselor counselor :Counselors){
+            if ( counselor.getFirstName().equals(firstName)&& counselor.getFirstName().equals(lastName)&& counselor.getCounselorDOB().equals(couselorDOB)&& counselor.getEmergencyContact().equals(EmergencyContact) && counselor.getRestriction().equals(restriction)&& counselor.getusername().equals(username) && counselor.getpassword().equals(password)){
+                return true;
+            }
+        }
+        return false;
+    } 
+
+    public ArrayList<Counselor> getCounselors(){
+        return Counselors;
+    }
 }

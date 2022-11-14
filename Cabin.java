@@ -7,7 +7,7 @@ import java.util.UUID;
  */
 public class Cabin extends User{
     public Counselor counselor;
-    public ArrayList<Child> children = new ArrayList<Child>(8);
+    public static ArrayList<Child> children = new ArrayList<Child>(8);
     public int cabinNumber;
     public int session;
     public UUID cabinID;
@@ -37,9 +37,12 @@ public class Cabin extends User{
         this.session = session;
         this.cabinNumber = cabinNumber;
         this.schedule = schedule;
-        this.children = children;
+        Cabin.children = children;
     }
 
+    public static ArrayList<Child> getChildren(){
+        return children;
+    }
     /**
      * access method that allows the user to view specific cabin details
      */
@@ -71,7 +74,6 @@ public class Cabin extends User{
     }
     
     }
-
 
     /**
      * fill cabin method which puts the specified amount of children into the cabin

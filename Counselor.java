@@ -121,6 +121,13 @@ public UUID getCounselorID()
 {
     return this.counselorID;
 }
+public String getusername(){
+    return this.username;
+}
+
+public String getpassword(){
+    return this.password;
+}
 
 }
 
