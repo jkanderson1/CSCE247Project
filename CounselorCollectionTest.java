@@ -43,19 +43,19 @@ class CounselorCollectionTest{
     @Test
 	void testHaveUCounselorInValid() {
 		boolean hasSophie = haveCounselor("Mike", "Sully","02/22/2010","123 addres rd",(new Contact("Blake", "Uni", "8031234567", "123 lake drive")),"none", "username", "password");
-		assertTrue(hasSophie);
+		assertFalse(hasSophie);
 	}
 
     @Test
 	void testHaveCounselorEmpty() {
 		boolean hasEmpty = haveCounselor("", "", "", "", (new Contact(" ", " ", "", "")),"", "", "");
-		assertTrue(hasEmpty);
+		assertFalse(hasEmpty);
 	}
 
     @Test
 	void testHaveCounselorNull() {
 		boolean hasNull = haveCounselor(null, null, null, null, null, null, null, null);
-		assertTrue(hasNull);
+		assertFalse(hasNull);
 	}
 
 }

@@ -26,7 +26,7 @@ class childCollectionTest{
 
     public boolean haveChild(String childFirstName, String childLastName, String childDOB, String restriction, Contact Pediatrician, Contact emergencyContact ){
         for (Child child :childrentestal){
-            if ( child.getchildFirstName().equals(childFirstName)&& child.getchildLastName().equals(childLastName)&& child.getchildDOB().equals(childDOB)&& child.getEmergencyContact().equals(emergencyContact) && child.getpediatrician().equals(Pediatrician)&& child.getRestriction().equals(restriction)){
+            if ( child.getchildFirstName().equals(childFirstName)&& child.getchildLastName().equals(childLastName)&& child.getchildDOB().equals(childDOB)&&  child.getRestriction().equals(restriction) && child.getEmergencyContact().equals(emergencyContact) && child.getpediatrician().equals(Pediatrician)){
                 return true;
             }
         }
@@ -36,25 +36,25 @@ class childCollectionTest{
     @Test
     void testHaveChildValid() {
 		boolean hasSally = haveChild("Sally", "Martin","10/12/2010","none",(new Contact("Bob", "Manning", "8031234567", "123 house drive")),(new Contact("Jonny", "Cash", "8031234567", "123 Barbie drive")));
-		assertTrue(hasSally);
+		assertTrue(hasSally); 
 	}
 
     @Test
 	void testHaveChildInValid() {
 		boolean hasSophie = haveChild("Mike", "Sully","02/22/2010","none",(new Contact("Blake", "Uni", "8031234567", "123 lake drive")),(new Contact("Jonny", "Cash", "8031234567", "123 Barbie drive")));
-		assertTrue(hasSophie);
+		assertFalse(hasSophie);
 	}
 
     @Test
 	void testHaveChildEmpty() {
 		boolean hasEmpty = haveChild(" ", " ", " ", " ", (new Contact(" ", " ", "", "")),(new Contact("", "", "", "")));
-		assertTrue(hasEmpty);
+		assertFalse(hasEmpty);
 	}
 
     @Test
 	void testHaveChildNull() {
 		boolean hasNull = haveChild(null, null, null, null, null, null);
-		assertTrue(hasNull);
+		assertFalse(hasNull);
 	}
 
 }

@@ -41,19 +41,19 @@ public class ParentTest {
     @Test
 	void testHaveParentInValid() {
 		boolean hasSophie = haveParent("joyw", "wheeler","joy", "Wheeler"," joy13@aol.com", "8032314567"," 123 marryway rd");
-		assertTrue(hasSophie);
+		assertFalse(hasSophie);
 	}
 
     @Test
 	void testHaveParentEmpty() {
 		boolean hasEmpty = haveParent(" ", " ", " ", " ", "", "", "");
-		assertTrue(hasEmpty);
+		assertFalse(hasEmpty);
 	}
 
     @Test
 	void testHaveParentNull() {
 		boolean hasNull = haveParent(null, null, null, null, null, null, null);
-		assertTrue(hasNull);
+		assertFalse(hasNull);
 	}
 
 }  
