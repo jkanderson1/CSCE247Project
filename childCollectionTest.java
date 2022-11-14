@@ -8,42 +8,52 @@ import org.junit.jupiter.api.Test;
 
 class childCollectionTest{
     private ChildCollection childcollection = ChildCollection.getinstance();
-    private static ArrayList<Child> children = ChildCollection.getAllChildren();
+    private ArrayList<Child> children = childcollection.getkids();
+    private ArrayList<Child> childrentestal = new ArrayList<>();
 
     @BeforeEach
     public void set(){
-        children.clear();
-        children.add(new Child("Sally", "Martin","10/12/2010","none",(new Contact("Bob", "Manning", "8031234567", "123 house drive")),(new Contact("Jonny", "Cash", "8031234567", "123 Barbie drive"))));
-        //children.add(new Child("Mike", "Sully","02/22/2010","none",(new Contact("Blake", "Uni", "8031234567", "123 lake drive")),(new Contact("Jonny", "Cash", "8031234567", "123 Barbie drive"))));
-
+        childrentestal.clear();
+        //children.add(new Child("Sally", "Martin","10/12/2010","none",(new Contact("Bob", "Manning", "8031234567", "123 house drive")),(new Contact("Jonny", "Cash", "8031234567", "123 Barbie drive"))));
+        childrentestal.add(new Child("Sally", "Martin","10/12/2010","none",(new Contact("Bob", "Manning", "8031234567", "123 house drive")),(new Contact("Jonny", "Cash", "8031234567", "123 Barbie drive"))));
     }
 
-    @AfterEach
+  @AfterEach
     public void tearDown(){
-        ChildCollection.getinstance().getkids().clear();
+        //ChildCollection.getinstance().getkids().clear();
+        childrentestal.clear();
+    }
+
+    public boolean haveChild(String childFirstName, String childLastName, String childDOB, String restriction, Contact Pediatrician, Contact emergencyContact ){
+        for (Child child :childrentestal){
+            if ( child.getchildFirstName().equals(childFirstName)&& child.getchildLastName().equals(childLastName)&& child.getchildDOB().equals(childDOB)&&  child.getRestriction().equals(restriction) && child.getEmergencyContact().equals(emergencyContact) && child.getpediatrician().equals(Pediatrician)){
+                return true;
+            }
+        }
+        return false;
     }
 
     @Test
-    void testHaveUserValidFirstname() {
-		boolean hasSally = childcollection.haveChild("Sally", "Martin","10/12/2010","none",(new Contact("Bob", "Manning", "8031234567", "123 house drive")),(new Contact("Jonny", "Cash", "8031234567", "123 Barbie drive")));
-		assertTrue(hasSally);
+    void testHaveChildValid() {
+		boolean hasSally = haveChild("Sally", "Martin","10/12/2010","none",(new Contact("Bob", "Manning", "8031234567", "123 house drive")),(new Contact("Jonny", "Cash", "8031234567", "123 Barbie drive")));
+		assertTrue(hasSally); 
 	}
 
     @Test
-	void testHaveUserInValid() {
-		boolean hasSophie = childcollection.haveChild("Mike", "Sully","02/22/2010","none",(new Contact("Blake", "Uni", "8031234567", "123 lake drive")),(new Contact("Jonny", "Cash", "8031234567", "123 Barbie drive")));
+	void testHaveChildInValid() {
+		boolean hasSophie = haveChild("Mike", "Sully","02/22/2010","none",(new Contact("Blake", "Uni", "8031234567", "123 lake drive")),(new Contact("Jonny", "Cash", "8031234567", "123 Barbie drive")));
 		assertFalse(hasSophie);
 	}
 
     @Test
-	void testHaveUserEmpty() {
-		boolean hasEmpty = childcollection.haveChild(" ", " ", " ", " ", (new Contact(" ", " ", "", "")),(new Contact("", "", "", "")));
+	void testHaveChildEmpty() {
+		boolean hasEmpty = haveChild(" ", " ", " ", " ", (new Contact(" ", " ", "", "")),(new Contact("", "", "", "")));
 		assertFalse(hasEmpty);
 	}
 
     @Test
-	void testHaveUserNull() {
-		boolean hasNull = childcollection.haveChild(null, null, null, null, null, null);
+	void testHaveChildNull() {
+		boolean hasNull = haveChild(null, null, null, null, null, null);
 		assertFalse(hasNull);
 	}
 

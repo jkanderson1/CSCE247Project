@@ -35,7 +35,6 @@ public class CounselorCollection {
         }
         return Counselors;
     }
-
     public static CounselorCollection getinstance(){
         if (counselorcollection==null){
             counselorcollection = new CounselorCollection(Counselors);

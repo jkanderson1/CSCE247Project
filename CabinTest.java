@@ -7,7 +7,6 @@ import org.junit.jupiter.api.Test;
 public class CabinTest {
     static ArrayList<Child> children = Cabin.getChildren();
     @Test
-    static
     void testFillCabin(){
         boolean check = false;
         if(children.size() == 8)
@@ -18,9 +17,5 @@ public class CabinTest {
         check = false;
         assertTrue(check);
     }
-
-    public static void main(String[] args) {
-        testFillCabin();
-     }
     
 }
