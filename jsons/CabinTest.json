@@ -1,0 +1,33 @@
+[
+    {
+        "cabinNumber": 1,
+	    "counselor": {
+			"username": "testCUsername",
+			"password" : "testCPassword",
+			"FirstName": "testCFirstName",
+			"LastName": "testCLastName",
+			"counselorDOB" : "testCDOB",
+			"address" : "testCAddress",
+	
+			"emergencyContact":{
+				"firstName": "testECFirstName",
+				"lastName" : "testECLastName", 
+				"Number": "testECNumber",
+				"Address": "testECAddress"
+			},
+			"restrictions" : "testRestriction",
+			"UUID" : "testUUID"
+		},
+	    "minAge":4,
+		"maxAge":10,
+	    "children": [     
+			
+		
+
+	],
+    "schedule": "testSchedule",
+    "session" : 1,
+    "UUID": "testUUID"
+    
+}
+]
