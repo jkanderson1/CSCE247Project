@@ -22,25 +22,25 @@ public class ParentTest {
     }
 
     @Test
-    void testHaveUserValidFirstname() {
+    void testHaveParentValid() {
 		boolean hasSally = parent.haveParent("jillw", "watson123","jill", "Watson"," watson123@aol.com", "8032314567"," 123 apple rd");
 		assertTrue(hasSally);
 	}
 
     @Test
-	void testHaveUserInValid() {
+	void testHaveParentInValid() {
 		boolean hasSophie = parent.haveParent("joyw", "wheeler","joy", "Wheeler"," joy13@aol.com", "8032314567"," 123 marryway rd");
 		assertFalse(hasSophie);
 	}
 
     @Test
-	void testHaveUserEmpty() {
+	void testHaveParentEmpty() {
 		boolean hasEmpty = parent.haveParent(" ", " ", " ", " ", "", "", "");
 		assertFalse(hasEmpty);
 	}
 
     @Test
-	void testHaveUserNull() {
+	void testHaveParentNull() {
 		boolean hasNull = parent.haveParent(null, null, null, null, null, null, null);
 		assertFalse(hasNull);
 	}
